@@ -15,9 +15,12 @@
     margin-left: 16%;
     background-color: var(--bg);
     min-height: 100vh;
-    position: fixed;
     background-image: url(../Images/dots.svg);
     display: grid;
     position: relative;
+    .content
+    {
+      margin: 5rem 15rem;
+    }
   }
 }

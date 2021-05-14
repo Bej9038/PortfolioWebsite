@@ -5,7 +5,8 @@
   --main-blue-color: #247ac1;
   --main-blue-hover: rgba(36, 122, 193, .2);
   --main-border-color: #2e344e;
-  --font-color: #a4acc4;
+  --font-color1: white;
+  --font-color2: #a4acc4;
 }
 
 *{
@@ -15,7 +16,12 @@
 }
 
 body{
-  color: var(--font-color);
+  color: var(--font-color2);
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 1.2rem;
+}
+
+span
+{
+  color: var(--main-blue-color);
 }

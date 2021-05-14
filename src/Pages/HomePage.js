@@ -16,7 +16,7 @@ function HomePage()
                     <span> Ben Jordan.</span>
                 </h1>
                 <p className="home-sub-text">
-                    I'm a 4th year Software Engineer and Audio Engineer from Rochester Institute of Technology
+                    I'm a 4th year Software and Audio Engineer from Rochester Institute of Technology
                 </p>
                 <div className="icons">
                     <Link className="icon-link">
