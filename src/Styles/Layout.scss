@@ -1,0 +1,23 @@
+.App
+{
+  .sidebar
+  {
+    width: 16%;
+    height: 100vh;
+    background-color: var(--sidebar);
+    position: fixed;
+    border-right: 1px solid var(--main-border-color);
+  }
+
+  .main-content
+  {
+    width: 84%;
+    margin-left: 16%;
+    background-color: var(--bg);
+    min-height: 100vh;
+    position: fixed;
+    background-image: url(../Images/dots.svg);
+    display: grid;
+    position: relative;
+  }
+}

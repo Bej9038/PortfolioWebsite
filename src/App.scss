@@ -1,3 +1,13 @@
+:root
+{
+  --bg: #10121B;
+  --sidebar: #191D2B;
+  --main-blue-color: #247ac1;
+  --main-blue-hover: rgba(36, 122, 193, .2);
+  --main-border-color: #2e344e;
+  --font-color: #a4acc4;
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -6,4 +16,6 @@
 
 body{
   color: var(--font-color);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 1.2rem;
 }
