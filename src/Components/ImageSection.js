@@ -15,14 +15,7 @@ function ImageSection() {
                 <p className="about-text">
                     words
                 </p>
-                <div className="about-details">
-                    <div className="left-section">
-
-                    </div>
-                    <div className="right-section">
-
-                    </div>
-                </div>
+                <button className="btn">Download CV</button>
             </div>
         </div>
     )

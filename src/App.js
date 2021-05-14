@@ -3,6 +3,7 @@ import './Styles/Layout.scss';
 import './Styles/NavBar.scss';
 import './Styles/HomePage.scss';
 import './Styles/Title.scss';
+import './Styles/Skills.scss';
 import './Styles/AboutPage.scss';
 import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage'
