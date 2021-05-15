@@ -7,6 +7,8 @@
   --main-border-color: #2e344e;
   --font-color1: white;
   --font-color2: #a4acc4;
+
+  overflow-x: hidden;
 }
 
 *{
@@ -19,6 +21,22 @@ body{
   color: var(--font-color2);
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 1.2rem;
+}
+
+body::-webkit-scrollbar
+{
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background-color: var(--main-blue-hover);
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track
+{
+  background-color: var(--sidebar);
 }
 
 span
