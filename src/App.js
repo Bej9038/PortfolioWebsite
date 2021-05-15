@@ -5,6 +5,8 @@ import './Styles/HomePage.scss';
 import './Styles/Title.scss';
 import './Styles/Skills.scss';
 import './Styles/AboutPage.scss';
+import './Styles/ContactPage.scss';
+import './Styles/PortfolioPage.scss';
 import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage';

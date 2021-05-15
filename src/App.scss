@@ -1,12 +1,21 @@
 :root
 {
+  //--bg: #10121B;
+  //--sidebar: #191D2B;
+  //--main-blue-color: #247ac1;
+  //--main-blue-hover: rgba(36, 122, 193, .2);
+  //--main-border-color: #2e344e;
+  //--font-color1: white;
+  //--font-color2: #a4acc4;
+
   --bg: #10121B;
   --sidebar: #191D2B;
-  --main-blue-color: #247ac1;
-  --main-blue-hover: rgba(36, 122, 193, .2);
-  --main-border-color: #2e344e;
+  --main-blue-color: #26a69a;
+  --main-blue-hover: rgba(38, 166, 154, .2);
+  --main-border-color: rgba(164, 172, 196, .2);
   --font-color1: white;
   --font-color2: #a4acc4;
+  --card-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.17);
 
   overflow-x: hidden;
 }
@@ -25,6 +34,7 @@ body{
 
 body::-webkit-scrollbar
 {
+  display: none;
   width: 8px;
 }
 

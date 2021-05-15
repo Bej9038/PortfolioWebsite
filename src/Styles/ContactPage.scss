@@ -1,0 +1,25 @@
+.contact-page
+{
+  display: flex;
+
+  .contact-title
+  {
+    margin-bottom: 5rem;
+  }
+  .contact-sect
+  {
+    display: flex;
+    margin-left: 2rem;
+  }
+  .map-sect
+  {
+    margin-top: 4rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--sidebar);
+    iframe
+    {
+      width: 100%;
+    }
+  }
+}

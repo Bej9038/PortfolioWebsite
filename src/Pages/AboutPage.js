@@ -6,9 +6,9 @@ import ImageSection from "../Components/ImageSection";
 function AboutPage() {
     return (
         <div className="AboutPage">
-            <Title title={'About Me'} span={'About Me'} />
+            <Title title={'About Me'}/>
             <ImageSection />
-            <Title title={'Skills'} span={'Skills'} />
+            <Title title={'Skills'}/>
             <div className="skills-group">
                 <Skills skill = {'Web Audio API'} progress={'100%'}/>
                 <Skills skill = {'HTML'} progress={'90%'}/>

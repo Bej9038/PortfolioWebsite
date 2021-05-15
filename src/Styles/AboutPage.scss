@@ -1,6 +1,5 @@
 .ImageSection
 {
-  display: flex;
   margin-top: 4rem;
   margin-bottom: 4rem;
   .img
@@ -31,6 +30,7 @@
   {
     padding: 1rem 2rem;
     background-color: var(--main-blue-color);
+    box-shadow: var(--card-shadow);
     border: none;
     outline: none;
     font-family: inherit;

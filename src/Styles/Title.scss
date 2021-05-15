@@ -31,9 +31,11 @@
   span
   {
     position: absolute;
+    white-space: nowrap;
+    width: 20vm;
     top: 15%;
     left: 0;
     font-size: 4.5rem;
-    opacity: .07;
+    opacity: .05;
   }
 }
