@@ -1,70 +1,74 @@
-.ImageSection
+.AboutPage
 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  .img
+  .ImageSection
   {
-    width: 100%;
-    img
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    .img
     {
       width: 100%;
-      object-fit: cover;
+      img
+      {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .about-info
+    {
+      margin-left: 2rem;
+      h4
+      {
+        font-size: 2rem;
+      }
+
+      .about-text
+      {
+        padding: 2rem 0;
+      }
+    }
+
+    .btn
+    {
+      padding: 1rem 2rem;
+      background-color: var(--main-blue-color);
+      box-shadow: var(--card-shadow);
+      border: none;
+      outline: none;
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      text-transform: uppercase;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      position: relative;
+
+      &::after
+      {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: .3rem;
+        left: 0;
+        bottom: 0;
+        background-color: var(--font-color2);
+        transition: all .4s ease-in-out;
+      }
+      &:hover::after
+      {
+        width: 100%;
+      }
     }
   }
 
-  .about-info
+  .skills-group
   {
-    margin-left: 2rem;
-    h4
-    {
-      font-size: 2rem;
-    }
-
-    .about-text
-    {
-      padding: 2rem 0;
-    }
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
   }
 
-  .btn
-  {
-    padding: 1rem 2rem;
-    background-color: var(--main-blue-color);
-    box-shadow: var(--card-shadow);
-    border: none;
-    outline: none;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    text-transform: uppercase;
-    cursor: pointer;
-    letter-spacing: 2px;
-    margin-top: 1rem;
-    position: relative;
-
-    &::after
-    {
-      position: absolute;
-      content: "";
-      width: 0;
-      height: .3rem;
-      left: 0;
-      bottom: 0;
-      background-color: var(--font-color2);
-      transition: all .4s ease-in-out;
-    }
-    &:hover::after
-    {
-      width: 100%;
-    }
-  }
-}
-
-.skills-group
-{
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem;
-  row-gap: 3rem;
 }

@@ -1,25 +1,40 @@
-.contact-page
+.ContactPage
 {
-  display: flex;
-
-  .contact-title
-  {
-    margin-bottom: 5rem;
-  }
-  .contact-sect
+  .sections
   {
     display: flex;
-    margin-left: 2rem;
-  }
-  .map-sect
-  {
-    margin-top: 4rem;
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--sidebar);
-    iframe
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+    .map-sect
     {
+      margin-top: 5rem;
+      padding: .5rem;
       width: 100%;
+      box-shadow: var(--card-shadow);
+      background-color: var(--sidebar);
+      iframe
+      {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .contact-sect
+    {
+      display: flex;
+      width: 100%;
+      margin-left: 2rem;
+      background-color: var(--sidebar);
+      .contact-form
+      {
+        .form-group
+        {
+          width: 100%;
+        }
+      }
     }
   }
 }
+
+

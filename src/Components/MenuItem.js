@@ -1,8 +1,27 @@
 import React from 'react';
 
-function MenuItem(props) {
+function MenuItem({menuItem}) {
     return (
-        <div></div>
+        <div className="MenuItem">
+            {
+                menuItem.map((item) =>
+                {
+                    return <div className = "portfolio" key={item.id}>
+                        <div className="image-data">
+                            <img src={item.image} alt=""/>
+                            <ul className="hover-items">
+                                <li>
+                                    <a href={item.link}></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h5>
+                            {item.title}
+                        </h5>
+                    </div>
+                })
+            }
+        </div>
     );
 }
 
