@@ -18,5 +18,4 @@ function Skills({skill, progress}) {
         </div>
     );
 }
-
 export default Skills;

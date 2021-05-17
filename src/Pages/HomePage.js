@@ -19,18 +19,12 @@ function HomePage()
                     I'm a 4th year Software and Audio Engineer from Rochester Institute of Technology
                 </p>
                 <div className="icons">
-                    <Link className="icon-link">
+                    <a target = "_blank" href = "https://github.com/Bej9038" className="icon-link">
                         <FontAwesomeIcon icon = {faGithub} className="icon"/>
-                    </Link>
-                    <Link className="icon-link">
+                    </a>
+                    <a target = "_blank"  href = "https://www.linkedin.com/in/ben-jordan-b745a0194/" className="icon-link">
                         <FontAwesomeIcon icon = {faLinkedin} className="icon"/>
-                    </Link>
-                    <Link className="icon-link">
-                        <FontAwesomeIcon icon = {faSoundcloud} className="icon"/>
-                    </Link>
-                    <Link className="icon-link">
-                        <FontAwesomeIcon icon = {faYoutube} className="icon"/>
-                    </Link>
+                    </a>
                 </div>
             </header>
         </div>

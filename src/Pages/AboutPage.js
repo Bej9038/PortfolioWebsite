@@ -10,7 +10,7 @@ function AboutPage() {
             <ImageSection />
             <Title title={'Skills'}/>
             <div className="skills-group">
-                <Skills skill = {'Web Audio API'} progress={'100%'}/>
+                <Skills skill = {'Web Audio API'} progress={'90%'}/>
                 <Skills skill = {'HTML'} progress={'90%'}/>
                 <Skills skill = {'Git'} progress={'90%'}/>
                 <Skills skill = {'JavaScript'} progress={'90%'}/>
