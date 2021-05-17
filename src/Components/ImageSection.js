@@ -9,7 +9,7 @@ function ImageSection() {
             {/*</div>*/}
             <div className="about-info">
                 <p className="about-text">
-                    words
+                    Ben
                 </p>
                 <button className="btn">Download CV</button>
             </div>

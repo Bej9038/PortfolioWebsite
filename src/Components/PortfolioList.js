@@ -1,80 +1,45 @@
-import port1 from '../Images/PImages/maya-1.jpg';
-import port2 from '../Images/PImages/port1.jpg';
-import port3 from '../Images/PImages/port2.jpg';
-import port4 from '../Images/PImages/port3.jpg';
-import port6 from '../Images/PImages/port5.jpg';
-import port7 from '../Images/PImages/port6.jpg';
-
+import port1 from '../Images/PImages/port1.jpg';
+import port2 from '../Images/PImages/port2.jpg';
+import port3 from '../Images/PImages/port3.webp';
+import port4 from '../Images/PImages/port4.webp';
 const portfolios = [
     {
         id: 1,
-        category: 'Animation',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
+        category: 'Javascript',
+        link1: 'http://auditoryneuro.com/Implant%20Testing%20Program/Signin/Signin.html',
+        link2: 'https://github.com/Bej9038/ImplantTestingProgram',
+        icon1: 'Website',
+        icon2: 'Github',
         image: port1,
-        title: 'Autodesk Maya'
+        title: 'Implant Testing Program'
     },
     {
         id: 2,
-        category: 'Python',
-        link1: 'www.youtube.com',
+        category: 'Javascript',
+        link1: 'https://github.com/Bej9038/OmnitoneV2',
         link2: 'www.github.com',
-        icon1: 'G',
+        icon1: 'Github',
         icon2: 'Y',
         image: port2,
-        title: 'Python Web Scrapping'
+        title: 'Omnitone'
     },
     {
         id: 3,
-        category: 'Animation',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
+        category: 'Music',
+        link1: 'https://www.youtube.com/channel/UCqztrHyJRJKGxSo5_cpzWaA',
+        link2: 'https://soundcloud.com/odysymusic',
+        icon1: 'YouTube',
+        icon2: 'SoundCloud',
         image: port3,
-        title: 'Autodesk Maya'
+        title: 'Electronic Music Project'
     },
     {
         id: 4,
         category: 'Javascript',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
+        link1: 'https://github.com/Bej9038/PortfolioWebsite',
+        icon1: 'Github',
         image: port4,
-        title: 'Vanilla Javascript Website'
-    },
-    {
-        id: 5,
-        category: 'React Js',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        image: port6,
-        title: 'Getting Started With React'
-    },
-    {
-        id: 6,
-        category: 'React Js',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        image: port7,
-        title: 'Vanilla Javascript Website'
-    },
-    {
-        id: 7,
-        category: 'Test Port',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        image: port4,
-        title: 'Vanilla Javascript Website'
+        title: 'Portfolio Website'
     }
 ]
 

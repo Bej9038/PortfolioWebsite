@@ -1,6 +1,6 @@
 .NavBar
 {
-  height: 100vh;
+  height: 100%;
   .nav
   {
     height: 100%;
@@ -73,7 +73,6 @@
       {
         color: var(--main-border-color);
         font-size: .8rem;
-        white-space: nowrap;
         text-align: center;
         padding: 1rem 0;
       }

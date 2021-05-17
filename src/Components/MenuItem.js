@@ -8,7 +8,7 @@ function MenuItem({menuItem}) {
                 {
                     return <div className = "portfolio" key={item.id}>
                         <div className="image-data">
-                            <img src={item.image} alt=""/>
+                            <img className="img" src={item.image} alt=""/>
                             <ul className="hover-items">
                                 <li>
                                     <a href={item.link1}>{item.icon1}</a>
