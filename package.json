@@ -19,6 +19,7 @@
     "sass": "^1.32.13",
     "web-vitals": "^1.1.2"
   },
+  "homepage" : "http://Bej9038.github.io/PortfolioWebsite",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
