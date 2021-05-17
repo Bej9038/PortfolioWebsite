@@ -5,6 +5,12 @@
     white-space: nowrap;
     font-size: 1.4rem;
     font-weight: 400;
+    transition: all .3s ease-in-out;
+    cursor: default;
+    &:hover
+    {
+      color: var(--main-color);
+    }
   }
   .skill-bar
   {
