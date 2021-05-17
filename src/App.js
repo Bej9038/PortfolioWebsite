@@ -13,11 +13,21 @@ import AboutPage from './Pages/AboutPage';
 import {Switch, Route} from 'react-router-dom';
 import PortfolioPage from "./Pages/PortfolioPage";
 import ContactPage from "./Pages/ContactPage";
+import {useState} from 'react'
 
 function App() {
+    const [navToggle, setNavToggle] = useState(false);
+    const navClick = () =>
+    {
+        setNavToggle(!navToggle);
+    }
+
   return (
     <div className="App">
-      <div className="sidebar">
+        <div className="nav-btn" onClick={navClick}>
+
+        </div>
+      <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
         <NavBar />
       </div>
       <div className="main-content">

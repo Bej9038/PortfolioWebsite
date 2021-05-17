@@ -1,6 +1,5 @@
 .NavBar
 {
-  box-shadow: var(--card-shadow);
   height: 100vh;
   .nav
   {
@@ -40,7 +39,7 @@
           color: inherit;
           text-align: center;
           display: block;
-          padding: 1rem 0;
+          padding: 1.3rem 0;
           position: relative;
           &::before
           {
