@@ -1,5 +1,7 @@
 .AboutPage
 {
+  opacity: 0;
+  animation: fadeIn .3s ease forwards;
   .ImageSection
   {
     margin-top: 4rem;
@@ -31,7 +33,7 @@
     .btn
     {
       padding: 1rem 2rem;
-      background-color: var(--main-blue-color);
+      background-color: var(--main-color);
       box-shadow: var(--card-shadow);
       border: none;
       outline: none;

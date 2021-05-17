@@ -11,7 +11,7 @@ function MenuItem({menuItem}) {
                             <img src={item.image} alt=""/>
                             <ul className="hover-items">
                                 <li>
-                                    <a href={item.link}></a>
+                                    <a href={item.icon1}></a>
                                 </li>
                             </ul>
                         </div>

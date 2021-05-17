@@ -1,5 +1,7 @@
 .ContactPage
 {
+  opacity: 0;
+  animation: fadeIn .3s ease forwards;
   .sections
   {
     display: flex;

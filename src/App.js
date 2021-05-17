@@ -10,7 +10,6 @@ import './Styles/PortfolioPage.scss';
 import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage';
-
 import {Switch, Route} from 'react-router-dom';
 import PortfolioPage from "./Pages/PortfolioPage";
 import ContactPage from "./Pages/ContactPage";

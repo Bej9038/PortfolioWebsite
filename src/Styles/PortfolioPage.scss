@@ -1,0 +1,44 @@
+.PortfolioPage
+{
+  opacity: 0;
+  animation: fadeIn .3s ease forwards;
+  .menu-items
+  {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+.MenuItem
+{
+  .portfolio
+  {
+    .image-data
+    {
+      img
+      {
+        height: 40vh;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .hover-items
+    {
+      list-style: none;
+    }
+    h5
+    {
+      font-size: 1.5rem;
+      font-weight: 400;
+      transition: all .3s ease-in-out;
+      &:hover
+      {
+        color: var(--main-color);
+      }
+    }
+  }
+}
+
+
