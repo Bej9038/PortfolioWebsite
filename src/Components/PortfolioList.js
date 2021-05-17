@@ -2,14 +2,19 @@ import port1 from '../Images/PImages/port1.jpg';
 import port2 from '../Images/PImages/port2.jpg';
 import port3 from '../Images/PImages/port3.webp';
 import port4 from '../Images/PImages/port4.webp';
+
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {faSoundcloud} from "@fortawesome/free-brands-svg-icons";
+import {faChrome} from "@fortawesome/free-brands-svg-icons";
 const portfolios = [
     {
         id: 1,
         category: 'Javascript',
         link1: 'http://auditoryneuro.com/Implant%20Testing%20Program/Signin/Signin.html',
         link2: 'https://github.com/Bej9038/ImplantTestingProgram',
-        icon1: 'Website',
-        icon2: 'Github',
+        icon1: faChrome,
+        icon2: faGithub,
         image: port1,
         title: 'Implant Testing Program'
     },
@@ -17,9 +22,7 @@ const portfolios = [
         id: 2,
         category: 'Javascript',
         link1: 'https://github.com/Bej9038/OmnitoneV2',
-        link2: 'www.github.com',
-        icon1: 'Github',
-        icon2: 'Y',
+        icon1: faGithub,
         image: port2,
         title: 'Omnitone'
     },
@@ -28,8 +31,8 @@ const portfolios = [
         category: 'Music',
         link1: 'https://www.youtube.com/channel/UCqztrHyJRJKGxSo5_cpzWaA',
         link2: 'https://soundcloud.com/odysymusic',
-        icon1: 'YouTube',
-        icon2: 'SoundCloud',
+        icon1: faYoutube,
+        icon2: faSoundcloud,
         image: port3,
         title: 'Electronic Music Project'
     },
@@ -37,7 +40,7 @@ const portfolios = [
         id: 4,
         category: 'Javascript',
         link1: 'https://github.com/Bej9038/PortfolioWebsite',
-        icon1: 'Github',
+        icon1: faGithub,
         image: port4,
         title: 'Portfolio Website'
     }
