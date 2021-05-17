@@ -4,14 +4,14 @@
   {
     position: fixed;
     z-index: 10;
-    right: 10%;
-    top: 10%;
-    background-color: red;
-    width: 5rem;
-    height: 5rem;
+    right: 8.3%;
+    top: 8.3%;
     opacity: 0;
     cursor: pointer;
     display: flex;
+    color: var(--font-color2);
+    height: 2.5rem;
+    width: 2.5rem;
     @media screen and (max-width: 1000px)
     {
       transition: all .3s ease-in-out;

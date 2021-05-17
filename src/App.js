@@ -14,20 +14,23 @@ import {Switch, Route} from 'react-router-dom';
 import PortfolioPage from "./Pages/PortfolioPage";
 import ContactPage from "./Pages/ContactPage";
 import {useState} from 'react'
+import { FaBars } from 'react-icons/fa';
 
 function App() {
     const [navToggle, setNavToggle] = useState(false);
     const navClick = () =>
     {
-        setNavToggle(!navToggle);
+        if(window.innerWidth < 1000)
+        {
+            setNavToggle(!navToggle);
+        }
     }
 
   return (
     <div className="App">
-        <div className="nav-btn" onClick={navClick}>
-
-        </div>
-      <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
+        <FaBars className="nav-btn" onClick={navClick}>
+        </FaBars>
+      <div onClick={navClick} className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
         <NavBar />
       </div>
       <div className="main-content">
