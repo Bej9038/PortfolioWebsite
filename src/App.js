@@ -36,7 +36,7 @@ function App() {
       <div className="main-content">
         <div className="content">
             <Switch>
-                <Route path="/PortfolioWebsite" exact>
+                <Route path="/" exact>
                     <HomePage />
                 </Route>
 
