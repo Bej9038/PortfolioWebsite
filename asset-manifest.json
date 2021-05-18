@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/PortfolioWebsite/static/css/main.8087b681.chunk.css",
-    "main.js": "/PortfolioWebsite/static/js/main.fb7288df.chunk.js",
-    "main.js.map": "/PortfolioWebsite/static/js/main.fb7288df.chunk.js.map",
-    "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js",
-    "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js.map",
-    "static/js/2.54f8d308.chunk.js": "/PortfolioWebsite/static/js/2.54f8d308.chunk.js",
-    "static/js/2.54f8d308.chunk.js.map": "/PortfolioWebsite/static/js/2.54f8d308.chunk.js.map",
-    "index.html": "/PortfolioWebsite/index.html",
-    "static/css/main.8087b681.chunk.css.map": "/PortfolioWebsite/static/css/main.8087b681.chunk.css.map",
-    "static/js/2.54f8d308.chunk.js.LICENSE.txt": "/PortfolioWebsite/static/js/2.54f8d308.chunk.js.LICENSE.txt",
-    "static/media/Ben Jordan's Resume.2b6ee730.pdf": "/PortfolioWebsite/static/media/Ben Jordan's Resume.2b6ee730.pdf",
-    "static/media/ProfilePicture.35ed2c25.jpg": "/PortfolioWebsite/static/media/ProfilePicture.35ed2c25.jpg",
-    "static/media/Layout.scss": "/PortfolioWebsite/static/media/dots.943074de.svg",
-    "static/media/port1.10ed3f2b.jpg": "/PortfolioWebsite/static/media/port1.10ed3f2b.jpg",
-    "static/media/port2.13c6b5d4.jpg": "/PortfolioWebsite/static/media/port2.13c6b5d4.jpg",
-    "static/media/port3.b5cb8f35.webp": "/PortfolioWebsite/static/media/port3.b5cb8f35.webp",
-    "static/media/port4.374376c9.webp": "/PortfolioWebsite/static/media/port4.374376c9.webp"
+    "main.css": "/static/css/main.b00d517a.chunk.css",
+    "main.js": "/static/js/main.fb7288df.chunk.js",
+    "main.js.map": "/static/js/main.fb7288df.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b83279d6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b83279d6.js.map",
+    "static/js/2.54f8d308.chunk.js": "/static/js/2.54f8d308.chunk.js",
+    "static/js/2.54f8d308.chunk.js.map": "/static/js/2.54f8d308.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b00d517a.chunk.css.map": "/static/css/main.b00d517a.chunk.css.map",
+    "static/js/2.54f8d308.chunk.js.LICENSE.txt": "/static/js/2.54f8d308.chunk.js.LICENSE.txt",
+    "static/media/Ben Jordan's Resume.2b6ee730.pdf": "/static/media/Ben Jordan's Resume.2b6ee730.pdf",
+    "static/media/ProfilePicture.35ed2c25.jpg": "/static/media/ProfilePicture.35ed2c25.jpg",
+    "static/media/Layout.scss": "/static/media/dots.943074de.svg",
+    "static/media/port1.10ed3f2b.jpg": "/static/media/port1.10ed3f2b.jpg",
+    "static/media/port2.13c6b5d4.jpg": "/static/media/port2.13c6b5d4.jpg",
+    "static/media/port3.b5cb8f35.webp": "/static/media/port3.b5cb8f35.webp",
+    "static/media/port4.374376c9.webp": "/static/media/port4.374376c9.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.906d1dcc.js",
+    "static/js/runtime-main.b83279d6.js",
     "static/js/2.54f8d308.chunk.js",
-    "static/css/main.8087b681.chunk.css",
+    "static/css/main.b00d517a.chunk.css",
     "static/js/main.fb7288df.chunk.js"
   ]
 }
