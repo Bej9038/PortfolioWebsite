@@ -5,7 +5,7 @@ function ContactPage() {
     return (
         <div className="ContactPage">
             <div className="contact-title">
-                <Title title={'Contact'}/>
+                <Title title={'Contact'} progress={'100%'}/>
             </div>
             <div className="sections">
                 <div className="map-sect">

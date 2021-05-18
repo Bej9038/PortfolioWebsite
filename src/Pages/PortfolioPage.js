@@ -28,7 +28,7 @@ function PortfolioPage() {
     return (
         <div className="PortfolioPage">
             <div className="title">
-                <Title title={'Portfolio'}/>
+                <Title title={'Portfolio'} progress={'75%'}/>
             </div>
             <div className="portfolio-menu">
                 <Categories categories = {categories} filter={filter} />
