@@ -16,14 +16,12 @@
   {
     display: flex;
     align-items: center;
-    .skill-text
-    {
-    }
     .skill-progress
     {
       width: 100%;
       .progressbar
       {
+        box-shadow: var(--card-shadow);
         width: 100%;
         height: .5rem;
         margin-left: 1rem;

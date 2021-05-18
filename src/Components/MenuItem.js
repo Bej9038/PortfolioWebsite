@@ -9,6 +9,9 @@ function MenuItem({menuItem}) {
                 menuItem.map((item) =>
                 {
                     return <div className = "portfolio" key={item.id}>
+                        <h5>
+                            {item.title}
+                        </h5>
                         <div className="image-data">
                             <img className="img" src={item.image} alt=""/>
                             <div className="hover-items">
@@ -20,9 +23,6 @@ function MenuItem({menuItem}) {
                                 </a>}
                             </div>
                         </div>
-                        <h5>
-                            {item.title}
-                        </h5>
                     </div>
                 })
             }

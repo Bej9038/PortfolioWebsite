@@ -12,7 +12,7 @@ function ContactPage() {
                 <div className="map-sect">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1409184.4457547094!2d-77.01656342625483!3d42.317772110826056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d08182e0af88f7%3A0xae52768a56ece74!2sIthaca%2C%20NY!5e1!3m2!1sen!2sus!4v1621097926772!5m2!1sen!2sus"
-                        width="600" height="450" title = "map" style={{border:0}} loading="lazy"/>
+                        width="450" height="450" title = "map" style={{border:0}} loading="lazy"/>
                 </div>
                 <div className="contact-sect">
                     <form action="" className="contact-form">
