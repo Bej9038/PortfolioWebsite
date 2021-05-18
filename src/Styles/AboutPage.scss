@@ -5,8 +5,8 @@
   cursor: default;
   .ImageSection
   {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
     .img
     {
       width: 100%;
@@ -40,7 +40,7 @@
       text-transform: uppercase;
       cursor: pointer;
       letter-spacing: 2px;
-      margin-top: 1rem;
+      margin-top: .5rem;
       position: relative;
       transition: all .3s ease-in-out;
       &::after

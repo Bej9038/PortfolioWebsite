@@ -15,22 +15,41 @@ function ContactPage() {
                         width="450" height="450" title = "map" style={{border:0}} loading="lazy"/>
                 </div>
                 <div className="contact-sect">
-                    <form action="" className="contact-form">
+
+                    <form autoComplete="off" action="" className="contact-form">
                         <div className="form-group">
-                            <label htmlFor="name">Name</label>
-                            <input type="text" id = "name" name = "name" />
+                            <label htmlFor="name" className="label">Name</label>
+                            <input type="text" id = "name" onFocus={event =>
+                            {
+                                for(let i = 0; i < 2; i++)
+                                {
+                                    event.target.autoComplete = "off";
+                                }
+                            }} className="textio" name = "name" />
+                        </div>
+                        <input type="hidden" value = 'prayer'/>
+
+                        <div className="form-group">
+                            <label htmlFor="email" className="label">Email</label>
+                            <input type="text" id="email" onFocus={event =>
+                            {
+                                for(let i = 0; i < 2; i++)
+                                {
+                                    event.target.autoComplete = "off";
+                                }
+                            }} className="textio" name="email"/>
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="email">Email</label>
-                            <input type="text" id="email" name="email"/>
+                            <label htmlFor="message" className="label">Message</label>
+                            <input type="text" id="message" onFocus={event =>
+                            {
+                                for(let i = 0; i < 2; i++)
+                                {
+                                    event.target.autoComplete = "off";
+                                }
+                            }} className="textio" name="message"/>
                         </div>
-
-                        <div className="form-group">
-                            <label htmlFor="message">Message</label>
-                            <input type="text" id="message" name="message"/>
-                        </div>
-
                         <button type = "submit">Send</button>
                     </form>
                 </div>

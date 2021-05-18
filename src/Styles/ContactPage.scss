@@ -10,12 +10,10 @@
     align-items: center;
     flex-direction: row;
     justify-content: center;
-
+    margin-top: 4.5rem;
     .map-sect
     {
-      margin-top: 5rem;
       padding: .5rem;
-      width: 100%;
       box-shadow: var(--card-shadow);
       background-color: var(--sidebar);
     }
@@ -23,6 +21,8 @@
     {
       display: flex;
       width: 100%;
+      padding: .5rem;
+      height: 471px;
       margin-left: 2rem;
       background-color: var(--sidebar);
       box-shadow: var(--card-shadow);
@@ -34,13 +34,14 @@
           flex-direction: column;
           flex-wrap: nowrap;
           width: 100%;
-
           #message
           {
             width: 450px;
             height: 200px;
             font-size: inherit;
-            background-color: var(--sidebar);
+            font-weight: 400;
+            background-color: var(--bg);
+            border-radius: 4px;
             outline: none;
             border: none;
             color: var(--font-color2);
@@ -48,8 +49,10 @@
           #email
           {
             font-size: inherit;
+            font-weight: 400;
             width: 450px;
-            background-color: var(--sidebar);
+            background-color: var(--bg);
+            border-radius: 4px;
             outline: none;
             border: none;
             color: var(--font-color2);
@@ -59,8 +62,10 @@
             outline: none;
             border: none;
             font-size: inherit;
+            font-weight: 400;
             color: var(--font-color2);
-            background-color: var(--sidebar);
+            background-color: var(--bg);
+            border-radius: 4px;
           }
         }
       }
