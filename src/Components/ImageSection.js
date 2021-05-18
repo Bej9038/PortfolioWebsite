@@ -13,7 +13,7 @@ function ImageSection() {
                     tweaking a song until it's perfect.
                     <br/><br/>
                     Along with software and audio engineering, I'm a member of RIT's varsity Track and Field team and
-                    enjoy spending my time workingout and being outdoors.
+                    enjoy spending my time working out and being outdoors.
                 </p>
                 <a style={{color: "var(--font-color2)"}} href={resume} download>
                     <button className="btn">Download CV</button>
