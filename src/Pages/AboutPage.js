@@ -23,7 +23,6 @@ function AboutPage() {
                 <Skills skill = {'Python'} progress={'70%'}/>
                 <Skills skill = {'React'} progress={'60%'}/>
             </div>
-
         </div>
     );
 }

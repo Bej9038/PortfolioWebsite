@@ -3,7 +3,7 @@
   .nav-btn
   {
     position: fixed;
-    z-index: 10;
+    z-index: 12;
     right: 8.3%;
     top: 8.3%;
     opacity: 0;
@@ -30,7 +30,7 @@
     height: 100vh;
     background-color: var(--sidebar);
     position: fixed;
-    z-index: 11;
+    z-index: 10;
     box-shadow: var(--card-shadow);
     @media screen and (max-width: 1000px)
     {
@@ -81,4 +81,24 @@
       margin-left: 16%;
     }
   }
+}
+
+.rightarrow
+{
+  position: fixed;
+  top: 90vh;
+  right: 3vh;
+  color: var(--main-color);
+  font-size: 3rem;
+  z-index: 11;
+}
+
+.leftarrow
+{
+  position: fixed;
+  top: 90vh;
+  left: 3vh;
+  color: var(--main-color);
+  font-size: 3rem;
+  z-index: 11;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import Title from "../Components/Title";
 
-
 function ContactPage() {
     return (
         <div className="ContactPage">

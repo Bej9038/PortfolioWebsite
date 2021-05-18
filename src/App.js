@@ -10,11 +10,11 @@ import './Styles/PortfolioPage.scss';
 import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage';
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, NavLink} from 'react-router-dom';
 import PortfolioPage from "./Pages/PortfolioPage";
 import ContactPage from "./Pages/ContactPage";
-import {useState} from 'react'
-import { FaBars } from 'react-icons/fa';
+import React, {useState} from 'react'
+import {FaArrowLeft, FaArrowRight, FaBars} from 'react-icons/fa';
 
 function App() {
     const [navToggle, setNavToggle] = useState(false);
@@ -28,9 +28,44 @@ function App() {
 
   return (
     <div className="App">
-        <FaBars className="nav-btn" onClick={navClick}>
-        </FaBars>
-      <div onClick={navClick} className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
+        <div className="nav-">
+            <Switch>
+                <Route path="/" exact>
+                    <NavLink className = "rightarrow" to="/About" exact>
+                        <FaArrowRight />
+                    </NavLink>
+                </Route>
+
+                <Route path="/About" exact>
+                    <NavLink className = "leftarrow" to="/" exact>
+                        <FaArrowLeft />
+                    </NavLink>
+                    <NavLink className = "rightarrow" to="/Portfolio" exact>
+                        <FaArrowRight />
+                    </NavLink>
+                </Route>
+
+                <Route path="/Portfolio" exact>
+                    <NavLink className = "leftarrow" to="/About" exact>
+                        <FaArrowLeft />
+                    </NavLink>
+                    <NavLink className = "rightarrow" to="/Contact" exact>
+                        <FaArrowRight />
+                    </NavLink>
+                </Route>
+
+                <Route path="/Contact" exact>
+                    <NavLink className = "leftarrow" to="/Portfolio" exact>
+                        <FaArrowLeft />
+                    </NavLink>
+                </Route>
+
+            </Switch>
+        </div>
+
+
+
+      <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
         <NavBar />
       </div>
       <div className="main-content">
