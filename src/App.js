@@ -33,30 +33,36 @@ function App() {
                 <Route path="/" exact>
                     <NavLink className = "rightarrow" to="/About" exact>
                         <FaArrowRight />
+                        <FaArrowRight className = "rightarrow2"/>
                     </NavLink>
                 </Route>
 
                 <Route path="/About" exact>
                     <NavLink className = "leftarrow" to="/" exact>
                         <FaArrowLeft />
+                        <FaArrowLeft className = "leftarrow2"/>
                     </NavLink>
                     <NavLink className = "rightarrow" to="/Portfolio" exact>
                         <FaArrowRight />
+                        <FaArrowRight className = "rightarrow2"/>
                     </NavLink>
                 </Route>
 
                 <Route path="/Portfolio" exact>
                     <NavLink className = "leftarrow" to="/About" exact>
                         <FaArrowLeft />
+                        <FaArrowLeft className = "leftarrow2"/>
                     </NavLink>
                     <NavLink className = "rightarrow" to="/Contact" exact>
                         <FaArrowRight />
+                        <FaArrowRight className = "rightarrow2"/>
                     </NavLink>
                 </Route>
 
                 <Route path="/Contact" exact>
                     <NavLink className = "leftarrow" to="/Portfolio" exact>
                         <FaArrowLeft />
+                        <FaArrowLeft className = "leftarrow2"/>
                     </NavLink>
                 </Route>
 

@@ -87,18 +87,64 @@
 {
   position: fixed;
   top: 90vh;
-  right: 3vh;
+  right: 4vh;
   color: var(--main-color);
   font-size: 3rem;
   z-index: 11;
+}
+
+.rightarrow:hover
+{
+  transition: all .3s ease-in-out;
+  font-size: 3.1rem;
+}
+
+.rightarrow2
+{
+  opacity: 0;
+  position: fixed;
+  top: 90vh;
+  right: 4vh;
+  color: var(--main-color-hover);
+  font-size: 3.7rem;
+  z-index: 11;
+}
+
+.rightarrow2:hover
+{
+  transition: all .3s ease-in-out;
+  opacity: 1;
 }
 
 .leftarrow
 {
   position: fixed;
   top: 90vh;
-  left: 3vh;
+  left: 4vh;
   color: var(--main-color);
   font-size: 3rem;
   z-index: 11;
+}
+
+.leftarrow:hover
+{
+  transition: all .3s ease-in-out;
+  font-size: 3.1rem;
+}
+
+.leftarrow2
+{
+  opacity: 0;
+  position: fixed;
+  top: 90vh;
+  left: 4vh;
+  color: var(--main-color-hover);
+  font-size: 3.7rem;
+  z-index: 11;
+}
+
+.leftarrow2:hover
+{
+  transition: all .3s ease-in-out;
+  opacity: 1;
 }

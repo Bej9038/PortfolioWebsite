@@ -25,6 +25,25 @@
   100% {opacity:1;}
 }
 
+@keyframes title25 {
+  0% {width:0;}
+  100% {width:25%;}
+}
+
+@keyframes title50 {
+  0% {width:0;}
+  100% {width:50%;}
+}
+
+@keyframes title75 {
+  0% {width:0;}
+  100% {width:75%;}
+}
+
+@keyframes title100 {
+  0% {width:0;}
+  100% {width:100%;}
+}
 
 *{
   padding: 0;
