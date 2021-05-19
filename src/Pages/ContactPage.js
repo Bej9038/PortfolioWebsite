@@ -21,18 +21,18 @@ function ContactPage() {
                     <form autoComplete="off" onSubmit={handleSubmit} action="https://formspree.io/f/mqkwpwoa" method="post" id="contact-form">
                         <div className="form-group">
                             <label htmlFor="name" className="label">Name</label>
-                            <input type="text" id = "name" className="textio" name = "name" />
+                            <input autoComplete="new-password" type="text" id = "name" className="textio" name = "name" />
                         </div>
                         <input type="hidden" value = 'prayer'/>
 
                         <div className="form-group">
                             <label htmlFor="email" className="label">Email</label>
-                            <input type="text" id="email" className="textio" name="email"/>
+                            <input autoComplete="new-password" type="text" id="email" className="textio" name="email"/>
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="message" className="label">Message</label>
-                            <input type="text" id="message" className="textio" name="message"/>
+                            <textarea id="message" className="textio" name="message"/>
                         </div>
                         <button className='email-btn' type = "submit">Send</button>
                     </form>
