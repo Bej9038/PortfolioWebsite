@@ -26,7 +26,7 @@
       margin-left: 2rem;
       background-color: var(--sidebar);
       box-shadow: var(--card-shadow);
-      .contact-form
+      #contact-form
       {
         .form-group
         {
@@ -43,7 +43,7 @@
             background-color: var(--bg);
             border-radius: 4px;
             outline: none;
-            border: none;
+            border: 1px solid;
             color: var(--font-color2);
           }
           #email
@@ -52,21 +52,67 @@
             font-weight: 400;
             width: 450px;
             background-color: var(--bg);
+            border: 1px solid;
             border-radius: 4px;
             outline: none;
-            border: none;
             color: var(--font-color2);
           }
           #name
           {
             outline: none;
-            border: none;
+            border: 1px solid;
             font-size: inherit;
             font-weight: 400;
             color: var(--font-color2);
             background-color: var(--bg);
             border-radius: 4px;
           }
+
+        }
+      }
+      .email-btn
+      {
+        padding: 1rem 2rem;
+        background-color: var(--main-color-hover);
+        box-shadow: var(--card-shadow);
+        border: none;
+        outline: none;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        text-transform: uppercase;
+        cursor: pointer;
+        letter-spacing: 2px;
+        margin-top: .5rem;
+        position: relative;
+        transition: all .3s ease-in-out;
+        width: 100%;
+        &::after
+        {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: .3rem;
+          left: 0;
+          bottom: 0;
+          background-color: var(--font-color2);
+          transition: all .3s ease-in-out;
+        }
+        &:hover::after
+        {
+          width: 100%;
+        }
+        &:active::after
+        {
+          width: 100%;
+        }
+        &:focus::after
+        {
+          width: 100%;
+        }
+        &:hover
+        {
+          background-color: var(--main-color);
         }
       }
     }

@@ -1,7 +1,11 @@
 import React from 'react';
 import Title from "../Components/Title";
+import { useForm, ValidationError } from '@formspree/react';
 
 function ContactPage() {
+    const [state, handleSubmit] = useForm("mqkwpwoa");
+    if (state.succeeded) {
+    }
     return (
         <div className="ContactPage">
             <div className="contact-title">
@@ -14,42 +18,23 @@ function ContactPage() {
                         width="450" height="450" title = "map" style={{border:0}} loading="lazy"/>
                 </div>
                 <div className="contact-sect">
-
-                    <form autoComplete="off" action="" className="contact-form">
+                    <form autoComplete="off" onSubmit={handleSubmit} action="https://formspree.io/f/mqkwpwoa" method="post" id="contact-form">
                         <div className="form-group">
                             <label htmlFor="name" className="label">Name</label>
-                            <input type="text" id = "name" onFocus={event =>
-                            {
-                                for(let i = 0; i < 2; i++)
-                                {
-                                    event.target.autoComplete = "off";
-                                }
-                            }} className="textio" name = "name" />
+                            <input type="text" id = "name" className="textio" name = "name" />
                         </div>
                         <input type="hidden" value = 'prayer'/>
 
                         <div className="form-group">
                             <label htmlFor="email" className="label">Email</label>
-                            <input type="text" id="email" onFocus={event =>
-                            {
-                                for(let i = 0; i < 2; i++)
-                                {
-                                    event.target.autoComplete = "off";
-                                }
-                            }} className="textio" name="email"/>
+                            <input type="text" id="email" className="textio" name="email"/>
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="message" className="label">Message</label>
-                            <input type="text" id="message" onFocus={event =>
-                            {
-                                for(let i = 0; i < 2; i++)
-                                {
-                                    event.target.autoComplete = "off";
-                                }
-                            }} className="textio" name="message"/>
+                            <input type="text" id="message" className="textio" name="message"/>
                         </div>
-                        <button type = "submit">Send</button>
+                        <button className='email-btn' type = "submit">Send</button>
                     </form>
                 </div>
             </div>
