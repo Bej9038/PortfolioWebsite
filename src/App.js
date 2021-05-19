@@ -14,7 +14,7 @@ import {Switch, Route, NavLink} from 'react-router-dom';
 import PortfolioPage from "./Pages/PortfolioPage";
 import ContactPage from "./Pages/ContactPage";
 import React, {useState} from 'react'
-import {FaArrowLeft, FaArrowRight, FaBars} from 'react-icons/fa';
+import {FaArrowLeft, FaArrowRight} from 'react-icons/fa';
 
 function App() {
     const [navToggle, setNavToggle] = useState(false);
