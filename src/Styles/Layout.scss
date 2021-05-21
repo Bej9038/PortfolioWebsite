@@ -35,7 +35,7 @@
     @media screen and (max-width: 1000px)
     {
       transition: all .3s ease-in-out;
-      transform: translateX(-100%);
+      transform: translateX(-150%);
     }
     @media screen and (min-width: 1000px)
     {
@@ -86,8 +86,8 @@
 .rightarrow
 {
   position: fixed;
-  top: 90vh;
-  right: 4vh;
+  top: 85%;
+  right: 5%;
   color: var(--main-color);
   font-size: 3rem;
   z-index: 11;
@@ -103,8 +103,8 @@
 {
   opacity: 0;
   position: fixed;
-  top: 90vh;
-  right: 4vh;
+  top: 80%;
+  right: 10%;
   color: var(--main-color-hover);
   font-size: 3.7rem;
   z-index: 11;
@@ -119,8 +119,8 @@
 .leftarrow
 {
   position: fixed;
-  top: 90vh;
-  left: 4vh;
+  top: 85%;
+  left: 5%;
   color: var(--main-color);
   font-size: 3rem;
   z-index:9;
@@ -136,8 +136,8 @@
 {
   opacity: 0;
   position: fixed;
-  top: 90vh;
-  left: 4vh;
+  top: 80%;
+  left: 10%;
   color: var(--main-color-hover);
   font-size: 3.7rem;
   z-index: 11;
