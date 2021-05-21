@@ -54,6 +54,7 @@
 
   .main-content
   {
+    zoom: 100%;
     width: 84%;
     margin-left: 16%;
     background-color: var(--bg);
@@ -63,10 +64,11 @@
     position: relative;
     .content
     {
+      zoom: 100%;
       margin-top: 5rem;
       margin-bottom: 10rem;
       margin-left: 10%;
-      width: 100%;
+      width: 80%;
     }
     @media screen and (max-width: 1000px)
     {
