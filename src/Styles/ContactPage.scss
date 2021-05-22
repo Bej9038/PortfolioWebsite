@@ -94,14 +94,17 @@
       .success
       {
         position: absolute;
-
+        display: none;
+        animation: fadeIO 4s ease-in-out forwards;
         top: 110%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: green;
+        color: var(--font-color2);
+        background-color: var(--main-color);
+        border-radius: 24px;
         font-family: inherit;
         font-size: inherit;
-        opacity: 0;
+        padding: 1rem 2rem;
       }
       .email-btn
       {
