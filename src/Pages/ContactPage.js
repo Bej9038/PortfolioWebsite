@@ -5,6 +5,8 @@ import { useForm, ValidationError } from '@formspree/react';
 function ContactPage() {
     const [state, handleSubmit] = useForm("mqkwpwoa");
     if (state.succeeded) {
+        document.getElementsByClassName('success')[0].style.opacity = "1";
+        document.getElementById('contact-form').reset();
     }
     return (
         <div className="ContactPage">
@@ -36,6 +38,7 @@ function ContactPage() {
                         </div>
                         <button className='email-btn' type = "submit">Send</button>
                     </form>
+                    <div className="success">Massage Sent</div>
                 </div>
             </div>
         </div>
