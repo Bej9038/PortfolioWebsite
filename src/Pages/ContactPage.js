@@ -38,7 +38,7 @@ function ContactPage() {
                         </div>
                         <button className='email-btn' type = "submit">Send</button>
                     </form>
-                    <div className="success">Massage Received</div>
+                    <div className="success">Massage Received!</div>
                 </div>
             </div>
         </div>
