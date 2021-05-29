@@ -22,7 +22,8 @@ function AboutPage() {
                 <Skills skill = {'Python'} progress={'70%'}/>
                 <Skills skill = {'PHP'} progress={'60%'}/>
                 <Skills skill = {'React'} progress={'60%'}/>
-                <Skills skill = {'C++'} progress={'60%'}/>
+                <Skills skill = {'C++'} progress={'50%'}/>
+                <Skills skill = {'JUCE Framework'} progress={'40%'}/>
             </div>
         </div>
     );

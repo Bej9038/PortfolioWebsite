@@ -2,6 +2,7 @@ import port1 from '../Images/PImages/port1.jpg';
 import port2 from '../Images/PImages/port2.jpg';
 import port3 from '../Images/PImages/port3.webp';
 import port4 from '../Images/PImages/port4.webp';
+import port5 from '../Images/PImages/port5_2.png';
 
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {faYoutube} from "@fortawesome/free-brands-svg-icons";
@@ -43,6 +44,14 @@ const portfolios = [
         icon1: faGithub,
         image: port4,
         title: 'Portfolio Website'
+    },
+    {
+        id: 5,
+        category: 'C++',
+        link1: 'https://github.com/Bej9038/EQ',
+        icon1: faGithub,
+        image: port5,
+        title: 'EQ Audio Effect Plugin'
     }
 ]
 
