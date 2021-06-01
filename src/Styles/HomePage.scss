@@ -8,42 +8,43 @@
   opacity: 0;
   animation: fadeIn 2s ease forwards;
   cursor: default;
-}
-
-
-.hero-text
-{
-  color: var(--font-color1);
-  text-align: center;
-  font-size: 3.6rem;
-}
-
-.home-sub-text
-{
-  color: inherit;
-  text-align: center;
-}
-
-.icons
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 0;
-
-  .icon-link
+  .hero
   {
-    margin-right: 1rem;
-    .icon
+    .hero-text
     {
-      font-size: 2.8rem;
-      color: var(--font-color2);
-      transition: all .3s ease-in-out;
+      color: var(--font-color1);
+      text-align: center;
+      font-size: 3.6rem;
     }
 
-    .icon:hover
+    .home-sub-text
     {
-      color: var(--main-color)
+      color: inherit;
+      text-align: center;
+    }
+
+    .icons
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 0;
+
+      .icon-link
+      {
+        margin-right: 1rem;
+        .icon
+        {
+          font-size: 2.8rem;
+          color: var(--font-color2);
+          transition: all .3s ease-in-out;
+        }
+
+        .icon:hover
+        {
+          color: var(--main-color)
+        }
+      }
     }
   }
 }

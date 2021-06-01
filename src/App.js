@@ -15,6 +15,7 @@ import PortfolioPage from "./Pages/PortfolioPage";
 import ContactPage from "./Pages/ContactPage";
 import React, {useState} from 'react'
 import {FaArrowLeft, FaArrowRight} from 'react-icons/fa';
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
     const [navToggle, setNavToggle] = useState(false);
@@ -78,18 +79,22 @@ function App() {
         <div className="content">
             <Switch>
                 <Route path="/" exact>
+                    <ScrollToTop/>
                     <HomePage />
                 </Route>
 
                 <Route path="/About" exact>
+                    <ScrollToTop/>
                     <AboutPage />
                 </Route>
 
                 <Route path="/Portfolio" exact>
+                    <ScrollToTop/>
                     <PortfolioPage />
                 </Route>
 
                 <Route path="/Contact" exact>
+                    <ScrollToTop/>
                     <ContactPage />
                 </Route>
             </Switch>
