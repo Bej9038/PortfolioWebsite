@@ -10,20 +10,18 @@ function AboutPage() {
             <ImageSection />
             <Title title={'Skills'} progress={50}/>
             <div className="skills-group">
-                <Skills skill = {'Web Audio API'} progress={'90%'}/>
-                <Skills skill = {'HTML'} progress={'90%'}/>
-                <Skills skill = {'Git'} progress={'90%'}/>
+                <Skills skill = {'Java'} progress={'90%'}/>
                 <Skills skill = {'JavaScript'} progress={'90%'}/>
-                <Skills skill = {'Java'} progress={'80%'}/>
-                <Skills skill = {'CSS/SCSS'} progress={'80%'}/>
+                <Skills skill = {'HTML'} progress={'90%'}/>
+                <Skills skill = {'Web Audio API'} progress={'90%'}/>
+                <Skills skill = {'C'} progress={'80%'}/>
+                <Skills skill = {'Python'} progress={'80%'}/>
+                <Skills skill = {'CSS'} progress={'80%'}/>
                 <Skills skill = {'Audio Engineering'} progress={'80%'}/>
-                <Skills skill = {'C'} progress={'70%'}/>
+                <Skills skill = {'React'} progress={'70%'}/>
                 <Skills skill = {'SQL'} progress={'70%'}/>
-                <Skills skill = {'Python'} progress={'70%'}/>
                 <Skills skill = {'PHP'} progress={'70%'}/>
-                <Skills skill = {'React'} progress={'60%'}/>
                 <Skills skill = {'C++'} progress={'60%'}/>
-                <Skills skill = {'JUCE Framework'} progress={'40%'}/>
             </div>
         </div>
     );

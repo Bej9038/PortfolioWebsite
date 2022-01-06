@@ -3,6 +3,9 @@ import port2 from '../Images/PImages/port2.jpg';
 import port3 from '../Images/PImages/port3.webp';
 import port4 from '../Images/PImages/port4.webp';
 import port5 from '../Images/PImages/port5_2.png';
+import port6 from '../Images/PImages/port6.png';
+import port7 from '../Images/PImages/port7.jpg';
+import port8 from '../Images/PImages/port8.png';
 
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {faYoutube} from "@fortawesome/free-brands-svg-icons";
@@ -52,6 +55,23 @@ const portfolios = [
         icon1: faGithub,
         image: port5,
         title: 'EQ Audio Effect Plugin'
+    },
+    {
+        id: 6,
+        category: 'MIPS',
+        link1: 'https://github.com/Bej9038/Conway-Game-of-Life',
+        icon1: faGithub,
+        image: port6,
+        title: 'MIPS Conway\'s Game of Life'
+    },
+    {
+      id: 7,
+      category: 'Java',
+      link1: 'https://github.com/Bej9038/Translator',
+        icon1: faGithub,
+        image: port7,
+        title: 'Jott Compiler & Translator'
+
     }
 ]
 
