@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PortfolioWebsite/static/css/main.1e9fa5c3.chunk.css",
-    "main.js": "/PortfolioWebsite/static/js/main.df282baf.chunk.js",
-    "main.js.map": "/PortfolioWebsite/static/js/main.df282baf.chunk.js.map",
+    "main.js": "/PortfolioWebsite/static/js/main.6a58d8e5.chunk.js",
+    "main.js.map": "/PortfolioWebsite/static/js/main.6a58d8e5.chunk.js.map",
     "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js",
     "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js.map",
     "static/js/2.33543f3d.chunk.js": "/PortfolioWebsite/static/js/2.33543f3d.chunk.js",
@@ -10,19 +10,20 @@
     "index.html": "/PortfolioWebsite/index.html",
     "static/css/main.1e9fa5c3.chunk.css.map": "/PortfolioWebsite/static/css/main.1e9fa5c3.chunk.css.map",
     "static/js/2.33543f3d.chunk.js.LICENSE.txt": "/PortfolioWebsite/static/js/2.33543f3d.chunk.js.LICENSE.txt",
-    "static/media/Ben Jordan Resume Oct. 2021.be1011a6.pdf": "/PortfolioWebsite/static/media/Ben Jordan Resume Oct. 2021.be1011a6.pdf",
+    "static/media/Jan 2022 Resume.92fdbf4b.pdf": "/PortfolioWebsite/static/media/Jan 2022 Resume.92fdbf4b.pdf",
     "static/media/ProfilePicture.35ed2c25.jpg": "/PortfolioWebsite/static/media/ProfilePicture.35ed2c25.jpg",
     "static/media/Layout.scss": "/PortfolioWebsite/static/media/dots.943074de.svg",
-    "static/media/port1.d1857bf5.jpg": "/PortfolioWebsite/static/media/port1.d1857bf5.jpg",
+    "static/media/port1.10ed3f2b.jpg": "/PortfolioWebsite/static/media/port1.10ed3f2b.jpg",
     "static/media/port2.13c6b5d4.jpg": "/PortfolioWebsite/static/media/port2.13c6b5d4.jpg",
     "static/media/port3.b5cb8f35.webp": "/PortfolioWebsite/static/media/port3.b5cb8f35.webp",
     "static/media/port4.374376c9.webp": "/PortfolioWebsite/static/media/port4.374376c9.webp",
-    "static/media/port5_2.268b06a2.png": "/PortfolioWebsite/static/media/port5_2.268b06a2.png"
+    "static/media/port5_2.268b06a2.png": "/PortfolioWebsite/static/media/port5_2.268b06a2.png",
+    "static/media/port7.b39e232c.jpg": "/PortfolioWebsite/static/media/port7.b39e232c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.906d1dcc.js",
     "static/js/2.33543f3d.chunk.js",
     "static/css/main.1e9fa5c3.chunk.css",
-    "static/js/main.df282baf.chunk.js"
+    "static/js/main.6a58d8e5.chunk.js"
   ]
 }
