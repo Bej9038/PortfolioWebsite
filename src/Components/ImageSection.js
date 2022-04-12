@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from "../Downloads/Jan 2022 Resume.pdf";
+import resume from "../Downloads/March 2022 Resume.pdf";
 
 function ImageSection() {
     return (
