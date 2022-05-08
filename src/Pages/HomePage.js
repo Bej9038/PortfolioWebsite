@@ -13,7 +13,7 @@ function HomePage()
                     <span> Ben Jordan.</span>
                 </h1>
                 <p className="home-sub-text">
-                    I'm a 4th year Software and Audio Engineer from Rochester Institute of Technology
+                    I'm a 5th year Software and Audio Engineer from Rochester Institute of Technology
                 </p>
                 <div className="icons">
                     <a target = "_blank" href = "https://github.com/Bej9038" className="icon-link">
