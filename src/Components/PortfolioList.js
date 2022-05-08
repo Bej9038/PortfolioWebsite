@@ -5,7 +5,6 @@ import port4 from '../Images/PImages/port4.webp';
 import port5 from '../Images/PImages/port5_2.png';
 import port6 from '../Images/PImages/port6.png';
 import port7 from '../Images/PImages/port7.jpg';
-import port8 from '../Images/PImages/port8.png';
 
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {faYoutube} from "@fortawesome/free-brands-svg-icons";
