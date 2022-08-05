@@ -69,7 +69,7 @@ const portfolios = [
       link1: 'https://github.com/Bej9038/Translator',
         icon1: faGithub,
         image: port7,
-        title: 'Jott Compiler & Translator'
+        title: 'Code Analyser & Translator'
 
     }
 ]
