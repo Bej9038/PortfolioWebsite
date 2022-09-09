@@ -9,7 +9,7 @@ function ImageSection() {
                     <span>All my life I've had a passion for creating. </span>
                     Nothing excites me more than seeing a project I've spent months working on and perfecting come to life.
                     Programming and music production are without a doubt some of my favorite ways to express my
-                    creativity. I'm also fond of CS topics such as computer architecture, algorithms,
+                    creativity. I'm also fond of CS topics such as computer architecture, applications of graphs,
                     machine learning, and programming languages. Learning about and applying CS knowledge is extremely
                     fulfilling for me.
                     <br/><br/>
