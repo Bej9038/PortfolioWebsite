@@ -13,13 +13,13 @@ function HomePage()
                     <span> Ben Jordan.</span>
                 </h1>
                 <p className="home-sub-text">
-                    I'm a 5th year computer scientist and software engineer from Rochester Institute of Technology
+                    I'm a 5th year Computer Scientist and Software Engineer from Rochester Institute of Technology
                 </p>
                 <div className="icons">
                     <a target = "_blank" href = "https://github.com/Bej9038" className="icon-link">
-                        <FontAwesomeIcon icon = {faGithub} className="icon"/>
-                    </a>
-                    <a target = "_blank"  href = "https://www.linkedin.com/in/ben-jordan-b745a0194/" className="icon-link">
+                    <FontAwesomeIcon icon = {faGithub} className="icon"/>
+                </a>
+                <a target = "_blank"  href = "https://www.linkedin.com/in/ben-jordan-b745a0194/" className="icon-link">
                         <FontAwesomeIcon icon = {faLinkedin} className="icon"/>
                     </a>
                 </div>
