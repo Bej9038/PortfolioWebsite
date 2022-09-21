@@ -11,16 +11,14 @@ function AboutPage() {
             <Title title={'Skills'} progress={50}/>
             <div className="skills-group">
                 <Skills skill = {'C#'} progress={'90%'}/>
-                <Skills skill = {'JavaScript'} progress={'90%'}/>
                 <Skills skill = {'Java'} progress={'90%'}/>
-                <Skills skill = {'Audio Engineering'} progress={'90%'}/>
-                <Skills skill = {'C'} progress={'80%'}/>
+                <Skills skill = {'JavaScript'} progress={'90%'}/>
+                <Skills skill = {'C/C++'} progress={'90%'}/>
                 <Skills skill = {'Python'} progress={'80%'}/>
-                <Skills skill = {'C++'} progress={'70%'}/>
                 <Skills skill = {'React'} progress={'70%'}/>
                 <Skills skill = {'Angular'} progress={'70%'}/>
+                <Skills skill = {'ASP.NET'} progress={'70%'}/>
                 <Skills skill = {'SQL'} progress={'60%'}/>
-                <Skills skill = {'PHP'} progress={'60%'}/>
             </div>
         </div>
     );
