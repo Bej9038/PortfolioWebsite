@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from "../Downloads/Ben Jordan [September 2022 Resume].pdf";
+import resume from "../Downloads/Ben Jordan [September 2022 Resume] V3.pdf";
 
 function ImageSection() {
     return (
@@ -13,7 +13,7 @@ function ImageSection() {
                     machine learning, and programming languages. Learning about and applying CS knowledge is extremely
                     fulfilling for me.
                     <br/><br/>
-                    I'm also a member of RIT's varsity track and field team and
+                    Outside of academics, I'm a member of RIT's varsity track and field team and
                     like to spend my time being active and enjoying the outdoors.
                 </p>
                 <a style={{color: "var(--font-color2)"}} href={resume} download>
