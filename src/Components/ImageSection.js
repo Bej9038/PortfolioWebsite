@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from "../Downloads/Ben Jordan [September 2022 Resume] V4.pdf";
+import resume from "../Downloads/Ben Jordan [M.Eng Resume].pdf";
 
 function ImageSection() {
     return (
@@ -8,7 +8,7 @@ function ImageSection() {
                 <p className="about-text">
                     <span>All my life I've had a passion for creating. </span>
                     Nothing excites me more than seeing a project I've spent months working on and perfecting come to life.
-                    Programming and music production are without a doubt some of my favorite ways to express my
+                    Software engineering and music production are without a doubt some of my favorite ways to express my
                     creativity. I'm also fond of CS topics such as computer architecture, real-world applications of graphs,
                     machine learning, and programming languages. Learning about and applying CS knowledge is extremely
                     fulfilling for me.
