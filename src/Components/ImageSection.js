@@ -7,8 +7,8 @@ function ImageSection() {
             <div className="about-info">
                 <p className="about-text">
                     <span>All my life I've had a passion for creating. </span>
-                    Nothing excites me more than seeing a project I've spent months working on and perfecting come to life.
-                    Software engineering and music production are without a doubt some of my favorite ways to express my
+                    Nothing excites me more than seeing a project I've spent months working on come to life.
+                    Software engineering and music production are without a doubt some of my favorite ways to express this
                     creativity. I'm also fond of CS topics such as computer architecture, real-world applications of graphs,
                     machine learning, and programming languages. Learning about and applying CS knowledge is extremely
                     fulfilling for me.
