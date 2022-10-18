@@ -9,9 +9,8 @@ function ImageSection() {
                     <span>All my life I've had a passion for creating. </span>
                     Nothing excites me more than seeing a project I've spent months working on come to life.
                     Software engineering and music production are without a doubt some of my favorite ways to express this
-                    creativity. I'm also fond of CS topics such as computer architecture, real-world applications of graphs,
-                    machine learning, and programming languages. Learning about and applying CS knowledge is extremely
-                    fulfilling for me.
+                    creativity. I'm also fond of CS topics such as computer systems, graph theory,
+                    machine learning, and programming languages.
                     <br/><br/>
                     Outside of academics, I'm a member of RIT's varsity track and field team and
                     like to spend my time being active and enjoying the outdoors.
