@@ -32,25 +32,25 @@ function App() {
         <div className="nav-">
             <Switch>
                 <Route path="/" exact>
-                    <NavLink className = "rightarrow" to="/About" exact>
-                        <FaArrowRight />
-                        <FaArrowRight className = "rightarrow2"/>
-                    </NavLink>
-                </Route>
-
-                <Route path="/About" exact>
-                    <NavLink className = "leftarrow" to="/" exact>
-                        <FaArrowLeft />
-                        <FaArrowLeft className = "leftarrow2"/>
-                    </NavLink>
                     <NavLink className = "rightarrow" to="/Portfolio" exact>
                         <FaArrowRight />
                         <FaArrowRight className = "rightarrow2"/>
                     </NavLink>
                 </Route>
 
+                {/*<Route path="/About" exact>*/}
+                {/*    <NavLink className = "leftarrow" to="/" exact>*/}
+                {/*        <FaArrowLeft />*/}
+                {/*        <FaArrowLeft className = "leftarrow2"/>*/}
+                {/*    </NavLink>*/}
+                {/*    <NavLink className = "rightarrow" to="/Portfolio" exact>*/}
+                {/*        <FaArrowRight />*/}
+                {/*        <FaArrowRight className = "rightarrow2"/>*/}
+                {/*    </NavLink>*/}
+                {/*</Route>*/}
+
                 <Route path="/Portfolio" exact>
-                    <NavLink className = "leftarrow" to="/About" exact>
+                    <NavLink className = "leftarrow" to="/" exact>
                         <FaArrowLeft />
                         <FaArrowLeft className = "leftarrow2"/>
                     </NavLink>
@@ -78,12 +78,12 @@ function App() {
       <div className="main-content">
         <div className="content">
             <Switch>
-                <Route path="/" exact>
-                    <ScrollToTop/>
-                    <HomePage />
-                </Route>
+                {/*<Route path="/" exact>*/}
+                {/*    <ScrollToTop/>*/}
+                {/*    <HomePage />*/}
+                {/*</Route>*/}
 
-                <Route path="/About" exact>
+                <Route path="/" exact>
                     <ScrollToTop/>
                     <AboutPage />
                 </Route>

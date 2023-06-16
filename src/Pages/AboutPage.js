@@ -13,8 +13,11 @@ function AboutPage() {
                 <Skills skill = {'C#'} progress={'90%'}/>
                 <Skills skill = {'Java'} progress={'90%'}/>
                 <Skills skill = {'JavaScript'} progress={'90%'}/>
-                <Skills skill = {'C/C++'} progress={'90%'}/>
+                <Skills skill = {'C++'} progress={'90%'}/>
+                <Skills skill = {'C'} progress={'90%'}/>
                 <Skills skill = {'Python'} progress={'80%'}/>
+                <Skills skill = {'NumPy'} progress={'80%'}/>
+                <Skills skill = {'PyTorch'} progress={'80%'}/>
                 <Skills skill = {'Angular'} progress={'70%'}/>
                 <Skills skill = {'SQL'} progress={'60%'}/>
             </div>

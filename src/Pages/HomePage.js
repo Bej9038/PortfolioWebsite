@@ -12,9 +12,7 @@ function HomePage()
                     Hi, I'm
                     <span> Ben Jordan.</span>
                 </h1>
-                <p className="home-sub-text">
-                    I'm a Computer Scientist and Software Engineer at Cornell
-                </p>
+
                 <div className="icons">
                     <a target = "_blank" href = "https://github.com/Bej9038" className="icon-link">
                     <FontAwesomeIcon icon = {faGithub} className="icon"/>
