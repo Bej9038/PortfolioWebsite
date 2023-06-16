@@ -12,66 +12,82 @@ import {faSoundcloud} from "@fortawesome/free-brands-svg-icons";
 import {faChrome} from "@fortawesome/free-brands-svg-icons";
 const portfolios = [
     {
+        id: 8,
+        category: 'Software',
+        link1: 'https://github.com/Bej9038/OmnitoneV2',
+        icon1: faGithub,
+        // image: port2,
+        title: 'SynthLM'
+    },
+    {
+        id: 6,
+        category: 'Software',
+        link1: 'https://github.com/Bej9038/OmnitoneV2',
+        icon1: faGithub,
+        // image: port2,
+        title: 'DSLabs'
+    },
+    {
+        id: 7,
+        category: 'Software',
+        link1: 'https://github.com/Bej9038/OmnitoneV2',
+        icon1: faGithub,
+        // image: port2,
+        title: 'Graph Neural Network Research Project'
+    },
+    {
         id: 1,
-        category: 'Javascript',
+        category: 'Software',
         link1: 'http://auditoryneuro.com/Implant%20Testing%20Program/Signin/Signin.html',
         link2: 'https://github.com/Bej9038/ImplantTestingProgram',
         icon1: faChrome,
         icon2: faGithub,
-        image: port1,
+        // image: port1,
         title: 'Implant Testing Program'
     },
     {
-        id: 2,
-        category: 'Javascript',
+        id: 9,
+        category: 'Software',
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
-        image: port2,
-        title: 'Omnitone'
+        // image: port2,
+        title: 'Encrypted Messenger'
     },
     {
         id: 3,
-        category: 'Music',
+        category: 'Other',
         link1: 'https://www.youtube.com/channel/UCqztrHyJRJKGxSo5_cpzWaA',
         link2: 'https://soundcloud.com/odysymusic',
         icon1: faYoutube,
         icon2: faSoundcloud,
-        image: port3,
+        // image: port3,
         title: 'Electronic Music Project'
     },
     {
         id: 4,
-        category: 'Javascript',
+        category: 'Software',
         link1: 'https://github.com/Bej9038/PortfolioWebsite',
         icon1: faGithub,
-        image: port4,
+        // image: port4,
         title: 'Portfolio Website'
     },
     {
         id: 5,
-        category: 'C++',
+        category: 'Software',
         link1: 'https://github.com/Bej9038/EQ',
         icon1: faGithub,
-        image: port5,
-        title: 'EQ Audio Effect Plugin'
+        // image: port5,
+        title: 'EQ Audio Plugin'
     },
     {
-        id: 6,
-        category: 'MIPS',
-        link1: 'https://github.com/Bej9038/Conway-Game-of-Life',
+        id: 2,
+        category: 'Software',
+        link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
-        image: port6,
-        title: 'MIPS Conway\'s Game of Life'
+        // image: port2,
+        title: 'Omnitone'
     },
-    {
-      id: 7,
-      category: 'Java',
-      link1: 'https://github.com/Bej9038/Translator',
-        icon1: faGithub,
-        image: port7,
-        title: 'Code Analyser & Translator'
 
-    }
 ]
 
 export default portfolios;

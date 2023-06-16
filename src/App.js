@@ -6,12 +6,12 @@ import './Styles/Title.scss';
 import './Styles/Skills.scss';
 import './Styles/AboutPage.scss';
 import './Styles/ContactPage.scss';
-import './Styles/PortfolioPage.scss';
+import './Styles/ProjectsPage.scss';
 import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage';
 import {Switch, Route, NavLink} from 'react-router-dom';
-import PortfolioPage from "./Pages/PortfolioPage";
+import ProjectsPage from "./Pages/ProjectsPage";
 import ContactPage from "./Pages/ContactPage";
 import React, {useState} from 'react'
 import {FaArrowLeft, FaArrowRight} from 'react-icons/fa';
@@ -32,7 +32,7 @@ function App() {
         <div className="nav-">
             <Switch>
                 <Route path="/" exact>
-                    <NavLink className = "rightarrow" to="/Portfolio" exact>
+                    <NavLink className = "rightarrow" to="/Projects" exact>
                         <FaArrowRight />
                         <FaArrowRight className = "rightarrow2"/>
                     </NavLink>
@@ -49,7 +49,7 @@ function App() {
                 {/*    </NavLink>*/}
                 {/*</Route>*/}
 
-                <Route path="/Portfolio" exact>
+                <Route path="/Projects" exact>
                     <NavLink className = "leftarrow" to="/" exact>
                         <FaArrowLeft />
                         <FaArrowLeft className = "leftarrow2"/>
@@ -61,7 +61,7 @@ function App() {
                 </Route>
 
                 <Route path="/Contact" exact>
-                    <NavLink className = "leftarrow" to="/Portfolio" exact>
+                    <NavLink className = "leftarrow" to="/Projects" exact>
                         <FaArrowLeft />
                         <FaArrowLeft className = "leftarrow2"/>
                     </NavLink>
@@ -88,9 +88,9 @@ function App() {
                     <AboutPage />
                 </Route>
 
-                <Route path="/Portfolio" exact>
+                <Route path="/Projects" exact>
                     <ScrollToTop/>
-                    <PortfolioPage />
+                    <ProjectsPage />
                 </Route>
 
                 <Route path="/Contact" exact>

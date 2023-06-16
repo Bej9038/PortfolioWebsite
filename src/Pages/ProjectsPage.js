@@ -7,7 +7,7 @@ import {useState} from 'react'
 
 let allCategories = ['All', ...new Set(portfolios.map(item => item.category))];
 
-function PortfolioPage() {
+function ProjectsPage() {
     const [categories, setCategories] = useState(allCategories);
     const [menuItems, setMenuItems] = useState(portfolios);
 
@@ -26,9 +26,9 @@ function PortfolioPage() {
     }
 
     return (
-        <div className="PortfolioPage">
+        <div className="ProjectsPage">
             <div className="title">
-                <Title title={'Portfolio'} progress={75}/>
+                <Title title={'Projects'} progress={75}/>
             </div>
             <div className="portfolio-menu">
                 <Categories categories = {categories} filter={filter} />
@@ -38,4 +38,4 @@ function PortfolioPage() {
     );
 }
 
-export default PortfolioPage;
+export default ProjectsPage;

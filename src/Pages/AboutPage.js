@@ -20,6 +20,10 @@ function AboutPage() {
                 <Skills skill = {'PyTorch'} progress={'80%'}/>
                 <Skills skill = {'Angular'} progress={'70%'}/>
                 <Skills skill = {'SQL'} progress={'60%'}/>
+                <Skills skill = {'Git'} progress={'100%'}/>
+                <Skills skill = {'Unit Testing'} progress={'100%'}/>
+                <Skills skill = {'Linux'} progress={'100%'}/>
+                <Skills skill = {'Agile Development'} progress={'100%'}/>
             </div>
         </div>
     );

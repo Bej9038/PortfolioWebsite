@@ -39,8 +39,8 @@ function NavBar() {
                     {/*    </NavLink>*/}
                     {/*</lin>*/}
                     <lin className="nav-item">
-                        <NavLink to="/Portfolio" exact activeClassName="active">
-                            Portfolios
+                        <NavLink to="/Projects" exact activeClassName="active">
+                            Projects
                         </NavLink>
                     </lin>
                     <lin className="nav-item">
