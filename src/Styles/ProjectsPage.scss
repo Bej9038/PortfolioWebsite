@@ -65,6 +65,16 @@
     }
   }
 
+  .fadein
+  {
+    animation: fadeIn .3s ease forwards;
+  }
+
+  .fadeout
+  {
+    animation: fadeOut .3s ease forwards;
+  }
+
   .MenuItem
   {
     width: 100%;
@@ -79,6 +89,7 @@
     {
       box-shadow: var(--card-shadow);
       background-color: var(--sidebar);
+      transition: all 1s ease-in-out;
       .project-content
       {
 

@@ -10,8 +10,8 @@ function MenuItem({menuItem, id, setId}) {
             {
                 menuItem.map((item) =>
                 {
-                    if(id === -1 || item.id === id) {
-                        return <div className="portfolio" key={item.id}>
+                    // if(id === -1 || item.id === id) {
+                        return <div className={`portfolio ${expanded && item.id !== id ? 'fadeout' : 'fadein'}`} key={item.id}>
                             <h5>
                                 {item.title}
                             </h5>
@@ -32,8 +32,6 @@ function MenuItem({menuItem, id, setId}) {
                                         setId(-1);
                                         setExpanded(false);
                                     }
-
-
                                 }}>Expand</button>
                                 {/*<div className="hover-items">*/}
                                 {/*    <a target = "_blank" href={item.link1}>*/}
@@ -45,11 +43,11 @@ function MenuItem({menuItem, id, setId}) {
                                 {/*</div>*/}
                             </div>
                         </div>
-                    }
-                    else
-                    {
-                        return <div></div>
-                    }
+                    // }
+                    // else
+                    // {
+                    //     return <div></div>
+                    // }
                 })
             }
         </div>
