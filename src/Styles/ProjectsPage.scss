@@ -79,85 +79,101 @@
     {
       box-shadow: var(--card-shadow);
       background-color: var(--sidebar);
-      .image-data
+      .project-content
       {
+
+        height: 30vh;
         position: relative;
-        &::before
-        {
-          content: "";
-          position: absolute;
-          top: 12px;
-          left: 15px;
-          height: calc(100% - 30px);
-          width: calc(100% - 30px);
-          background-color: var(--main-color-hover);
-          transform-origin: center;
-          transform: scale(0);
-          transition: all .3s ease-in-out;
-          opacity: .9;
-        }
-        &:hover::before
-        {
-          transform: scale(1);
-        }
-        img
-        {
-          height: 30vh;
-          width: 100%;
-          object-fit: cover;
-          margin-bottom: -7px;
-        }
-        .hover-items
-        {
-          list-style: none;
-          position: absolute;
-          top: 70%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          padding: 1rem 2rem;
-          visibility: hidden;
-          display: flex;
-          a
-          {
-              padding: 1rem;
-              font-family: inherit;
-              font-size: 2.8rem;
-              color: var(--bg);
-              background-color: var(--font-color2);
-              transition: all .3s ease-in-out;
-            border-radius: 4px;
-              &:not(:last-child)
-              {
-                margin-right: 2rem;
-              }
-              &:hover
-              {
-               color: var(--main-color)
-              }
-          }
-        }
-        &:hover
-        {
-          .hover-items
-          {
-            visibility: visible;
-            top: 50%;
-            transition: all .3s ease-in-out .3s;
-          }
-        }
+        //&::before
+        //{
+        //  content: "";
+        //  position: absolute;
+        //  top: 12px;
+        //  left: 15px;
+        //  height: calc(100% - 30px);
+        //  width: calc(100% - 30px);
+        //  background-color: var(--main-color-hover);
+        //  transform-origin: center;
+        //  transform: scale(0);
+        //  transition: all .3s ease-in-out;
+        //  opacity: .9;
+        //}
+        //&:hover::before
+        //{
+        //  transform: scale(1);
+        //}
+        //img
+        //{
+        //  height: 50%;
+        //  width: 100%;
+        //  object-fit: cover;
+        //  margin-bottom: -7px;
+        //}
+        //.hover-items
+        //{
+        //  list-style: none;
+        //  position: absolute;
+        //  top: 70%;
+        //  left: 50%;
+        //  transform: translate(-50%, -50%);
+        //  padding: 1rem 2rem;
+        //  visibility: hidden;
+        //  display: flex;
+        //  a
+        //  {
+        //      padding: 1rem;
+        //      font-family: inherit;
+        //      font-size: 2.8rem;
+        //      color: var(--bg);
+        //      background-color: var(--font-color2);
+        //      transition: all .3s ease-in-out;
+        //    border-radius: 4px;
+        //      &:not(:last-child)
+        //      {
+        //        margin-right: 2rem;
+        //      }
+        //      &:hover
+        //      {
+        //       color: var(--main-color)
+        //      }
+        //  }
+        //}
+        //&:hover
+        //{
+        //  .hover-items
+        //  {
+        //    visibility: visible;
+        //    top: 50%;
+        //    transition: all .3s ease-in-out .3s;
+        //  }
+        //}
 
       }
       h5
       {
-        padding: 1rem;
-        font-size: inherit;
+        padding: 2rem;
+        //font-size: inherit;
+        height: 8vh;
         font-weight: 400;
+        font-size: 2rem;
         transition: all .3s ease-in-out;
         background-color: var(--sidebar);
         &:hover
         {
           color: var(--main-color);
         }
+      }
+
+      .text-cover {
+        background: linear-gradient(to bottom, transparent, #000000);
+        transition: all 0.3s ease;
+      }
+
+      p
+      {
+        padding: 2rem;
+        height: 8vh;
+        transition: all .3s ease-in-out;
       }
     }
   }

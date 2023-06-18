@@ -2,7 +2,7 @@ import React from 'react';
 import Title from "../Components/Title";
 import Categories from "../Components/Categories";
 import MenuItem from "../Components/MenuItem";
-import portfolios from "../Components/PortfolioList"
+import portfolios from "../Components/ProjectList"
 import {useState} from 'react'
 
 let allCategories = ['All', ...new Set(portfolios.map(item => item.category))];
@@ -10,6 +10,7 @@ let allCategories = ['All', ...new Set(portfolios.map(item => item.category))];
 function ProjectsPage() {
     const [categories, setCategories] = useState(allCategories);
     const [menuItems, setMenuItems] = useState(portfolios);
+    const [id, setId] = useState(-1);
 
     const filter = (category) =>
     {
@@ -32,7 +33,7 @@ function ProjectsPage() {
             </div>
             <div className="portfolio-menu">
                 <Categories categories = {categories} filter={filter} />
-                <MenuItem menuItem={menuItems}/>
+                <MenuItem menuItem={menuItems} id={id} setId={setId}/>
             </div>
         </div>
     );
