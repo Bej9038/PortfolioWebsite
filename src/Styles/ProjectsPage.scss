@@ -75,6 +75,24 @@
     animation: fadeOut .3s ease forwards;
   }
 
+  .expanded
+  {
+    height: 60rem !important;
+  }
+
+  .collapsed
+  {
+    height: 0 !important;
+    padding: 0 !important;
+    border-width: 0 !important;
+  }
+
+  .collapsedGrid
+  {
+    row-gap: 0 !important;
+  }
+
+
   .MenuItem
   {
     width: 100%;
@@ -89,10 +107,11 @@
     {
       box-shadow: var(--card-shadow);
       background-color: var(--sidebar);
-      transition: all 1s ease-in-out;
+      //transition: all 1s ease-in-out;
       .project-content
       {
-
+        transition: all .3s ease-in-out;
+        //height: 100vh;
         height: 30vh;
         position: relative;
         //&::before
