@@ -53,15 +53,26 @@ function MenuItem({menuItem, id, setId}) {
                                         // window.scroll({top: previousWindowPos, behavior: 'instant'})
                                     }
                                 }}>Expand</button>
-                                <div className="text-cover"></div>
-                                <div></div>
-                                <img className="img" src={item.image} alt=""/>
+                                <div className={`${expanded? 'text-cover-plain' : 'text-cover'}`}></div>
+                                <div className="flex-container">
+                                    <p className="description">
+                                        {item.descriptions? item.descriptions[0] ? item.descriptions[0]:"":""}
+                                    </p>
+                                    <img className="img" src={item.image} alt=""/>
+                                    <div className="img-caption">{item.imagecap? item.imagecap[0] : ''}</div>
+                                    <p className="description">
+                                        {item.descriptions? item.descriptions[1] ? item.descriptions[1]:"":""}
+                                    </p>
+                                    <p className="description">
+                                        {item.descriptions? item.descriptions[2] ? item.descriptions[2]:"":""}
+                                    </p>
+                                    {/*<div className="content-pad"></div>*/}
+                                </div>
+
                                 {/*<p className={`description ${id === -1 || item.id === id ? '' : 'collapsed'}`}>*/}
                                 {/*    {item.description}*/}
                                 {/*</p>*/}
-                                <p className="description">
-                                    {item.description}
-                                </p>
+
                                 {/*<div className="hover-items">*/}
                                 {/*    <a target = "_blank" href={item.link1}>*/}
                                 {/*        <FontAwesomeIcon icon={item.icon1} className='icon'/>*/}

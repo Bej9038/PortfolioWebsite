@@ -77,7 +77,12 @@
 
   .expanded
   {
-    height: 50vh !important;
+    height: auto !important;
+  }
+
+  .text-cover-plain
+  {
+    background: var(--sidebar);
   }
 
 
@@ -156,14 +161,15 @@
           bottom: 0;
           left: 0;
           width: 100%;
-          height: 20vh; /* Adjust this value based on the number of lines you want to fade out */
+          height: 24vh; /* Adjust this value based on the number of lines you want to fade out */
           background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--sidebar));
         }
         //background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
         transition: all .3s ease-in-out;
         //height: 100vh;
-        height: 20vh;
+        height: 24vh;
         position: relative;
+        padding-bottom: 4rem;
         //&::before
         //{
         //  content: "";
@@ -182,18 +188,50 @@
         //{
         //  transform: scale(1);
         //}
-        img
+        .flex-container
         {
-          height: 20vh;
-          width: 20vh;
-          position: absolute;
-          padding: 2rem;
-          border: none;
-          outline: none;
-          background-color: var(--sidebar);
-          //object-fit: cover;
-          //margin-bottom: -7px;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+          justify-items: center;
+          align-items: center;
+          //grid-template-rows: 1fr;
+          column-gap: 1rem;
+          img
+          {
+            height: 20vh;
+            width: 30vh;
+            //min-width: 100%;
+            min-height: 100%;
+            //position: absolute;
+            //padding: 2rem;
+            background-color: var(--sidebar);
+            //object-fit: cover;
+            //margin-bottom: -7px;
+          }
+          .img-caption
+          {
+            font-size: .8rem;
+            width: 30vh;
+            text-align: center;
+            padding-top: .5rem;
+          }
+          p
+          {
+            padding: 2rem;
+            width: 80%;
+            //position: fixed;
+            //white-space: nowrap;
+            //overflow: hidden;
+            //text-overflow: ellipsis;
+            //height: 8vh;
+            transition: all .3s ease-in-out;
+            //position: absolute;
+            //left: 28vh;
+            line-height: 150%;
+          }
         }
+
         //.hover-items
         //{
         //  list-style: none;
@@ -254,14 +292,7 @@
         transition: all 0.3s ease;
       }
 
-      p
-      {
-        padding: 2rem;
-        height: 8vh;
-        transition: all .3s ease-in-out;
-        position: absolute;
-        left: 18vh;
-      }
+
     }
   }
 }
