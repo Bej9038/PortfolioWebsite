@@ -5,6 +5,7 @@ import port4 from '../Images/PImages/port4.webp';
 import port5 from '../Images/PImages/port5_2.png';
 import port6 from '../Images/PImages/port6.png';
 import port7 from '../Images/PImages/port7.jpg';
+import SynthLM1 from '../Images/SynthLM1.PNG';
 
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {faYoutube} from "@fortawesome/free-brands-svg-icons";
@@ -14,13 +15,14 @@ const portfolios = [
     {
         id: 8,
         category: 'Software',
-        link1: 'https://github.com/Bej9038/OmnitoneV2',
+        // link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
         description: "In recent years, there's been a ton of research on audio generation and " +
             "compression using deep learning. After coming across Google's MusicLM project, I was inspired to try and " +
             "create my own audio generating model but for a slightly different task. My goal with this project is to " +
             "create the first text to sample synthesizer meant for music creation. The difference between this ",
-        title: 'SynthLM'
+        title: 'SynthLM',
+        image: SynthLM1
     },
     {
         id: 6,

@@ -34,6 +34,7 @@ function MenuItem({menuItem, id, setId}) {
             {
                 menuItem.map((item) =>
                 {
+                    // TODO - make the other menu items not expand, so then we dont have to deal with weird view changes
                     // if(id === -1 || item.id === id) {
                         return <div className={`portfolio ${expanded && item.id !== id ? 'fadeout' : 'fadein'}`} key={item.id}>
                             <h5 className={`${id === -1 || item.id === id ? '' : 'collapsed'}`}>
@@ -47,22 +48,23 @@ function MenuItem({menuItem, id, setId}) {
                                         // window.scroll({top: 0, behavior: 'instant'})
                                         setId(item.id);
                                         setExpanded(true);
-
                                     }
                                     else
                                     {
                                         setId(-1);
                                         setExpanded(false);
                                         // window.scroll({top: previousWindowPos, behavior: 'instant'})
-
                                     }
                                 }}>Expand</button>
                                 <div className="text-cover"></div>
-                                {/*<img className="img" src={item.image} alt=""/>*/}
-                                <p className={`description ${id === -1 || item.id === id ? '' : 'collapsed'}`}>
+                                <div></div>
+                                <img className={`img ${id === -1 || item.id === id ? '' : 'collapsed'}`} src={item.image} alt=""/>
+                                {/*<p className={`description ${id === -1 || item.id === id ? '' : 'collapsed'}`}>*/}
+                                {/*    {item.description}*/}
+                                {/*</p>*/}
+                                <p className="description">
                                     {item.description}
                                 </p>
-
                                 {/*<div className="hover-items">*/}
                                 {/*    <a target = "_blank" href={item.link1}>*/}
                                 {/*        <FontAwesomeIcon icon={item.icon1} className='icon'/>*/}

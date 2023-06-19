@@ -77,14 +77,21 @@
 
   .expanded
   {
-    height: 60rem !important;
+    height: 40vh !important;
   }
 
   .collapsed
   {
-    height: 0 !important;
-    padding: 0 !important;
-    border-width: 0 !important;
+    //height: 28vh !important;
+    //padding: 0 !important;
+    //border-width: 0 !important;
+  }
+
+  .collapsed-item
+  {
+    height: 20vh !important;
+    //padding: 0 !important;
+    //border-width: 0 !important;
   }
 
   .collapsedGrid
@@ -194,13 +201,18 @@
         //{
         //  transform: scale(1);
         //}
-        //img
-        //{
-        //  height: 50%;
-        //  width: 100%;
-        //  object-fit: cover;
-        //  margin-bottom: -7px;
-        //}
+        img
+        {
+          height: 20vh;
+          width: 20vh;
+          position: absolute;
+          padding: 2rem;
+          border: none;
+          outline: none;
+          background-color: var(--sidebar);
+          //object-fit: cover;
+          //margin-bottom: -7px;
+        }
         //.hover-items
         //{
         //  list-style: none;
@@ -266,6 +278,8 @@
         padding: 2rem;
         height: 8vh;
         transition: all .3s ease-in-out;
+        position: absolute;
+        left: 18vh;
       }
     }
   }
