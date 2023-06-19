@@ -29,19 +29,16 @@ function MenuItem({menuItem, id, setId}) {
         }
     }
     return (
-        // <div className={`MenuItem ${expanded? 'collapsedGrid' : ''}`}>
         <div className={`MenuItem`}>
             {
                 menuItem.map((item) =>
                 {
-                    // TODO - make the other menu items not expand, so then we dont have to deal with weird view changes
-                    // if(id === -1 || item.id === id) {
                         return <div className={`portfolio ${expanded && item.id !== id ? 'fadeout' : 'fadein'}`} key={item.id}>
-                            <h5 className={`${id === -1 || item.id === id ? '' : 'collapsed'}`}>
+                            <h5>
                                 {item.title}
                             </h5>
-                            <div className={`project-content ${expanded ? 'expanded' : ''} ${id === -1 || item.id === id ? '' : 'collapsed'}`}>
-                                <button className={`expand-btn ${id === -1 || item.id === id ? '' : 'collapsed'}`} onClick={() => {
+                            <div className={`project-content ${expanded && (id === -1 || item.id === id) ? 'expanded' : ''}`}>
+                                <button className="expand-btn" onClick={() => {
                                     if(!expanded)
                                     {
                                         // setPrev(window.scrollY)
@@ -58,7 +55,7 @@ function MenuItem({menuItem, id, setId}) {
                                 }}>Expand</button>
                                 <div className="text-cover"></div>
                                 <div></div>
-                                <img className={`img ${id === -1 || item.id === id ? '' : 'collapsed'}`} src={item.image} alt=""/>
+                                <img className="img" src={item.image} alt=""/>
                                 {/*<p className={`description ${id === -1 || item.id === id ? '' : 'collapsed'}`}>*/}
                                 {/*    {item.description}*/}
                                 {/*</p>*/}
