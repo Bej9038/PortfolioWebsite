@@ -108,11 +108,73 @@
       box-shadow: var(--card-shadow);
       background-color: var(--sidebar);
       //transition: all 1s ease-in-out;
+      overflow: hidden;
       .project-content
       {
+        .expand-btn
+        {
+          position: absolute;
+          z-index: 100;
+          bottom: 0;
+          margin: auto;
+          left: 0;
+          right: 0;
+          width: 100%;
+          text-align: center;
+          padding: 1rem 2rem;
+          background-color: var(--main-color-hover);
+          border: none;
+          outline: none;
+          font-size: inherit;
+          font-family: inherit;
+          color: inherit;
+          flex-wrap: wrap;
+          cursor: pointer;
+          box-shadow: var(--card-shadow);
+          transition: all .3s ease-in-out;
+          &::after
+          {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: .3rem;
+            left: 0;
+            bottom: 0;
+            background-color: var(--font-color2);
+            transition: all .3s ease-in-out;
+          }
+          &:hover::after
+          {
+            width: 100%;
+          }
+          &:hover
+          {
+            background-color: var(--main-color);
+          }
+
+          &:active::after
+          {
+            width: 100%;
+          }
+          &:focus::after
+          {
+            width: 100%;
+          }
+          }
+        .text-cover
+        {
+          z-index: 99;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 20vh; /* Adjust this value based on the number of lines you want to fade out */
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--sidebar));
+        }
+        //background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
         transition: all .3s ease-in-out;
         //height: 100vh;
-        height: 30vh;
+        height: 20vh;
         position: relative;
         //&::before
         //{

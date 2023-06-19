@@ -40,12 +40,7 @@ function MenuItem({menuItem, id, setId}) {
                                 {item.title}
                             </h5>
                             <div className={`project-content ${expanded ? 'expanded' : ''} ${id === -1 || item.id === id ? '' : 'collapsed'}`}>
-                                {/*<img className="img" src={item.image} alt=""/>*/}
-                                <div className="text-cover"></div>
-                                <p className={`${id === -1 || item.id === id ? '' : 'collapsed'}`}>
-                                    {item.description}
-                                </p>
-                                <button className={`${id === -1 || item.id === id ? '' : 'collapsed'}`} onClick={() => {
+                                <button className={`expand-btn ${id === -1 || item.id === id ? '' : 'collapsed'}`} onClick={() => {
                                     if(!expanded)
                                     {
                                         // setPrev(window.scrollY)
@@ -62,6 +57,12 @@ function MenuItem({menuItem, id, setId}) {
 
                                     }
                                 }}>Expand</button>
+                                <div className="text-cover"></div>
+                                {/*<img className="img" src={item.image} alt=""/>*/}
+                                <p className={`description ${id === -1 || item.id === id ? '' : 'collapsed'}`}>
+                                    {item.description}
+                                </p>
+
                                 {/*<div className="hover-items">*/}
                                 {/*    <a target = "_blank" href={item.link1}>*/}
                                 {/*        <FontAwesomeIcon icon={item.icon1} className='icon'/>*/}
