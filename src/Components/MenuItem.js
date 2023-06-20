@@ -58,15 +58,36 @@ function MenuItem({menuItem, id, setId}) {
                                     <p className="description">
                                         {item.descriptions? item.descriptions[0] ? item.descriptions[0]:"":""}
                                     </p>
-                                    <img className="img" src={item.image} alt=""/>
-                                    <div className="img-caption">{item.imagecap? item.imagecap[0] : ''}</div>
+                                    {(() => {
+                                        if (item.images && item.images[0]) {
+                                            return <div>
+                                                <img className="img"
+                                                     src={item.images[0]}
+                                                     alt=""/>
+                                                <div
+                                                    className="img-caption">{item.imagecap[0]}</div>
+                                            </div>
+                                        }
+                                    }
+                                    )()}
                                     <p className="description">
                                         {item.descriptions? item.descriptions[1] ? item.descriptions[1]:"":""}
                                     </p>
+                                    {(() => {
+                                            if (item.images && item.images[1]) {
+                                                return <div>
+                                                    <img className="img"
+                                                         src={item.images[1]}
+                                                         alt=""/>
+                                                    <div
+                                                        className="img-caption">{item.imagecap[1]}</div>
+                                                </div>
+                                            }
+                                        }
+                                    )()}
                                     <p className="description">
                                         {item.descriptions? item.descriptions[2] ? item.descriptions[2]:"":""}
                                     </p>
-                                    {/*<div className="content-pad"></div>*/}
                                 </div>
 
                                 {/*<p className={`description ${id === -1 || item.id === id ? '' : 'collapsed'}`}>*/}

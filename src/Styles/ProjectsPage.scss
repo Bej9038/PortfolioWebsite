@@ -169,7 +169,7 @@
         //height: 100vh;
         height: 24vh;
         position: relative;
-        padding-bottom: 4rem;
+        padding-bottom: 6rem;
         //&::before
         //{
         //  content: "";
@@ -196,11 +196,12 @@
           justify-items: center;
           align-items: center;
           //grid-template-rows: 1fr;
-          column-gap: 1rem;
+          row-gap: 3rem;
           img
           {
             height: 20vh;
             width: 30vh;
+            //top: -.5rem;
             //min-width: 100%;
             min-height: 100%;
             //position: absolute;
@@ -218,7 +219,7 @@
           }
           p
           {
-            padding: 2rem;
+            //padding-bottom: 3rem;
             width: 80%;
             //position: fixed;
             //white-space: nowrap;
@@ -276,7 +277,8 @@
       {
         padding: 2rem;
         //font-size: inherit;
-        height: 8vh;
+        //height: 8vh;
+        height: auto;
         font-weight: 400;
         font-size: 2rem;
         transition: all .3s ease-in-out;
@@ -291,8 +293,6 @@
         background: linear-gradient(to bottom, transparent, #000000);
         transition: all 0.3s ease;
       }
-
-
     }
   }
 }
