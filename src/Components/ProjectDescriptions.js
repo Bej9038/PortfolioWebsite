@@ -29,12 +29,32 @@ const descriptions =
             "is an amazing algorithm that allows a group of servers to be fault tolerant as long as f <= (n-1)/2. It " +
             "also guarantees that consensus can be reached during periods of synchrony. This part involved a bit too many hours " +
             "of grinding in order to debug the system, but I'm proud to say that we eventually passed all of the test cases.",
-
         dslabs4: "Lab 4 added on multi-key transactions and sharding. This allows the system to process operations " +
             "in parallel thus increasing performance proportional to the number of server groups. We also had to implement two" +
             " phase commit for agreement between server groups during transactions. On its own 2PC is susceptible to failures, " +
             "but when paired with paxos provides agreement without major availability issues.",
 
+        sae1: "After working for Professor Sungyoung Kim at RIT for over a year starting in 2020, I was rehired as a part-" +
+            "time developer during my last semester of undergrad. During this semester, my task was to write a program " +
+            "that would allow Dr. Kim to collect data on how listeners interpret the spatial characteristics of audio. " +
+            "This was quite an enjoyable project because I was given a general overview of what to build, but every " +
+            "aspect of design and implementation was left up to me.",
+        sae2: "The main feature of this program was an interactive 3D visual that is supposed to represent audio and its spacial " +
+            "characteristics. Users will hear a series of songs, and then adjust a set of four attribute sliders " +
+            "(width, depth, immersion, and clarity) to morph the 3D visual until it best describes each song. " +
+            "Users can also use their mouse to adjust the camera's perspective of the 3D visual.",
+        sae3: "Given that this project was supposed to be a website, I decided to use Angular just to get some more " +
+            "experience with it. I really like Angular + Typescript because of the OOP style, and because it helps me keep my " +
+            "projects organized. As for the 3D visual, I used a well-known library called three.js. This was " +
+            "easily the most challenging part of the project since it was my first time doing anything related to " +
+            "computer graphics, but I learned a lot! I created a custom shader in order to have an " +
+            "animation that changed based on the music's volume and the attribute sliders. ",
+        sae4: "For the overall structure of the software, I added my basic components such as the attribute sliders, " +
+            "a view component to hold the three.js canvas, a singular audio service that controlled everything sound related " +
+            "and could injected into any component, and a singular session values service, that was used to maintain " +
+            "important values during a instance of the program (such as the current round number, whether light or dark mode is on). " +
+            "This service was injected into the slider components and the view component, so both the sliders and the 3D graphic could " +
+            "have realtime access to the values of the attribute sliders.",
 
         portfolio1: "This Website! During quarantine I wanted to give React a try, so I started with a tutorial I found online and " +
             "made some changes to it. I recently did a re-design as well. I haven't done a ton of web dev since it was " +

@@ -4,6 +4,8 @@ import SynthLM3 from '../Images/SynthLM3.PNG';
 import SynthLM4 from '../Images/SynthLM4.PNG';
 import SAE1 from "../Images/SAE1.PNG";
 import SAE2 from "../Images/SAE2.PNG";
+import SAE3 from "../Images/SAE3.PNG";
+import SAE4 from "../Images/SAE4.PNG";
 
 import descriptions from "./ProjectDescriptions"
 
@@ -37,9 +39,9 @@ const portfolios = [
         category: ['2022'],
         link1: '',
         icon1: faGithub,
-        descriptions: [descriptions.temp],
-        images: [SAE1, SAE2],
-        imagecap: ["1: The Welcome Screen", "2: Playing around with the controls"],
+        descriptions: [descriptions.sae1, descriptions.sae2, descriptions.sae3, descriptions.sae4],
+        images: [SAE4, SAE1, SAE2],
+        imagecap: ["1: Part of the initial project specifications", "2: Welcome menu","3: Playing around with the controls"],
         title: 'Spatial Audio Evaluation'
     },
     {
