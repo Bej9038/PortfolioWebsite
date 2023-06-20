@@ -1,6 +1,6 @@
 const descriptions =
     {
-        synthlm1: "Over the past couple of years, there has been a decent amount of research published related to audio generation and " +
+        synthlm1: "Over the past couple of years, there's been a decent amount of research published related to audio generation and " +
             "compression using deep learning. After coming across Google's MusicLM, I was inspired to " +
             "create my own deep learning powered software synthesizer.",
         synthlm2: "My goal with this project is to create the first text-to-sample synthesizer meant for music production. " +
@@ -26,13 +26,21 @@ const descriptions =
             " lab 1 using an all knowing view service that decides on primary backup configurations. This allows for state replication and therefore consistency, " +
             "but it also leaves us with a single point of failure. ",
         dslabs3: "Lab 3 fixes this issue using Paxos. Paxos " +
-            "is an amazing algorithm that allows a group of servers to be fault tolerant as long as f <= (n-1)/2 and " +
-            "guarantees that consensus can be reached during periods of synchrony. Lab 3 involved a bit too many hours " +
+            "is an amazing algorithm that allows a group of servers to be fault tolerant as long as f <= (n-1)/2. It " +
+            "also guarantees that consensus can be reached during periods of synchrony. Lab 3 involved a bit too many hours " +
             "of grinding in order to debug the system, but I'm proud to say that we eventually passed all of the test cases. " +
             "Finally, Lab 4 added on multi-key transactions and sharding. This allows the system to process operations " +
             "in parallel thus increasing performance proportional to the number of server groups. We also had to implement two" +
             " phase commit for agreement between server groups during transactions. On its own 2PC is susceptible to failures, " +
-            "but when paired with paxos provides agreement without major availability issues."
+            "but when paired with paxos provides agreement without major availability issues.",
+
+
+        portfolio1: "This Website! During quarantine I wanted to give React a try, so I started with a tutorial I found online and " +
+            "made some changes to it. I recently did a re-design as well. I haven't done a ton of web dev since it was " +
+            "never a part of my coursework, but I've always found designing and styling websites to be pretty enjoyable.",
+        portfolio2: "If you're interested, you can check out the code on my GitHub.",
+
+        temp: "Content coming soon..."
 
 
     };

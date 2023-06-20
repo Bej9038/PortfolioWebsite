@@ -37,12 +37,13 @@ const portfolios = [
         title: 'DSLabs - Replicated & Sharded Key-Value Store'
     },
     {
-        id: 7,
+        id: 9,
         category: 'Software',
-        link1: 'https://github.com/Bej9038/OmnitoneV2',
+        link1: '',
         icon1: faGithub,
+        descriptions: [descriptions.temp],
         // image: port2,
-        title: 'Graph Neural Network Research Project'
+        title: 'Spatial Audio Evaluation'
     },
     {
         id: 1,
@@ -51,33 +52,33 @@ const portfolios = [
         link2: 'https://github.com/Bej9038/ImplantTestingProgram',
         icon1: faChrome,
         icon2: faGithub,
+        descriptions: [descriptions.temp],
         // image: port1,
         title: 'Implant Testing Program'
     },
     {
-        id: 9,
+        id: 7,
         category: 'Software',
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
+        descriptions: [descriptions.temp],
         // image: port2,
-        title: 'Encrypted Messenger'
+        title: 'Graph Neural Network Research Project'
     },
-    {
-        id: 3,
-        category: 'Other',
-        link1: 'https://www.youtube.com/channel/UCqztrHyJRJKGxSo5_cpzWaA',
-        link2: 'https://soundcloud.com/odysymusic',
-        icon1: faYoutube,
-        icon2: faSoundcloud,
-        // image: port3,
-        title: 'Electronic Music Project'
-    },
+    // {
+    //     id: 9,
+    //     category: 'Software',
+    //     link1: 'https://github.com/Bej9038/OmnitoneV2',
+    //     icon1: faGithub,
+    //     // image: port2,
+    //     title: 'Encrypted Messenger'
+    // },
     {
         id: 4,
         category: 'Software',
         link1: 'https://github.com/Bej9038/PortfolioWebsite',
         icon1: faGithub,
-        // image: port4,
+        descriptions: [descriptions.portfolio1],
         title: 'Portfolio Website'
     },
     {
@@ -85,6 +86,7 @@ const portfolios = [
         category: 'Software',
         link1: 'https://github.com/Bej9038/EQ',
         icon1: faGithub,
+        descriptions: [descriptions.temp],
         // image: port5,
         title: 'EQ Audio Plugin'
     },
@@ -93,8 +95,20 @@ const portfolios = [
         category: 'Software',
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
+        descriptions: [descriptions.temp],
         // image: port2,
         title: 'Omnitone'
+    },
+    {
+        id: 3,
+        category: 'Other',
+        link1: 'https://www.youtube.com/channel/UCqztrHyJRJKGxSo5_cpzWaA',
+        link2: 'https://soundcloud.com/odysymusic',
+        icon1: faYoutube,
+        icon2: faSoundcloud,
+        descriptions: [descriptions.temp],
+        // image: port3,
+        title: 'Electronic Music Project'
     },
 ]
 
