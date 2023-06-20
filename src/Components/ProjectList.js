@@ -42,7 +42,7 @@ const portfolios = [
         descriptions: [descriptions.sae1, descriptions.sae2, descriptions.sae3, descriptions.sae4],
         images: [SAE4, SAE1, SAE2],
         imagecap: ["1: Part of the initial project specifications", "2: Welcome menu","3: Playing around with the controls"],
-        title: 'Spatial Audio Evaluation'
+        title: 'Spatial Attributes Evaluation'
     },
     {
         id: 1,
