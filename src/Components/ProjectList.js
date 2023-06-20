@@ -18,7 +18,7 @@ import {faChrome} from "@fortawesome/free-brands-svg-icons";
 const portfolios = [
     {
         id: 8,
-        category: 'Software',
+        category: ['2023'],
         // link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
         descriptions: [descriptions.synthlm1, descriptions.synthlm2, descriptions.synthlm3],
@@ -28,7 +28,7 @@ const portfolios = [
     },
     {
         id: 6,
-        category: 'Software',
+        category: ['2023'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
         descriptions: [descriptions.dslabs1, descriptions.dslabs2, descriptions.dslabs3],
@@ -38,7 +38,7 @@ const portfolios = [
     },
     {
         id: 9,
-        category: 'Software',
+        category: ['2022'],
         link1: '',
         icon1: faGithub,
         descriptions: [descriptions.temp],
@@ -47,7 +47,7 @@ const portfolios = [
     },
     {
         id: 1,
-        category: 'Software',
+        category: ['2020'],
         link1: 'http://auditoryneuro.com/Implant%20Testing%20Program/Signin/Signin.html',
         link2: 'https://github.com/Bej9038/ImplantTestingProgram',
         icon1: faChrome,
@@ -58,7 +58,7 @@ const portfolios = [
     },
     {
         id: 7,
-        category: 'Software',
+        category: ['2022'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
         descriptions: [descriptions.temp],
@@ -75,7 +75,7 @@ const portfolios = [
     // },
     {
         id: 4,
-        category: 'Software',
+        category: ['2021'],
         link1: 'https://github.com/Bej9038/PortfolioWebsite',
         icon1: faGithub,
         descriptions: [descriptions.portfolio1],
@@ -83,7 +83,7 @@ const portfolios = [
     },
     {
         id: 5,
-        category: 'Software',
+        category: ['2021'],
         link1: 'https://github.com/Bej9038/EQ',
         icon1: faGithub,
         descriptions: [descriptions.temp],
@@ -92,24 +92,24 @@ const portfolios = [
     },
     {
         id: 2,
-        category: 'Software',
+        category: ['2020'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
         descriptions: [descriptions.temp],
         // image: port2,
         title: 'Omnitone'
     },
-    {
-        id: 3,
-        category: 'Other',
-        link1: 'https://www.youtube.com/channel/UCqztrHyJRJKGxSo5_cpzWaA',
-        link2: 'https://soundcloud.com/odysymusic',
-        icon1: faYoutube,
-        icon2: faSoundcloud,
-        descriptions: [descriptions.temp],
-        // image: port3,
-        title: 'Electronic Music Project'
-    },
+    // {
+    //     id: 3,
+    //     category: ['Other'],
+    //     link1: 'https://www.youtube.com/channel/UCqztrHyJRJKGxSo5_cpzWaA',
+    //     link2: 'https://soundcloud.com/odysymusic',
+    //     icon1: faYoutube,
+    //     icon2: faSoundcloud,
+    //     descriptions: [descriptions.temp],
+    //     // image: port3,
+    //     title: 'Electronic Music Project'
+    // },
 ]
 
 export default portfolios;

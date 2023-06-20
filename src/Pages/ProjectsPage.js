@@ -5,8 +5,12 @@ import MenuItem from "../Components/MenuItem";
 import portfolios from "../Components/ProjectList"
 import {useState} from 'react'
 
-let allCategories = ['All', ...new Set(portfolios.map(item => item.category))];
-
+function onlyUnique(value, index, array) {
+    return array.indexOf(value) === index;
+}
+let cats = []
+portfolios.map(item => item.category.map(i => cats.push(i)))
+let allCategories = ['All', ...cats.filter(onlyUnique)]
 function ProjectsPage() {
     const [categories, setCategories] = useState(allCategories);
     const [menuItems, setMenuItems] = useState(portfolios);
@@ -19,9 +23,9 @@ function ProjectsPage() {
             setMenuItems(portfolios);
             return;
         }
-        const filteredData = portfolios.filter((item)=>
+        const filteredData= portfolios.filter((item)=>
         {
-            return item.category === category;
+            return item.category.includes(category);
         });
         setMenuItems(filteredData);
     }
@@ -32,7 +36,7 @@ function ProjectsPage() {
                 <Title title={'Projects'} progress={75}/>
             </div>
             <div className="portfolio-menu">
-                <Categories categories = {categories} filter={filter} />
+                {/*<Categories categories = {categories} filter={filter} />*/}
                 <MenuItem menuItem={menuItems} id={id} setId={setId}/>
             </div>
         </div>
