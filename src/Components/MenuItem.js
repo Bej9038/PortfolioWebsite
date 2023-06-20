@@ -79,14 +79,16 @@ function MenuItem({menuItem, id, setId}) {
                                                     <img className="img"
                                                          src={item.images[1]}
                                                          alt=""/>
-                                                    <div
-                                                        className="img-caption">{item.imagecap[1]}</div>
+                                                    <div className="img-caption">{item.imagecap[1]}</div>
                                                 </div>
                                             }
                                         }
                                     )()}
                                     <p className="description">
                                         {item.descriptions? item.descriptions[2] ? item.descriptions[2]:"":""}
+                                    </p>
+                                    <p className="description">
+                                        {item.descriptions? item.descriptions[3] ? item.descriptions[3]:"":""}
                                     </p>
                                 </div>
 

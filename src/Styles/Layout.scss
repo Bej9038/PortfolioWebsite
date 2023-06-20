@@ -12,12 +12,12 @@
     color: var(--font-color2);
     height: 2.5rem;
     width: 2.5rem;
-    @media screen and (max-width: 1750px)
+    @media screen and (max-width: 1200px)
     {
       transition: all .3s ease-in-out;
       opacity: 1;
     }
-    @media screen and (min-width: 1750px)
+    @media screen and (min-width: 1200px)
     {
       transition: all .3s ease-in-out;
       opacity: 0;
@@ -32,12 +32,12 @@
     position: fixed;
     z-index: 10;
     box-shadow: var(--card-shadow);
-    @media screen and (max-width: 1750px)
+    @media screen and (max-width: 1200px)
     {
       transition: all .3s ease-in-out;
       transform: translateX(-150%);
     }
-    @media screen and (min-width: 1750px)
+    @media screen and (min-width: 1200px)
     {
       transition: all .3s ease-in-out;
       transform: translateX(0);
@@ -45,7 +45,7 @@
   }
   .nav-toggle
   {
-    @media screen and (max-width: 1750px)
+    @media screen and (max-width: 1200px)
     {
       transition: all .3s ease-in-out;
       transform: translateX(0);
@@ -70,13 +70,13 @@
       margin-left: 10%;
       width: 80%;
     }
-    @media screen and (max-width: 1750px)
+    @media screen and (max-width: 1200px)
     {
       transition: all .3s ease-in-out;
       margin-left: 0;
       width: 100%;
     }
-    @media screen and (min-width: 1750px)
+    @media screen and (min-width: 1200px)
     {
       transition: all .3s ease-in-out;
       transform: translateX(0);

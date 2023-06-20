@@ -27,9 +27,10 @@ const descriptions =
             "but it also leaves us with a single point of failure. ",
         dslabs3: "Lab 3 fixes this issue using Paxos. Paxos " +
             "is an amazing algorithm that allows a group of servers to be fault tolerant as long as f <= (n-1)/2. It " +
-            "also guarantees that consensus can be reached during periods of synchrony. Lab 3 involved a bit too many hours " +
-            "of grinding in order to debug the system, but I'm proud to say that we eventually passed all of the test cases. " +
-            "Finally, Lab 4 added on multi-key transactions and sharding. This allows the system to process operations " +
+            "also guarantees that consensus can be reached during periods of synchrony. This part involved a bit too many hours " +
+            "of grinding in order to debug the system, but I'm proud to say that we eventually passed all of the test cases.",
+
+        dslabs4: "Lab 4 added on multi-key transactions and sharding. This allows the system to process operations " +
             "in parallel thus increasing performance proportional to the number of server groups. We also had to implement two" +
             " phase commit for agreement between server groups during transactions. On its own 2PC is susceptible to failures, " +
             "but when paired with paxos provides agreement without major availability issues.",

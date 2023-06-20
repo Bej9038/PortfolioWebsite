@@ -1,14 +1,10 @@
-import port1 from '../Images/PImages/port1.jpg';
-import port2 from '../Images/PImages/port2.jpg';
-import port3 from '../Images/PImages/port3.webp';
-import port4 from '../Images/PImages/port4.webp';
-import port5 from '../Images/PImages/port5_2.png';
-import port6 from '../Images/PImages/port6.png';
-import port7 from '../Images/PImages/port7.jpg';
 import dslabs1 from "../Images/dslabs1.PNG";
 import dslabs2 from "../Images/dslabs2.png";
 import SynthLM3 from '../Images/SynthLM3.PNG';
 import SynthLM4 from '../Images/SynthLM4.PNG';
+import SAE1 from "../Images/SAE1.PNG";
+import SAE2 from "../Images/SAE2.PNG";
+
 import descriptions from "./ProjectDescriptions"
 
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
@@ -24,16 +20,16 @@ const portfolios = [
         descriptions: [descriptions.synthlm1, descriptions.synthlm2, descriptions.synthlm3],
         title: 'SynthLM',
         images: [SynthLM3, SynthLM4],
-        imagecap: ["Figure 1: The structure of Google's MusicLM", "Figure 2: Some neat auto-encoder audio compression"]
+        imagecap: ["1. The structure of Google's MusicLM", "2. Some neat autoencoder audio compression"]
     },
     {
         id: 6,
         category: ['2023'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
-        descriptions: [descriptions.dslabs1, descriptions.dslabs2, descriptions.dslabs3],
+        descriptions: [descriptions.dslabs1, descriptions.dslabs2, descriptions.dslabs3, descriptions.dslabs4],
         images: [dslabs1, dslabs2],
-        imagecap: ["Figure 1: The Part-Time Parliament", "Figure 2: Probably the greatest moment of my life"],
+        imagecap: ["1: The Part-Time Parliament", "2: The greatest moment of my life"],
         title: 'DSLabs - Replicated & Sharded Key-Value Store'
     },
     {
@@ -42,7 +38,8 @@ const portfolios = [
         link1: '',
         icon1: faGithub,
         descriptions: [descriptions.temp],
-        // image: port2,
+        images: [SAE1, SAE2],
+        imagecap: ["1: The Welcome Screen", "2: Playing around with the controls"],
         title: 'Spatial Audio Evaluation'
     },
     {
