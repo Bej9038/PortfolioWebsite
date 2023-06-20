@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/PortfolioWebsite/static/css/main.6c2c70ac.chunk.css",
-    "main.js": "/PortfolioWebsite/static/js/main.7e28971b.chunk.js",
-    "main.js.map": "/PortfolioWebsite/static/js/main.7e28971b.chunk.js.map",
+    "main.css": "/PortfolioWebsite/static/css/main.0986404d.chunk.css",
+    "main.js": "/PortfolioWebsite/static/js/main.496ec801.chunk.js",
+    "main.js.map": "/PortfolioWebsite/static/js/main.496ec801.chunk.js.map",
     "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js",
     "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js.map",
-    "static/js/2.110bd5de.chunk.js": "/PortfolioWebsite/static/js/2.110bd5de.chunk.js",
-    "static/js/2.110bd5de.chunk.js.map": "/PortfolioWebsite/static/js/2.110bd5de.chunk.js.map",
+    "static/js/2.846f4e4b.chunk.js": "/PortfolioWebsite/static/js/2.846f4e4b.chunk.js",
+    "static/js/2.846f4e4b.chunk.js.map": "/PortfolioWebsite/static/js/2.846f4e4b.chunk.js.map",
     "index.html": "/PortfolioWebsite/index.html",
-    "static/css/main.6c2c70ac.chunk.css.map": "/PortfolioWebsite/static/css/main.6c2c70ac.chunk.css.map",
-    "static/js/2.110bd5de.chunk.js.LICENSE.txt": "/PortfolioWebsite/static/js/2.110bd5de.chunk.js.LICENSE.txt",
+    "static/css/main.0986404d.chunk.css.map": "/PortfolioWebsite/static/css/main.0986404d.chunk.css.map",
+    "static/js/2.846f4e4b.chunk.js.LICENSE.txt": "/PortfolioWebsite/static/js/2.846f4e4b.chunk.js.LICENSE.txt",
     "static/media/Ben Jordan [June 2023 Resume] V2.6df87ac0.pdf": "/PortfolioWebsite/static/media/Ben Jordan [June 2023 Resume] V2.6df87ac0.pdf",
+    "static/media/SynthLM3.828823aa.PNG": "/PortfolioWebsite/static/media/SynthLM3.828823aa.PNG",
+    "static/media/SynthLM4.a3f325ba.PNG": "/PortfolioWebsite/static/media/SynthLM4.a3f325ba.PNG",
     "static/media/Layout.scss": "/PortfolioWebsite/static/media/dots.943074de.svg",
+    "static/media/dslabs1.d3e62336.PNG": "/PortfolioWebsite/static/media/dslabs1.d3e62336.PNG",
+    "static/media/dslabs2.37fb7c6f.png": "/PortfolioWebsite/static/media/dslabs2.37fb7c6f.png",
     "static/media/newsmaller.c434568e.jpg": "/PortfolioWebsite/static/media/newsmaller.c434568e.jpg",
     "static/media/port1.10ed3f2b.jpg": "/PortfolioWebsite/static/media/port1.10ed3f2b.jpg",
     "static/media/port2.13c6b5d4.jpg": "/PortfolioWebsite/static/media/port2.13c6b5d4.jpg",
@@ -22,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.906d1dcc.js",
-    "static/js/2.110bd5de.chunk.js",
-    "static/css/main.6c2c70ac.chunk.css",
-    "static/js/main.7e28971b.chunk.js"
+    "static/js/2.846f4e4b.chunk.js",
+    "static/css/main.0986404d.chunk.css",
+    "static/js/main.496ec801.chunk.js"
   ]
 }
