@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PortfolioWebsite/static/css/main.f91a0ce1.chunk.css",
-    "main.js": "/PortfolioWebsite/static/js/main.b213c9c4.chunk.js",
-    "main.js.map": "/PortfolioWebsite/static/js/main.b213c9c4.chunk.js.map",
+    "main.js": "/PortfolioWebsite/static/js/main.ad7dceb5.chunk.js",
+    "main.js.map": "/PortfolioWebsite/static/js/main.ad7dceb5.chunk.js.map",
     "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js",
     "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js.map",
     "static/js/2.f460db2e.chunk.js": "/PortfolioWebsite/static/js/2.f460db2e.chunk.js",
@@ -13,6 +13,8 @@
     "static/media/Ben Jordan [June 2023 Resume] V2.6df87ac0.pdf": "/PortfolioWebsite/static/media/Ben Jordan [June 2023 Resume] V2.6df87ac0.pdf",
     "static/media/SAE1.ee662d30.PNG": "/PortfolioWebsite/static/media/SAE1.ee662d30.PNG",
     "static/media/SAE2.2881e408.PNG": "/PortfolioWebsite/static/media/SAE2.2881e408.PNG",
+    "static/media/SAE3.aef70276.PNG": "/PortfolioWebsite/static/media/SAE3.aef70276.PNG",
+    "static/media/SAE4.5677207e.PNG": "/PortfolioWebsite/static/media/SAE4.5677207e.PNG",
     "static/media/SynthLM3.828823aa.PNG": "/PortfolioWebsite/static/media/SynthLM3.828823aa.PNG",
     "static/media/SynthLM4.a3f325ba.PNG": "/PortfolioWebsite/static/media/SynthLM4.a3f325ba.PNG",
     "static/media/Layout.scss": "/PortfolioWebsite/static/media/dots.943074de.svg",
@@ -24,6 +26,6 @@
     "static/js/runtime-main.906d1dcc.js",
     "static/js/2.f460db2e.chunk.js",
     "static/css/main.f91a0ce1.chunk.css",
-    "static/js/main.b213c9c4.chunk.js"
+    "static/js/main.ad7dceb5.chunk.js"
   ]
 }
