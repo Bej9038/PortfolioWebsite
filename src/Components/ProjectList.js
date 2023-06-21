@@ -51,9 +51,9 @@ const portfolios = [
         link2: 'https://github.com/Bej9038/ImplantTestingProgram',
         icon1: faChrome,
         icon2: faGithub,
-        descriptions: [descriptions.temp],
+        descriptions: [descriptions.ipt1, descriptions.ipt2, descriptions.ipt3],
         // image: port1,
-        title: 'Implant Testing Program'
+        title: 'Cochlear Implant Testing Program'
     },
     {
         id: 7,

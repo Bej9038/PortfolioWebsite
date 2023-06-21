@@ -56,6 +56,25 @@ const descriptions =
             "This service was injected into the slider components and the view component, so both the sliders and the 3D graphic could " +
             "have realtime access to the values of the attribute sliders.",
 
+        ipt1: "This project was created during my coop in 2020 with Professor Sungyoung Kim. In collaboration with a team from University of Iowa, " +
+            "we were attempting to evaluate the effectiveness of hearing devices called hybrid cochlear implants. " +
+            "The team was also interested in people's ability to understand speech depending on background noise level. " +
+            "In short, I was given the task of independently creating a website that would allow the researchers to test participants hearing abilities " +
+            "and collect data. This ended up being a great project because it was the largest project I had ever" +
+            " worked on, I got to learn about web development, and the team successfully published research using the data" +
+            " collected from trials done with the software. Its a good feeling when the software you make is used for something important.",
+        ipt2:"The website contains 5 unique testing modules. The Inharmonicity Training and Speech-In-Noise tests have " +
+            "2 and 3 difficulty levels respectively. All tests heavily use the Javascript Web Audio API to generate " +
+            "and process sound at various frequencies and levels. The website is connected to a backend SQL database to " +
+            "store data for each user.",
+        ipt3:"The main focus of the program was the Inharmonicity Training. In this module, users are presented with a " +
+            "box that produces a tone as their mouse hovers over it. The tone changes depending on the location of the" +
+            " mouse within the box. This tone consists of a group of low frequency oscillators and a group of " +
+            "high frequency oscillators set at precise frequency ratios. The goal is for the user to move their mouse " +
+            "inside the box until the tone sounds most \"harmonic\". After selecting a point, a gradient appears on the " +
+            "box that shows the user how correct their guess was. This is calculated based on the randomized frequency " +
+            "ranges of the box set before each trial.",
+
         portfolio1: "This Website! During quarantine I wanted to give React a try, so I started with a tutorial I found online and " +
             "made some changes to it. I recently did a re-design as well. I haven't done a ton of web dev since it was " +
             "never a part of my coursework, but I've always found designing and styling websites to be pretty enjoyable.",

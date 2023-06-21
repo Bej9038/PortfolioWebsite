@@ -87,9 +87,7 @@ function MenuItem({menuItem, id, setId}) {
                                     <p className="description">
                                         {item.descriptions? item.descriptions[2] ? item.descriptions[2]:"":""}
                                     </p>
-                                    <p className="description">
-                                        {item.descriptions? item.descriptions[3] ? item.descriptions[3]:"":""}
-                                    </p>
+
                                     {(() => {
                                             if (item.images && item.images[2]) {
                                                 return <div>
@@ -101,6 +99,9 @@ function MenuItem({menuItem, id, setId}) {
                                             }
                                         }
                                     )()}
+                                    <p className="description">
+                                        {item.descriptions? item.descriptions[3] ? item.descriptions[3]:"":""}
+                                    </p>
                                 </div>
 
                                 {/*<p className={`description ${id === -1 || item.id === id ? '' : 'collapsed'}`}>*/}
