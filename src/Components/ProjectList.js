@@ -6,6 +6,10 @@ import SAE1 from "../Images/SAE1.PNG";
 import SAE2 from "../Images/SAE2.PNG";
 import SAE3 from "../Images/SAE3.PNG";
 import SAE4 from "../Images/SAE4.PNG";
+import ITP1 from "../Images/ITP1.PNG";
+import ITP2 from "../Images/ITP2.PNG";
+import ITP3 from "../Images/ITP3.PNG";
+import ITP4 from "../Images/ITP4.PNG";
 
 import descriptions from "./ProjectDescriptions"
 
@@ -32,7 +36,7 @@ const portfolios = [
         descriptions: [descriptions.dslabs1, descriptions.dslabs2, descriptions.dslabs3, descriptions.dslabs4],
         images: [dslabs1, dslabs2],
         imagecap: ["1: The Part-Time Parliament", "2: The greatest moment of my life"],
-        title: 'DSLabs - Replicated & Sharded Key-Value Store'
+        title: 'DSLabs - Sharded Key-Value Store'
     },
     {
         id: 9,
@@ -52,8 +56,10 @@ const portfolios = [
         icon1: faChrome,
         icon2: faGithub,
         descriptions: [descriptions.ipt1, descriptions.ipt2, descriptions.ipt3],
-        // image: port1,
-        title: 'Cochlear Implant Testing Program'
+        images: [ITP1, ITP3, ITP4, ITP2],
+        imagecap: ["1: The main menu", "2: Inharmonicty training",
+            "3: Setting the frequency ranges on the canvas's axes and creating the oscillators", "4: Speech to noise ratio selection"],
+        title: 'Implant Testing Program'
     },
     {
         id: 7,

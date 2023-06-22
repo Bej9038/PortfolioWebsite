@@ -56,7 +56,7 @@ const descriptions =
             "This service was injected into the slider components and the view component, so both the sliders and the 3D graphic could " +
             "have realtime access to the values of the attribute sliders.",
 
-        ipt1: "This project was created during my coop in 2020 with Professor Sungyoung Kim. In collaboration with a team from University of Iowa, " +
+        ipt1: "This project was created during my internship in 2020 with Professor Sungyoung Kim. In collaboration with a team from University of Iowa, " +
             "we were attempting to evaluate the effectiveness of hearing devices called hybrid cochlear implants. " +
             "The team was also interested in people's ability to understand speech depending on background noise level. " +
             "In short, I was given the task of independently creating a website that would allow the researchers to test participants hearing abilities " +
