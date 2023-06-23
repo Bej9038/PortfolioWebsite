@@ -38,6 +38,7 @@ function MenuItem({menuItem, id, setId}) {
                                 {item.title}
                             </h5>
                             <div className={`project-content ${expanded && (id === -1 || item.id === id) ? 'expanded' : ''}`}>
+                                <div className={`${expanded && (id === -1 || item.id === id)? 'text-cover-plain' : 'text-cover'}`}></div>
                                 <button className="expand-btn" onClick={() => {
                                     if(!expanded)
                                     {
@@ -53,7 +54,6 @@ function MenuItem({menuItem, id, setId}) {
                                         // window.scroll({top: previousWindowPos, behavior: 'instant'})
                                     }
                                 }}>Expand</button>
-                                <div className={`${expanded? 'text-cover-plain' : 'text-cover'}`}></div>
                                 <div className="flex-container">
                                     <p className="description">
                                         {item.descriptions? item.descriptions[0] ? item.descriptions[0]:"":""}
