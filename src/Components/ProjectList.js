@@ -10,6 +10,7 @@ import ITP1 from "../Images/ITP1.PNG";
 import ITP2 from "../Images/ITP2.PNG";
 import ITP3 from "../Images/ITP3.PNG";
 import ITP4 from "../Images/ITP4.PNG";
+import GNN1 from "../Images/GNN1.PNG";
 
 import descriptions from "./ProjectDescriptions"
 
@@ -66,8 +67,9 @@ const portfolios = [
         category: ['2022'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
-        descriptions: [descriptions.temp],
-        // image: port2,
+        descriptions: [descriptions.gnn1, descriptions.gnn2],
+        images: [GNN1],
+        imagecap: ["1: The main menu"],
         title: 'Graph Neural Network Research Project'
     },
     // {

@@ -75,6 +75,23 @@ const descriptions =
             "box that shows the user how correct their guess was. This is calculated based on the randomized frequency " +
             "ranges of the box set before each trial.",
 
+        gnn1:"For the final project in my ML course at RIT, we were tasked with researching a deep learning " +
+            "architecture that we didn't cover in class, proposing an experiment, and then putting together a " +
+            "final paper and presentation to describe our findings. After doing some searching online, I found an architecture " +
+            "known as graph neural networks and decided to experiment with the GraphSAGE architecture specifically.",
+        gnn2: "This turned out to be a great topic because I was in the process of finishing up one of my favorite math classes, " +
+            "graph theory, so graphs concepts were fresh in my mind. It was also cool to study GNNs " +
+            "given that they aren't discussed as much as other modalities of deep learning.",
+        gnn3:"GraphSAGE operates by randomly sampling a nodes neighbors, and then combining those neighbor embeddings " +
+            "with an aggregation function to represent the context of the original node. One way you can think of this " +
+            "is as a generalization of convolution for graph data, which is the basic principle behind GNN architectures. " +
+            "Implementations",
+        gnn4:"For the experiment, I proposed that if we methodically select which type of aggregation function " +
+            "is used for a given layer, then we would will get better results than by simply using a single type of " +
+            "aggregation for all layers. For the code used to test this theory out, I used the Cora dataset (the mnist for GNNs) " +
+            "along with a PyTorch implementation of GraphSAGE. I implemented max and mean aggregation functions on top " +
+            "of the already implemented repository.",
+
         portfolio1: "This Website! During quarantine I wanted to give React a try, so I started with a tutorial I found online and " +
             "made some changes to it. I recently did a re-design as well. I haven't done a ton of web dev since it was " +
             "never a part of my coursework, but I've always found designing and styling websites to be pretty enjoyable.",
