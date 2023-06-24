@@ -93,6 +93,22 @@ const descriptions =
                 "dataset and model would need to be done to make any conclusions. This turned out to be a great topic because I was in the process of finishing up one of my favorite math classes, " +
                 "graph theory, so graphs concepts were fresh in my mind. It was also cool to study GNNs " +
                 "given that they aren't discussed as much as other modalities of deep learning.",
+        eq1: "As an avid user of music production software, I always wondered how these tools were created " +
+            "and how digital audio processing worked. I also wanted to brush up on my C++ skills. Therefore, " +
+            "to kill two birds with one stone I decided to dive in and make an EQ (a commonly used audio effect) myself.",
+        eq2: "At first, I looked into writing VST3s (the format of an audio plugin) myself. However, it became " +
+            "apparent that this wasn't a simple feat for someone starting out. I ended up using an excellent C++ " +
+            "framework called JUCE that had libraries for both audio processing and UI elements.",
+        eq3: "My final EQ consisted of 2 notch filters for middle frequencies, a low pass filter to cut high frequencies, " +
+            "and a high pass filter to cut low frequencies. The inner workings of the program involved routing input " +
+            "audio through the four filters, and connecting the knobs on the UI I created to the filter parameters. " +
+            "I also ended up editing the code/math for one of the built in JUCE library filters in order to allow the user " +
+            "to select different filter slope values.",
+        eq4: "Although not the worlds flashiest audio plugin, I am very happen I got everything working inside " +
+            "my own music production software. Now that I have more experience behind my belt, I can tackle more " +
+            "interesting ideas that I have.",
+
+
 
         portfolio1: "This Website! During quarantine I wanted to give React a try, so I started with a tutorial I found online and " +
             "made some changes to it. I recently did a re-design as well. I haven't done a ton of web dev since it was " +
