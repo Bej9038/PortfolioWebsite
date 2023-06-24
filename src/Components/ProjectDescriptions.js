@@ -108,6 +108,19 @@ const descriptions =
             "my own music production software. Now that I have more experience behind my belt, I can tackle more " +
             "interesting ideas that I have.",
 
+        omni1: "While working on the cochlear implant testing software during my internship " +
+            "with Professor Kim, in my off time from working on that program, I was also given " +
+            "the task of fleshing out another VR/AR idea that the professor had.",
+        omni2: "This program was designed to take in a dry audio sample, and play the audio back is if it was " +
+            "in one of two rooms from any perspective in the room. The final result ended up working surprisingly well." +
+            "The way it was done was by recording room impulses, which are essentially loud reverb tails, inside a room " +
+            "using an ambisonic microphone. Then I created a program that took those files as input, and combined " +
+            "them in such a way (the equation for this was given to me by the professor) such that they create a new 4 channel" +
+            "spatial audio format.",
+        omni3: "These ambisonic B format audio files were then converted to stereo by a library called Omnitone. " +
+            "In the final program, users can rotate their position in the room using the VR viewer. Users " +
+            "can also select different sound source and listener positions, and mic setups using the controls " +
+            "on the bottom.",
 
 
         portfolio1: "This Website! During quarantine I wanted to give React a try, so I started with a tutorial I found online and " +
