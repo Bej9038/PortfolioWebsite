@@ -21,7 +21,7 @@ import {faSoundcloud} from "@fortawesome/free-brands-svg-icons";
 import {faChrome} from "@fortawesome/free-brands-svg-icons";
 const portfolios = [
     {
-        id: 8,
+        id: 1,
         category: ['2023'],
         // link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
@@ -31,7 +31,7 @@ const portfolios = [
         imagecap: ["1. The structure of Google's MusicLM", "2. Some neat autoencoder audio compression"]
     },
     {
-        id: 6,
+        id: 2,
         category: ['2023'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
@@ -41,7 +41,7 @@ const portfolios = [
         title: 'DSLabs - Sharded Key-Value Store'
     },
     {
-        id: 9,
+        id: 3,
         category: ['2022'],
         link1: '',
         icon1: faGithub,
@@ -51,7 +51,7 @@ const portfolios = [
         title: 'Spatial Attributes Evaluation'
     },
     {
-        id: 1,
+        id: 4,
         category: ['2020'],
         link1: 'http://auditoryneuro.com/Implant%20Testing%20Program/Signin/Signin.html',
         link2: 'https://github.com/Bej9038/ImplantTestingProgram',
@@ -64,7 +64,7 @@ const portfolios = [
         title: 'Implant Testing Program'
     },
     {
-        id: 7,
+        id: 5,
         category: ['2022'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
@@ -75,16 +75,8 @@ const portfolios = [
         "2: A GraphSAGE layer visualized"],
         title: 'Graph Neural Network Research Project'
     },
-    // {
-    //     id: 9,
-    //     category: 'Software',
-    //     link1: 'https://github.com/Bej9038/OmnitoneV2',
-    //     icon1: faGithub,
-    //     // image: port2,
-    //     title: 'Encrypted Messenger'
-    // },
     {
-        id: 4,
+        id: 6,
         category: ['2021'],
         link1: 'https://github.com/Bej9038/PortfolioWebsite',
         icon1: faGithub,
@@ -92,7 +84,7 @@ const portfolios = [
         title: 'Portfolio Website'
     },
     {
-        id: 5,
+        id: 7,
         category: ['2021'],
         link1: 'https://github.com/Bej9038/EQ',
         icon1: faGithub,
@@ -101,7 +93,7 @@ const portfolios = [
         title: 'EQ Audio Plugin'
     },
     {
-        id: 2,
+        id: 8,
         category: ['2020'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
@@ -109,17 +101,14 @@ const portfolios = [
         // image: port2,
         title: 'Omnitone'
     },
-    // {
-    //     id: 3,
-    //     category: ['Other'],
-    //     link1: 'https://www.youtube.com/channel/UCqztrHyJRJKGxSo5_cpzWaA',
-    //     link2: 'https://soundcloud.com/odysymusic',
-    //     icon1: faYoutube,
-    //     icon2: faSoundcloud,
-    //     descriptions: [descriptions.temp],
-    //     // image: port3,
-    //     title: 'Electronic Music Project'
-    // },
+    {
+        id: 9,
+        category: ['2022'],
+        link1: 'https://github.com/Bej9038/OmnitoneV2',
+        icon1: faGithub,
+        // image: port2,
+        title: 'Encrypted Messenger'
+    },
 ]
 
 export default portfolios;
