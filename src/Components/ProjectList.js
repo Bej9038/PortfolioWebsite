@@ -11,6 +11,7 @@ import ITP2 from "../Images/ITP2.PNG";
 import ITP3 from "../Images/ITP3.PNG";
 import ITP4 from "../Images/ITP4.PNG";
 import GNN1 from "../Images/GNN1.PNG";
+import GNN2 from "../Images/GNN2.png";
 
 import descriptions from "./ProjectDescriptions"
 
@@ -67,9 +68,11 @@ const portfolios = [
         category: ['2022'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
-        descriptions: [descriptions.gnn1, descriptions.gnn2],
-        images: [GNN1],
-        imagecap: ["1: The main menu"],
+        descriptions: [descriptions.gnn1, descriptions.gnn2, descriptions.gnn3, descriptions.gnn4],
+        images: [GNN1, GNN2],
+        imagecap: ["1: Visualization of CORA. The dataset consists of 2708 scientific publications classified " +
+        "into one of seven classes. The citation network consists of 5429 links between papers.",
+        "2: A GraphSAGE layer visualized"],
         title: 'Graph Neural Network Research Project'
     },
     // {
