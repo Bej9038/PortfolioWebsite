@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useState} from 'react'
+import ReactAudioPlayer from 'react-audio-player';
 
 
 function MenuItem({menuItem, id, setId}) {
@@ -84,6 +85,21 @@ function MenuItem({menuItem, id, setId}) {
                                             }
                                         }
                                     )()}
+                                    {(() => {
+                                        if (item.audio) {
+                                            return <div className="audio-container">
+                                                <ReactAudioPlayer
+                                                    src={item.audio[0]}
+                                                    controls
+                                                />
+                                                <ReactAudioPlayer
+                                                    src={item.audio[1]}
+                                                    controls
+                                                />
+                                            </div>
+                                        }
+                                    })()}
+
                                     <p className="description">
                                         {item.descriptions? item.descriptions[2] ? item.descriptions[2]:"":""}
                                     </p>

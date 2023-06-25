@@ -13,6 +13,9 @@ import ITP4 from "../Images/ITP4.PNG";
 import GNN1 from "../Images/GNN1.PNG";
 import GNN2 from "../Images/GNN2.png";
 
+import dry from "../Images/clarinet-dry.mp3"
+import wet from "../Images/clarinet-wet.mp3"
+
 import descriptions from "./ProjectDescriptions"
 
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
@@ -98,6 +101,7 @@ const portfolios = [
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
         descriptions: [descriptions.temp],
+        audio: [wet, dry],
         // image: port2,
         title: 'Omnitone'
     },
