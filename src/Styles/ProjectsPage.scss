@@ -77,7 +77,8 @@
 
   .expanded
   {
-    height: auto !important;
+
+    transition: all 3s ease-in-out;
   }
 
   .text-cover-plain
@@ -103,6 +104,10 @@
       overflow: hidden;
       .project-content
       {
+        transition: all .7s ease-in-out;
+        max-height: 24vh;
+        position: relative;
+        padding-bottom: 6rem;
         .expand-btn
         {
           position: absolute;
@@ -123,7 +128,6 @@
           flex-wrap: wrap;
           cursor: pointer;
           box-shadow: var(--card-shadow);
-          transition: all .3s ease-in-out;
           &::after
           {
             position: absolute;
@@ -164,11 +168,8 @@
           background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--sidebar));
         }
         //background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
-        transition: all .3s ease-in-out;
         //height: 100vh;
-        height: 24vh;
-        position: relative;
-        padding-bottom: 6rem;
+
         //&::before
         //{
         //  content: "";
@@ -200,14 +201,8 @@
           {
             height: 200px;
             width: 300px;
-            //top: -.5rem;
-            //min-width: 100%;
             min-height: 100%;
-            //position: absolute;
-            //padding: 2rem;
             background-color: var(--sidebar);
-            //object-fit: cover;
-            //margin-bottom: -7px;
           }
           .img-caption
           {
@@ -220,16 +215,8 @@
           }
           p
           {
-            //padding-bottom: 3rem;
             width: 80%;
-            //position: fixed;
-            //white-space: nowrap;
-            //overflow: hidden;
-            //text-overflow: ellipsis;
-            //height: 8vh;
             transition: all .3s ease-in-out;
-            //position: absolute;
-            //left: 28vh;
             line-height: 150%;
           }
         }
@@ -277,12 +264,9 @@
       h5
       {
         padding: 2rem;
-        //font-size: inherit;
-        //height: 8vh;
         height: auto;
         font-weight: 400;
         font-size: 2rem;
-        transition: all .3s ease-in-out;
         background-color: var(--sidebar);
         &:hover
         {
@@ -292,7 +276,6 @@
 
       .text-cover {
         background: linear-gradient(to bottom, transparent, #000000);
-        transition: all 0.3s ease;
       }
     }
   }

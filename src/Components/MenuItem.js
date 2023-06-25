@@ -7,38 +7,17 @@ import ReactAudioPlayer from 'react-audio-player';
 function MenuItem({menuItem, id, setId}) {
     const [expanded, setExpanded] = useState(false);
     const [previousWindowPos, setPrev] = useState(0);
-
-    function customScroll()
-    {
-        // let interval = setInterval(function ()
-        // {
-        //     if(window.scrollY > 0)
-        //     {window.scroll({top: window.scrollY-1, behavior: 'instant'})}
-        //     else
-        //     {
-        //         clearInterval(interval)
-        //     }
-        //
-        // }, 1);
-        while(window.scrollY > 0)
-        {
-            window.scroll({top: window.scrollY-1, behavior: 'instant'})
-            // setTimeout(() => {
-            //     window.scroll({top: window.scrollY-1, behavior: 'instant'})
-            // }, 1);
-
-        }
-    }
     return (
         <div className={`MenuItem`}>
             {
                 menuItem.map((item) =>
                 {
-                        return <div className={`portfolio ${expanded && item.id !== id ? 'fadeout' : 'fadein'}`} key={item.id}>
-                            <h5>
+                        // return <div className={`portfolio ${expanded && item.id !== id ? 'fadeout' : 'fadein'}`} key={item.id}>
+                    return <div className={`portfolio`} key={item.id}>
+                    <h5>
                                 {item.title}
                             </h5>
-                            <div className={`project-content ${expanded && (id === -1 || item.id === id) ? 'expanded' : ''}`}>
+                            <div style={{maxHeight: `${expanded && (id === -1 || item.id === id) ? "200vh" : "24vh"}`}} className={`project-content`}>
                                 <div className={`${expanded && (id === -1 || item.id === id)? 'text-cover-plain' : 'text-cover'}`}></div>
                                 <button className="expand-btn" onClick={() => {
                                     if(!expanded)
@@ -145,11 +124,6 @@ function MenuItem({menuItem, id, setId}) {
                                 {/*</div>*/}
                             </div>
                         </div>
-                    // }
-                    // else
-                    // {
-                    //     return <div></div>
-                    // }
                 })
             }
         </div>

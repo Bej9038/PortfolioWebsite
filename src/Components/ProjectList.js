@@ -12,9 +12,13 @@ import ITP3 from "../Images/ITP3.PNG";
 import ITP4 from "../Images/ITP4.PNG";
 import GNN1 from "../Images/GNN1.PNG";
 import GNN2 from "../Images/GNN2.png";
+import EQ1 from "../Images/EQ1.PNG"
+import EQ2 from "../Images/EQ2.PNG"
 
 import dry from "../Images/clarinet-dry.mp3"
 import wet from "../Images/clarinet-wet.mp3"
+import eqdry from "../Images/eq-dry.mp3"
+import eqwet from "../Images/eq-wet.mp3"
 
 import descriptions from "./ProjectDescriptions"
 
@@ -67,6 +71,27 @@ const portfolios = [
         title: 'Implant Testing Program'
     },
     {
+        id: 7,
+        category: ['2021'],
+        link1: 'https://github.com/Bej9038/EQ',
+        icon1: faGithub,
+        descriptions: [descriptions.temp],
+        audio: [eqdry, eqwet],
+        images: [EQ2],
+        imagecap: ["1: The EQ in action in my music production software"],
+        title: 'EQ Audio Plugin'
+    },
+    {
+        id: 8,
+        category: ['2020'],
+        link1: 'https://github.com/Bej9038/OmnitoneV2',
+        icon1: faGithub,
+        descriptions: [descriptions.temp],
+        audio: [dry, wet],
+        // image: port2,
+        title: 'Omnitone'
+    },
+    {
         id: 5,
         category: ['2022'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
@@ -75,7 +100,7 @@ const portfolios = [
         images: [GNN1, GNN2],
         imagecap: ["1: Visualization of CORA. The dataset consists of 2708 scientific publications classified " +
         "into one of seven classes. The citation network consists of 5429 links between papers.",
-        "2: A GraphSAGE layer visualized"],
+            "2: A GraphSAGE layer visualized"],
         title: 'Graph Neural Network Research Project'
     },
     {
@@ -86,33 +111,14 @@ const portfolios = [
         descriptions: [descriptions.portfolio1],
         title: 'Portfolio Website'
     },
-    {
-        id: 7,
-        category: ['2021'],
-        link1: 'https://github.com/Bej9038/EQ',
-        icon1: faGithub,
-        descriptions: [descriptions.temp],
-        // image: port5,
-        title: 'EQ Audio Plugin'
-    },
-    {
-        id: 8,
-        category: ['2020'],
-        link1: 'https://github.com/Bej9038/OmnitoneV2',
-        icon1: faGithub,
-        descriptions: [descriptions.temp],
-        audio: [wet, dry],
-        // image: port2,
-        title: 'Omnitone'
-    },
-    {
-        id: 9,
-        category: ['2022'],
-        link1: 'https://github.com/Bej9038/OmnitoneV2',
-        icon1: faGithub,
-        // image: port2,
-        title: 'Encrypted Messenger'
-    },
+    // {
+    //     id: 9,
+    //     category: ['2022'],
+    //     link1: 'https://github.com/Bej9038/OmnitoneV2',
+    //     icon1: faGithub,
+    //     // image: port2,
+    //     title: 'Encrypted Messenger'
+    // },
 ]
 
 export default portfolios;
