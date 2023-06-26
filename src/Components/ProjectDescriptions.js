@@ -110,19 +110,19 @@ const descriptions =
             "my own music production software. Now that I have more experience behind my belt, I can hopefully tackle more " +
             "interesting ideas that I have.",
 
-        omni1: "While working on the cochlear implant testing software during my internship " +
-            "with Professor Kim, in my off time from working on that program, I was also given " +
-            "the task of fleshing out another VR/AR idea that the professor had.",
-        omni2: "This program was designed to take in a dry audio sample, and play the audio back is if it was " +
-            "in one of two rooms from any perspective in the room. The final result ended up working surprisingly well." +
-            "The way it was done was by recording room impulses, which are essentially loud reverb tails, inside a room " +
-            "using an ambisonic microphone. Then I created a program that took those files as input, and combined " +
-            "them in such a way (the equation for this was given to me by the professor) such that they create a new 4 channel" +
-            "spatial audio format.",
-        omni3: "These ambisonic B format audio files were then converted to stereo by a library called Omnitone. " +
-            "In the final program, users can rotate their position in the room using the VR viewer. Users " +
-            "can also select different sound source and listener positions, and mic setups using the controls " +
-            "on the bottom.",
+        omni1: "Alongside the implant testing software I created while working with Professor Kim, I was also given " +
+            "the task of fleshing out another VR/AR project idea in my free time. This project was created " +
+            "in an attempt to preserve the aural characteristics of historical buildings.",
+        omni2: "The software is designed to take in a dry audio sample, and play the audio back is if it was " +
+            "inside a room from any position in the room. The final result ended up working surprisingly well! " +
+            "The way something like this is done is by recording room impulses, which are essentially isolated reverb " +
+            "tails, inside a room using an ambisonic 4 channel microphone. Then you convolve the " +
+            "source file with those impulse recordings, and combine the resulting 4 audio files in such a way such that they create " +
+            "B format ambisonic files.",
+        omni3: "These B format files can then be converted to stereo using a library called Omnitone. " +
+            "In the program, users can rotate their position in the room using the VR viewer. Users " +
+            "can also select different sound source and listening locations, and change which microphone is being used " +
+            "with the controls on the bottom.",
 
 
         portfolio1: "This Website! During quarantine I wanted to give React a try, so I started with a tutorial I found online and " +
