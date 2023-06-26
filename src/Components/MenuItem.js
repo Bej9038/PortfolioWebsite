@@ -86,7 +86,6 @@ function MenuItem({menuItem, id, setId}) {
                                             </div>
                                         }
                                     })()}
-
                                     <p className="description">
                                         {item.descriptions? item.descriptions[2] ? item.descriptions[2]:"":""}
                                     </p>
@@ -116,6 +115,17 @@ function MenuItem({menuItem, id, setId}) {
                                             }
                                         }
                                     )()}
+                                    {/*{(() => {*/}
+                                    {/*    if (item.audio && item.audio[2] && item.audiocap[2]) {*/}
+                                    {/*        return <div>*/}
+                                    {/*            <ReactAudioPlayer className="audio-player"*/}
+                                    {/*                              src={item.audio[2]}*/}
+                                    {/*                              controls*/}
+                                    {/*            />*/}
+                                    {/*            <div className="audio-caption">{item.audiocap[2]}</div>*/}
+                                    {/*        </div>*/}
+                                    {/*    }*/}
+                                    {/*})()}*/}
                                 </div>
 
                                 {/*<p className={`description ${id === -1 || item.id === id ? '' : 'collapsed'}`}>*/}

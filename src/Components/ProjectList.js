@@ -12,11 +12,16 @@ import ITP3 from "../Images/ITP3.PNG";
 import ITP4 from "../Images/ITP4.PNG";
 import GNN1 from "../Images/GNN1.PNG";
 import GNN2 from "../Images/GNN2.png";
-import EQ1 from "../Images/EQ1.PNG"
-import EQ2 from "../Images/EQ2.PNG"
+import EQ1 from "../Images/EQ1.PNG";
+import EQ2 from "../Images/EQ2.PNG";
+import OMNI1 from "../Images/OMNI1.PNG";
+import OMNI2 from "../Images/OMNI2.PNG";
+import OMNI3 from "../Images/OMNI3.PNG";
+import OMNI4 from "../Images/OMNI4.PNG";
 
 import dry from "../Images/clarinet-dry.mp3"
 import wet from "../Images/clarinet-wet.mp3"
+import wet2 from "../Images/clarinet-wet2.mp3"
 import eqdry from "../Images/eq-dry.mp3"
 import eqwet from "../Images/eq-wet.mp3"
 
@@ -88,9 +93,12 @@ const portfolios = [
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
         descriptions: [descriptions.omni1, descriptions.omni2, descriptions.omni3],
-        audio: [dry, wet],
-        audiocap:["The original audio file", "The audio file being played inside the simulated room"],
-        // images: [OM],
+        audio: [dry, wet, wet2],
+        audiocap:["The original audio file", "The audio file being played inside the simulated savings bank"],
+        images: [OMNI1, OMNI2, OMNI4],
+        imagecap: ["1: The Omnitone interface using the Rochester savings bank room. " +
+        "Users can use their mouse to explore the VR room and its audio characteristics.",
+            "2: The second selectable room"],
         title: 'Omnitone'
     },
     {
