@@ -34,7 +34,7 @@ const descriptions =
             " phase commit for agreement between server groups during transactions. On its own 2PC is susceptible to failures, " +
             "but when paired with paxos provides agreement without major availability issues.",
 
-        sae1: "After working as an intern for Professor Sungyoung Kim at RIT for a year in 2020, I was rehired as a part-" +
+        sae1: "After working for Professor Sungyoung Kim at RIT in 2020, I was rehired as a part-" +
             "time developer during my last semester of undergrad. During this semester, my task was to write a program " +
             "that would allow Dr. Kim to collect data on how listeners interpret the spatial characteristics of audio. " +
             "This was quite an enjoyable project because I was given a general overview of what to build, but every " +
@@ -54,24 +54,27 @@ const descriptions =
             "This service was injected into the slider components and the view component, so both the sliders and the 3D graphic could " +
             "have realtime access to the values of the attribute sliders.",
 
-        ipt1: "This project was created during my internship in 2020 with Professor Sungyoung Kim. In collaboration with a team from University of Iowa, " +
-            "we were attempting to evaluate the effectiveness of hearing devices called hybrid cochlear implants. " +
+        ipt1: "This project was created during my internship in 2020 with Professor Sungyoung Kim. In collaboration with " +
+            "a team from University of Iowa, " +
+            "we attempted to evaluate the effectiveness of hearing devices called hybrid cochlear implants. " +
             "The team was also interested in people's ability to understand speech depending on background noise level. " +
-            "In short, I was given the task of independently creating a website that would allow the researchers to test participants hearing abilities " +
-            "and collect data. This ended up being a great project because it was the largest project I had ever" +
+            "I was given the task of independently creating a website that would allow the researchers to test participants hearing abilities " +
+            "and collect data. This ended up being a great opportunity because it was the largest project I had ever" +
             " worked on, I got to learn about web development, and the team successfully published research using the data" +
-            " collected from trials done with the software. Its a good feeling when the software you make is used for something important.",
+            " collected with the software. It's a good feeling when the software you make is used for something important.",
         ipt2:"The website contains 5 unique testing modules. The Inharmonicity Training and Speech-In-Noise tests have " +
-            "2 and 3 difficulty levels respectively. All tests heavily use the Javascript Web Audio API to generate " +
+            "2 and 3 different modes respectively. All tests heavily rely on the Javascript Web Audio API to generate " +
             "and process sound at various frequencies and levels. The website is connected to a backend SQL database to " +
             "store data for each user.",
         ipt3:"The main focus of the program was the Inharmonicity Training. In this module, users are presented with a " +
             "box that produces a tone as their mouse hovers over it. The tone changes depending on the location of the" +
             " mouse within the box. This tone consists of a group of low frequency oscillators and a group of " +
-            "high frequency oscillators set at precise frequency ratios. The goal is for the user to move their mouse " +
+            "high frequency oscillators set with precise frequency ratios. The goal is for the user to move their mouse " +
             "inside the box until the tone sounds most \"harmonic\". After selecting a point, a gradient appears on the " +
-            "box that shows the user how correct their guess was. This is calculated based on the randomized frequency " +
-            "ranges of the box set before each trial.",
+            "box that shows the user how correct their guess was. This gradient is calculated based on final mouse " +
+            "position and the randomized frequency ranges of the box's x and y axes set before each trial.",
+        ipt4: "As part of a separate research question, I also added a speech-in-noise test that played a series " +
+            "of words alongside background noise. The user just has to guess which word was spoken.",
 
         gnn1:"For the final project in my ML course at RIT, we were tasked with researching a deep learning " +
             "architecture that we didn't cover in class, proposing an experiment, and then putting together a " +
@@ -91,19 +94,20 @@ const descriptions =
                 "dataset and model would need to be done to make any conclusions. This turned out to be a great topic because I was in the process of finishing up one of my favorite math classes, " +
                 "graph theory, so graphs concepts were fresh in my mind. It was also cool to study GNNs " +
                 "given that they aren't discussed as much as other modalities of deep learning.",
-        eq1: "As an avid user of music production software, I always wondered how these tools were created " +
-            "and how digital audio processing worked. I also wanted to brush up on my C++ skills. Therefore, " +
-            "to kill two birds with one stone I decided to dive in and make an EQ (a commonly used audio effect) myself.",
-        eq2: "At first, I looked into writing VST3s (the format of an audio plugin) myself. However, it became " +
+        eq1: "As an avid user of music production software, I always wondered how the tools I was using were created " +
+            "and how they worked. I also wanted to brush up on my C++ skills. Therefore, " +
+            "to kill two birds with one stone I decided to dive in and make an EQ (a commonly used audio effect).",
+        eq2: "At first, I looked into writing VST3s (the standard format of an audio plugin) from scratch. However, it became " +
             "apparent that this wasn't a simple feat for someone starting out. I ended up using an excellent C++ " +
-            "framework called JUCE that had libraries for both audio processing and UI elements.",
+            "framework called JUCE that has libraries for both audio processing and UI elements.",
         eq3: "My final EQ consisted of 2 notch filters for middle frequencies, a low pass filter to cut high frequencies, " +
-            "and a high pass filter to cut low frequencies. The inner workings of the program involved routing input " +
-            "audio through the four filters, and connecting the knobs on the UI I created to the filter parameters. " +
-            "I also ended up editing the code/math for one of the built in JUCE library filters in order to allow the user " +
+            "and a high pass filter to cut low frequencies. Writing the program involved routing audio input " +
+            "through the four filters, and connecting the knobs on the UI I created to the filter parameters. " +
+            "I also created a real-time frequency analyzer that sits behind a visualization of the EQ curve (the orange line). " +
+            "Lastly, I edited the code/math for one of the built in JUCE filters to allow the user " +
             "to select different filter slope values.",
         eq4: "Although not the worlds flashiest audio plugin, I am very happen I got everything working inside " +
-            "my own music production software. Now that I have more experience behind my belt, I can tackle more " +
+            "my own music production software. Now that I have more experience behind my belt, I should be able to tackle more " +
             "interesting ideas that I have.",
 
         omni1: "While working on the cochlear implant testing software during my internship " +

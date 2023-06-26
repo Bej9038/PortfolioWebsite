@@ -17,9 +17,9 @@ function MenuItem({menuItem, id, setId}) {
                     <h5>
                                 {item.title}
                             </h5>
-                            <div style={{maxHeight: `${expanded && (id === -1 || item.id === id) ? "200vh" : "24vh"}`}} className={`project-content`}>
-                                {/*<div className={`${expanded && (id === -1 || item.id === id)? 'text-cover-plain' : 'text-cover'}`}></div>*/}
-                                <div className={'text-cover'}></div>
+                            <div style={{maxHeight: `${expanded && (id === -1 || item.id === id) ? "400vh" : "24vh"}`}} className={`project-content`}>
+                                <div className={`${expanded && (id === -1 || item.id === id)? 'text-cover-plain' : 'text-cover'}`}></div>
+                                {/*<div className={'text-cover'}></div>*/}
 
                                 <button className="expand-btn" onClick={() => {
                                     if(!expanded)
@@ -67,16 +67,22 @@ function MenuItem({menuItem, id, setId}) {
                                         }
                                     )()}
                                     {(() => {
-                                        if (item.audio) {
+                                        if (item.audio && item.audiocap) {
                                             return <div className="audio-container">
-                                                <ReactAudioPlayer
+                                                <div>
+                                                    <ReactAudioPlayer className="audio-player"
                                                     src={item.audio[0]}
                                                     controls
-                                                />
-                                                <ReactAudioPlayer
-                                                    src={item.audio[1]}
-                                                    controls
-                                                />
+                                                    />
+                                                    <div className="audio-caption">{item.audiocap[0]}</div>
+                                                </div>
+                                                <div>
+                                                    <ReactAudioPlayer className="audio-player"
+                                                        src={item.audio[1]}
+                                                        controls
+                                                    />
+                                                    <div className="audio-caption">{item.audiocap[1]}</div>
+                                                </div>
                                             </div>
                                         }
                                     })()}

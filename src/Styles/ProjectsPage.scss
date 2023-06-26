@@ -100,7 +100,6 @@
     {
       box-shadow: var(--card-shadow);
       background-color: var(--sidebar);
-      //transition: all 1s ease-in-out;
       overflow: hidden;
       .project-content
       {
@@ -212,6 +211,24 @@
             margin: auto;
             align-content: center;
             padding-top: .5rem;
+          }
+          .audio-container
+          {
+            display: flex;
+            .audio-player
+            {
+              padding-left: 1rem;
+              padding-right: 1rem;
+            }
+            .audio-caption
+            {
+              font-size: .8rem;
+              width: 250px;
+              text-align: center;
+              margin: auto;
+              align-content: center;
+              padding-top: .5rem;
+            }
           }
           p
           {

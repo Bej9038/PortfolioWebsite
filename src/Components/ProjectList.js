@@ -48,6 +48,19 @@ const portfolios = [
         title: 'DSLabs - Sharded Key-Value Store'
     },
     {
+        id: 4,
+        category: ['2020'],
+        link1: 'http://auditoryneuro.com/Implant%20Testing%20Program/Signin/Signin.html',
+        link2: 'https://github.com/Bej9038/ImplantTestingProgram',
+        icon1: faChrome,
+        icon2: faGithub,
+        descriptions: [descriptions.ipt1, descriptions.ipt2, descriptions.ipt3, descriptions.ipt4],
+        images: [ITP1, ITP3, ITP4, ITP2],
+        imagecap: ["1: The main menu", "2: Inharmonicty training",
+            "3: Setting the frequency ranges on the canvas's axes and creating the oscillators", "4: Speech to noise ratio selection"],
+        title: 'Implant Testing Program'
+    },
+    {
         id: 3,
         category: ['2022'],
         link1: '',
@@ -58,25 +71,13 @@ const portfolios = [
         title: 'Spatial Attributes Evaluation'
     },
     {
-        id: 4,
-        category: ['2020'],
-        link1: 'http://auditoryneuro.com/Implant%20Testing%20Program/Signin/Signin.html',
-        link2: 'https://github.com/Bej9038/ImplantTestingProgram',
-        icon1: faChrome,
-        icon2: faGithub,
-        descriptions: [descriptions.ipt1, descriptions.ipt2, descriptions.ipt3],
-        images: [ITP1, ITP3, ITP4, ITP2],
-        imagecap: ["1: The main menu", "2: Inharmonicty training",
-            "3: Setting the frequency ranges on the canvas's axes and creating the oscillators", "4: Speech to noise ratio selection"],
-        title: 'Implant Testing Program'
-    },
-    {
         id: 7,
         category: ['2021'],
         link1: 'https://github.com/Bej9038/EQ',
         icon1: faGithub,
-        descriptions: [descriptions.temp],
+        descriptions: [descriptions.eq1, descriptions.eq2, descriptions.eq3, descriptions.eq4],
         audio: [eqdry, eqwet],
+        audiocap:["How it sounds with the EQ bypassed", "How it sounds after applying the EQ curve shown in the image above"],
         images: [EQ2],
         imagecap: ["1: The EQ in action in my music production software"],
         title: 'EQ Audio Plugin'
