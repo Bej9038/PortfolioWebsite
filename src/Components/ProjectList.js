@@ -77,7 +77,7 @@ const portfolios = [
         icon1: faGithub,
         descriptions: [descriptions.eq1, descriptions.eq2, descriptions.eq3, descriptions.eq4],
         audio: [eqdry, eqwet],
-        audiocap:["How it sounds with the EQ bypassed", "How it sounds after applying the EQ curve shown in the image above"],
+        audiocap:["A drum loop with the EQ bypassed", "The same drum loop after applying the EQ curve shown in the image above"],
         images: [EQ2],
         imagecap: ["1: The EQ in action in my music production software"],
         title: 'EQ Audio Plugin'
