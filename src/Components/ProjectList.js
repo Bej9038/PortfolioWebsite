@@ -87,9 +87,10 @@ const portfolios = [
         category: ['2020'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
-        descriptions: [descriptions.temp],
+        descriptions: [descriptions.omni1, descriptions.omni2, descriptions.omni3],
         audio: [dry, wet],
-        // image: port2,
+        audiocap:["The original audio file", "The audio file being played inside the simulated room"],
+        // images: [OM],
         title: 'Omnitone'
     },
     {
