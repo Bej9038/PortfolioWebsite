@@ -166,27 +166,6 @@
           height: 24vh; /* Adjust this value based on the number of lines you want to fade out */
           background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--sidebar));
         }
-        //background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
-        //height: 100vh;
-
-        //&::before
-        //{
-        //  content: "";
-        //  position: absolute;
-        //  top: 12px;
-        //  left: 15px;
-        //  height: calc(100% - 30px);
-        //  width: calc(100% - 30px);
-        //  background-color: var(--main-color-hover);
-        //  transform-origin: center;
-        //  transform: scale(0);
-        //  transition: all .3s ease-in-out;
-        //  opacity: .9;
-        //}
-        //&:hover::before
-        //{
-        //  transform: scale(1);
-        //}
         .flex-container
         {
           display: grid;
@@ -238,48 +217,11 @@
           }
         }
 
-        //.hover-items
-        //{
-        //  list-style: none;
-        //  position: absolute;
-        //  top: 70%;
-        //  left: 50%;
-        //  transform: translate(-50%, -50%);
-        //  padding: 1rem 2rem;
-        //  visibility: hidden;
-        //  display: flex;
-        //  a
-        //  {
-        //      padding: 1rem;
-        //      font-family: inherit;
-        //      font-size: 2.8rem;
-        //      color: var(--bg);
-        //      background-color: var(--font-color2);
-        //      transition: all .3s ease-in-out;
-        //    border-radius: 4px;
-        //      &:not(:last-child)
-        //      {
-        //        margin-right: 2rem;
-        //      }
-        //      &:hover
-        //      {
-        //       color: var(--main-color)
-        //      }
-        //  }
-        //}
-        //&:hover
-        //{
-        //  .hover-items
-        //  {
-        //    visibility: visible;
-        //    top: 50%;
-        //    transition: all .3s ease-in-out .3s;
-        //  }
-        //}
-
       }
       h5
       {
+        display: flex;
+        flex-direction: row;
         padding: 2rem;
         height: auto;
         font-weight: 400;
@@ -288,6 +230,28 @@
         &:hover
         {
           color: var(--main-color);
+        }
+        //.title{
+        //  &:hover
+        //  {
+        //    color: var(--main-color);
+        //  }
+        //}
+
+        .icon
+        {
+          position: relative;
+          margin-right: 16px;
+          color: var(--font-color2);
+          font-family: inherit;
+          //font-size: 2.8rem;
+          transition: all .3s ease-in-out;
+          //height: 2px !important;
+          //width: 2px !important;
+          &:hover
+          {
+            color: var(--main-color)
+          }
         }
       }
 

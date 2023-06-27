@@ -12,30 +12,34 @@ function MenuItem({menuItem, id, setId}) {
                 menuItem.map((item) =>
                 {
                     return <div className={`portfolio`} key={item.id}>
-                    <h5>
+                        <h5>
+                            {!item.link ? "" : <a target = "_blank" href={item.link}>
+                                <FontAwesomeIcon icon={item.icon} className='icon'/>
+                            </a>}
+                            <div className="title">
                                 {item.title}
-                            </h5>
-                            <div style={{maxHeight: `${expanded && (id === -1 || item.id === id) ? "400vh" : "24vh"}`}} className={`project-content`}>
-                                <div className={`${expanded && (id === -1 || item.id === id)? 'text-cover-plain' : 'text-cover'}`}></div>
-                                {/*<div className={'text-cover'}></div>*/}
+                            </div>
+                        </h5>
 
-                                <button className="expand-btn" onClick={() => {
-                                    if(!expanded)
-                                    {
-                                        setId(item.id);
-                                        setExpanded(true);
-                                    }
-                                    else
-                                    {
-                                        setId(-1);
-                                        setExpanded(false);
-                                    }
-                                }}>Expand</button>
-                                <div className="flex-container">
-                                    <p className="description">
-                                        {item.descriptions? item.descriptions[0] ? item.descriptions[0]:"":""}
-                                    </p>
-                                    {(() => {
+                        <div style={{maxHeight: `${expanded && (id === -1 || item.id === id) ? "400vh" : "24vh"}`}} className={`project-content`}>
+                            <div className={`${expanded && (id === -1 || item.id === id)? 'text-cover-plain' : 'text-cover'}`}></div>
+                            <button className="expand-btn" onClick={() => {
+                                if(!expanded)
+                                {
+                                    setId(item.id);
+                                    setExpanded(true);
+                                }
+                                else
+                                {
+                                    setId(-1);
+                                    setExpanded(false);
+                                }
+                            }}>Expand</button>
+                            <div className="flex-container">
+                                <p className="description">
+                                    {item.descriptions? item.descriptions[0] ? item.descriptions[0]:"":""}
+                                </p>
+                                {(() => {
                                         if (item.images && item.images[0]) {
                                             return <div>
                                                 <img className="img"
@@ -46,76 +50,76 @@ function MenuItem({menuItem, id, setId}) {
                                             </div>
                                         }
                                     }
-                                    )()}
-                                    <p className="description">
-                                        {item.descriptions? item.descriptions[1] ? item.descriptions[1]:"":""}
-                                    </p>
-                                    {(() => {
-                                            if (item.images && item.images[1]) {
-                                                return <div>
-                                                    <img className="img"
-                                                         src={item.images[1]}
-                                                         alt=""/>
-                                                    <div className="img-caption">{item.imagecap[1]}</div>
-                                                </div>
-                                            }
-                                        }
-                                    )()}
-                                    {(() => {
-                                        if (item.audio && item.audiocap) {
-                                            return <div className="audio-container">
-                                                <div>
-                                                    <ReactAudioPlayer className="audio-player"
-                                                    src={item.audio[0]}
-                                                    controls
-                                                    />
-                                                    <div className="audio-caption">{item.audiocap[0]}</div>
-                                                </div>
-                                                <div>
-                                                    <ReactAudioPlayer className="audio-player"
-                                                        src={item.audio[1]}
-                                                        controls
-                                                    />
-                                                    <div className="audio-caption">{item.audiocap[1]}</div>
-                                                </div>
+                                )()}
+                                <p className="description">
+                                    {item.descriptions? item.descriptions[1] ? item.descriptions[1]:"":""}
+                                </p>
+                                {(() => {
+                                        if (item.images && item.images[1]) {
+                                            return <div>
+                                                <img className="img"
+                                                     src={item.images[1]}
+                                                     alt=""/>
+                                                <div className="img-caption">{item.imagecap[1]}</div>
                                             </div>
                                         }
-                                    })()}
-                                    <p className="description">
-                                        {item.descriptions? item.descriptions[2] ? item.descriptions[2]:"":""}
-                                    </p>
+                                    }
+                                )()}
+                                {(() => {
+                                    if (item.audio && item.audiocap) {
+                                        return <div className="audio-container">
+                                            <div>
+                                                <ReactAudioPlayer className="audio-player"
+                                                                  src={item.audio[0]}
+                                                                  controls
+                                                />
+                                                <div className="audio-caption">{item.audiocap[0]}</div>
+                                            </div>
+                                            <div>
+                                                <ReactAudioPlayer className="audio-player"
+                                                                  src={item.audio[1]}
+                                                                  controls
+                                                />
+                                                <div className="audio-caption">{item.audiocap[1]}</div>
+                                            </div>
+                                        </div>
+                                    }
+                                })()}
+                                <p className="description">
+                                    {item.descriptions? item.descriptions[2] ? item.descriptions[2]:"":""}
+                                </p>
 
-                                    {(() => {
-                                            if (item.images && item.images[2]) {
-                                                return <div>
-                                                    <img className="img"
-                                                         src={item.images[2]}
-                                                         alt=""/>
-                                                    <div className="img-caption">{item.imagecap[2]}</div>
-                                                </div>
-                                            }
+                                {(() => {
+                                        if (item.images && item.images[2]) {
+                                            return <div>
+                                                <img className="img"
+                                                     src={item.images[2]}
+                                                     alt=""/>
+                                                <div className="img-caption">{item.imagecap[2]}</div>
+                                            </div>
                                         }
-                                    )()}
-                                    <p className="description">
-                                        {item.descriptions? item.descriptions[3] ? item.descriptions[3]:"":""}
-                                    </p>
-                                    {(() => {
-                                            if (item.images && item.images[3]) {
-                                                return <div>
-                                                    <img className="img"
-                                                         src={item.images[3]}
-                                                         alt=""/>
-                                                    <div className="img-caption">{item.imagecap[3]}</div>
-                                                </div>
-                                            }
+                                    }
+                                )()}
+                                <p className="description">
+                                    {item.descriptions? item.descriptions[3] ? item.descriptions[3]:"":""}
+                                </p>
+                                {(() => {
+                                        if (item.images && item.images[3]) {
+                                            return <div>
+                                                <img className="img"
+                                                     src={item.images[3]}
+                                                     alt=""/>
+                                                <div className="img-caption">{item.imagecap[3]}</div>
+                                            </div>
                                         }
-                                    )()}
-                                    <p className="description">
-                                        {item.descriptions? item.descriptions[4] ? item.descriptions[4]:"":""}
-                                    </p>
-                                </div>
+                                    }
+                                )()}
+                                <p className="description">
+                                    {item.descriptions? item.descriptions[4] ? item.descriptions[4]:"":""}
+                                </p>
                             </div>
                         </div>
+                    </div>
                 })
             }
         </div>
