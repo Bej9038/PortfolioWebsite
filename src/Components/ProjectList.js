@@ -32,6 +32,12 @@ import {faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {faSoundcloud} from "@fortawesome/free-brands-svg-icons";
 import {faChrome} from "@fortawesome/free-brands-svg-icons";
 const portfolios = [
+    // {
+    //     id: 10,
+    //     category: ['2023'],
+    //     descriptions: [descriptions.temp],
+    //     title: 'ResNet Feature Visualization'
+    // },
     {
         id: 1,
         category: ['2023'],
@@ -51,6 +57,18 @@ const portfolios = [
         images: [dslabs1, dslabs2],
         imagecap: ["1: The Part-Time Parliament", "2: The greatest moment of my life"],
         title: 'DSLabs - Sharded Key-Value Store'
+    },
+    {
+        id: 7,
+        category: ['2021'],
+        link1: 'https://github.com/Bej9038/EQ',
+        icon1: faGithub,
+        descriptions: [descriptions.eq1, descriptions.eq2, descriptions.eq3, descriptions.eq4],
+        audio: [eqdry, eqwet],
+        audiocap:["A drum loop with the EQ bypassed", "The same drum loop after applying the EQ curve shown in the image above"],
+        images: [EQ2],
+        imagecap: ["1: The EQ in action in my music production software"],
+        title: 'EQ Audio Plugin'
     },
     {
         id: 4,
@@ -74,18 +92,6 @@ const portfolios = [
         images: [SAE4, SAE1, SAE2],
         imagecap: ["1: Part of the initial project specifications", "2: Welcome menu","3: Playing around with the controls"],
         title: 'Spatial Attributes Evaluation'
-    },
-    {
-        id: 7,
-        category: ['2021'],
-        link1: 'https://github.com/Bej9038/EQ',
-        icon1: faGithub,
-        descriptions: [descriptions.eq1, descriptions.eq2, descriptions.eq3, descriptions.eq4],
-        audio: [eqdry, eqwet],
-        audiocap:["A drum loop with the EQ bypassed", "The same drum loop after applying the EQ curve shown in the image above"],
-        images: [EQ2],
-        imagecap: ["1: The EQ in action in my music production software"],
-        title: 'EQ Audio Plugin'
     },
     {
         id: 8,

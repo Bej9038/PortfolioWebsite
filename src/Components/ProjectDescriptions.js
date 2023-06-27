@@ -135,8 +135,12 @@ const descriptions =
 
         portfolio1: "This Website! During quarantine I wanted to give React a try, so I started with a tutorial I found online and " +
             "made some changes to it. I recently did a re-design as well. I haven't done a ton of web dev since it was " +
-            "never a part of my coursework, but I've always found designing and styling websites to be pretty enjoyable.",
+            "never a part of my coursework, but I've always found designing and styling websites to be relaxing " +
+            "(other than when trying to figure out how to center a div).",
         portfolio2: "If you're interested, you can check out the code on my GitHub.",
+
+        conv1: "didnt work for transformers, really cool how results are different depending on initialization, regulation",
+        conv2: "",
 
         temp: "Content coming soon..."
 

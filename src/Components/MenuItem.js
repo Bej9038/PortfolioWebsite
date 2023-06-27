@@ -6,13 +6,11 @@ import ReactAudioPlayer from 'react-audio-player';
 
 function MenuItem({menuItem, id, setId}) {
     const [expanded, setExpanded] = useState(false);
-    const [previousWindowPos, setPrev] = useState(0);
     return (
         <div className={`MenuItem`}>
             {
                 menuItem.map((item) =>
                 {
-                        // return <div className={`portfolio ${expanded && item.id !== id ? 'fadeout' : 'fadein'}`} key={item.id}>
                     return <div className={`portfolio`} key={item.id}>
                     <h5>
                                 {item.title}
@@ -24,8 +22,6 @@ function MenuItem({menuItem, id, setId}) {
                                 <button className="expand-btn" onClick={() => {
                                     if(!expanded)
                                     {
-                                        // setPrev(window.scrollY)
-                                        // window.scroll({top: 0, behavior: 'instant'})
                                         setId(item.id);
                                         setExpanded(true);
                                     }
@@ -33,7 +29,6 @@ function MenuItem({menuItem, id, setId}) {
                                     {
                                         setId(-1);
                                         setExpanded(false);
-                                        // window.scroll({top: previousWindowPos, behavior: 'instant'})
                                     }
                                 }}>Expand</button>
                                 <div className="flex-container">
@@ -115,34 +110,10 @@ function MenuItem({menuItem, id, setId}) {
                                             }
                                         }
                                     )()}
-                                    {/*{(() => {*/}
-                                    {/*    if (item.audio && item.audio[2] && item.audiocap[2]) {*/}
-                                    {/*        return <div>*/}
-                                    {/*            <ReactAudioPlayer className="audio-player"*/}
-                                    {/*                              src={item.audio[2]}*/}
-                                    {/*                              controls*/}
-                                    {/*            />*/}
-                                    {/*            <div className="audio-caption">{item.audiocap[2]}</div>*/}
-                                    {/*        </div>*/}
-                                    {/*    }*/}
-                                    {/*})()}*/}
                                     <p className="description">
                                         {item.descriptions? item.descriptions[4] ? item.descriptions[4]:"":""}
                                     </p>
                                 </div>
-
-                                {/*<p className={`description ${id === -1 || item.id === id ? '' : 'collapsed'}`}>*/}
-                                {/*    {item.description}*/}
-                                {/*</p>*/}
-
-                                {/*<div className="hover-items">*/}
-                                {/*    <a target = "_blank" href={item.link1}>*/}
-                                {/*        <FontAwesomeIcon icon={item.icon1} className='icon'/>*/}
-                                {/*    </a>*/}
-                                {/*    {!item.link2 ? "" : <a target = "_blank" href={item.link2}>*/}
-                                {/*        <FontAwesomeIcon icon={item.icon2} className='icon'/>*/}
-                                {/*    </a>}*/}
-                                {/*</div>*/}
                             </div>
                         </div>
                 })
