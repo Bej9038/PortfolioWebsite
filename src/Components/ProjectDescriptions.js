@@ -76,24 +76,32 @@ const descriptions =
         ipt4: "As part of a separate research question, I also added a speech-in-noise test that played a series " +
             "of words alongside background noise. The user just has to guess which word was spoken.",
 
-        gnn1:"For the final project in my ML course at RIT, we were tasked with researching a deep learning " +
+        gnn1:"For the final research project in my ML course at RIT, we were tasked with researching a deep learning " +
             "architecture that we didn't cover in class, proposing an experiment, and then putting together a " +
-            "final paper and presentation to describe our findings. After doing some searching online, I found an architecture " +
-            "known as graph neural networks and decided to experiment with the GraphSAGE architecture specifically.",
-        gnn2:"GraphSAGE operates by randomly sampling a nodes neighbors, and then combining those neighbor embeddings " +
-            "with an aggregation function to represent the context of the original node. One way you can think of this " +
-            "is as a generalization of convolution for graph data, which is the basic principle behind GNN architectures. " +
-            "Implementations",
-        gnn3:"For the experiment, I proposed that if we methodically select which type of aggregation function " +
-            "is used for a given layer, then we would will get better results than by simply using a single type of " +
-            "aggregation for all layers. For the code used to test this theory out, I used the Cora dataset (the mnist for GNNs) " +
-            "along with a PyTorch implementation of GraphSAGE. I implemented max and mean aggregation functions on top " +
-            "of the already implemented repository.",
-        gnn4: "The results showed that the proposed combination of aggregation layers did in fact result in an " +
-            "increase in F1 score, although this experiment was at such a small scale that testing on a larger " +
-                "dataset and model would need to be done to make any conclusions. This turned out to be a great topic because I was in the process of finishing up one of my favorite math classes, " +
-                "graph theory, so graphs concepts were fresh in my mind. It was also cool to study GNNs " +
-                "given that they aren't discussed as much as other modalities of deep learning.",
+            "final paper and presentation. After doing some searching online, I found graph neural networks and " +
+            "decided to experiment on the GraphSAGE architecture specifically.",
+        gnn2:"GraphSAGE works by randomly sampling the neighbors of a node in a graph (nodes which are directly connected to another), " +
+            "and combining those neighbors' embeddings using an aggregation function. One way you can think of this " +
+            "is as a generalization of convolution for graph data, which is the basic principle behind most GNN architectures. " +
+            "Its also similar to the idea of sentence embeddings in NLP.",
+        gnn3:"For the experiment portion of the project, I proposed that if we methodically select which type of aggregation function " +
+            "is used for a given layer, then we will get better results out of our model than by simply using a single " +
+            "function for all layers (like all current GNN architectures do). This is because some aggregators," +
+            " such as the mean aggregator, may be better at summarizing earlier layers of " +
+            "embeddings than max aggregators for example. For the code used to test this theory out, " +
+            "I used the CORA dataset (the MNIST for GNNs) along with a PyTorch implementation of GraphSAGE. " +
+            "I implemented max and mean aggregation functions to go along with the GraphSAGE code I downloaded.",
+        gnn4: "The results showed that the proposed combination of aggregation layers (mean in earlier layers, and max in later layers) " +
+            "did in fact result in an increase in F1 score. However, this experiment was at such a small scale that testing on a larger " +
+                "dataset and model would need to be done to make any conclusions.",
+        gnn5: "Overall, this turned out to be a great choice for my project. " +
+            "I was in the process of finishing up one of my favorite math classes, graph theory, " +
+            "so graphs concepts were fresh in my mind. It was also cool to study GNNs given that they " +
+            "aren't discussed nearly as much as other modalities of deep learning. Lastly, it was a good experience " +
+            "to learn a little more about the research process, writing a proposal, and creating and analyzing an experiment." +
+            " Although it was challenging doing such a project on a new subject in a little over a month, " +
+            "I'm glad I went through it.",
+
         eq1: "As an avid user of music production software, I always wondered how the tools I was using were created " +
             "and how they worked. I also wanted to brush up on my C++ skills. Therefore, " +
             "to kill two birds with one stone I decided to dive in and make a parametric EQ (a common audio effect).",

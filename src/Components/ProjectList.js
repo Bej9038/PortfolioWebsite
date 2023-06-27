@@ -106,7 +106,7 @@ const portfolios = [
         category: ['2022'],
         link1: 'https://github.com/Bej9038/OmnitoneV2',
         icon1: faGithub,
-        descriptions: [descriptions.gnn1, descriptions.gnn2, descriptions.gnn3, descriptions.gnn4],
+        descriptions: [descriptions.gnn1, descriptions.gnn2, descriptions.gnn3, descriptions.gnn4, descriptions.gnn5],
         images: [GNN1, GNN2],
         imagecap: ["1: Visualization of CORA. The dataset consists of 2708 scientific publications classified " +
         "into one of seven classes. The citation network consists of 5429 links between papers.",

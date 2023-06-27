@@ -126,6 +126,9 @@ function MenuItem({menuItem, id, setId}) {
                                     {/*        </div>*/}
                                     {/*    }*/}
                                     {/*})()}*/}
+                                    <p className="description">
+                                        {item.descriptions? item.descriptions[4] ? item.descriptions[4]:"":""}
+                                    </p>
                                 </div>
 
                                 {/*<p className={`description ${id === -1 || item.id === id ? '' : 'collapsed'}`}>*/}
