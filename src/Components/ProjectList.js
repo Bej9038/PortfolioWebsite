@@ -36,14 +36,16 @@ const portfolios = [
     //     title: 'ResNet Feature Visualization'
     // },
     {
-        id: 1,
-        category: ['2023'],
-        link: 'https://google-research.github.io/seanet/musiclm/examples/',
-        icon: faChrome,
-        descriptions: [descriptions.synthlm1, descriptions.synthlm2, descriptions.synthlm3],
-        title: 'SynthLM',
-        images: [SynthLM3, SynthLM4],
-        imagecap: ["1. The structure of Google's MusicLM", "2. Some neat autoencoder audio compression"]
+        id: 7,
+        category: ['2021'],
+        link: 'https://github.com/Bej9038/EQ',
+        icon: faGithub,
+        descriptions: [descriptions.eq1, descriptions.eq2, descriptions.eq3, descriptions.eq4],
+        audio: [eqdry, eqwet],
+        audiocap:["A drum loop with the EQ bypassed", "The same drum loop after applying the EQ curve shown in the image above"],
+        images: [EQ2],
+        imagecap: ["1: The EQ in action in my music production software"],
+        title: 'EQ Audio Plugin'
     },
     {
         id: 2,
@@ -56,16 +58,14 @@ const portfolios = [
         title: 'DSLabs - Sharded Key-Value Store'
     },
     {
-        id: 7,
-        category: ['2021'],
-        link: 'https://github.com/Bej9038/EQ',
-        icon: faGithub,
-        descriptions: [descriptions.eq1, descriptions.eq2, descriptions.eq3, descriptions.eq4],
-        audio: [eqdry, eqwet],
-        audiocap:["A drum loop with the EQ bypassed", "The same drum loop after applying the EQ curve shown in the image above"],
-        images: [EQ2],
-        imagecap: ["1: The EQ in action in my music production software"],
-        title: 'EQ Audio Plugin'
+        id: 1,
+        category: ['2023'],
+        link: 'https://google-research.github.io/seanet/musiclm/examples/',
+        icon: faChrome,
+        descriptions: [descriptions.synthlm1, descriptions.synthlm2, descriptions.synthlm3],
+        title: 'SynthLM',
+        images: [SynthLM3, SynthLM4],
+        imagecap: ["1. The structure of Google's MusicLM", "2. Some neat autoencoder audio compression"]
     },
     {
         id: 4,

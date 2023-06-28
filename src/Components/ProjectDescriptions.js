@@ -109,7 +109,8 @@ const descriptions =
             "apparent that this wasn't a simple feat for someone starting out. I ended up using an excellent C++ " +
             "framework called JUCE that has libraries for both audio processing and UI elements.",
         eq3: "My final EQ consisted of 2 notch filters for middle frequencies, a low pass filter to cut high frequencies, " +
-            "and a high pass filter to cut low frequencies. Writing the program involved routing audio input " +
+            "and a high pass filter to cut low frequencies. Each filter has a small bypass button above it. " +
+            "Writing the program involved routing audio input " +
             "through the four filters, and connecting the UI knobs to the filter parameters. " +
             "I also created a real-time frequency analyzer that sits behind a visualization of the EQ curve (the orange line). " +
             "Lastly, I edited the code/math for one of the built in JUCE filters to allow the user " +
