@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PortfolioWebsite/static/css/main.097c8040.chunk.css",
-    "main.js": "/PortfolioWebsite/static/js/main.f6c72477.chunk.js",
-    "main.js.map": "/PortfolioWebsite/static/js/main.f6c72477.chunk.js.map",
+    "main.js": "/PortfolioWebsite/static/js/main.5becead3.chunk.js",
+    "main.js.map": "/PortfolioWebsite/static/js/main.5becead3.chunk.js.map",
     "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js",
     "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js.map",
     "static/js/2.a0b413fe.chunk.js": "/PortfolioWebsite/static/js/2.a0b413fe.chunk.js",
@@ -12,6 +12,8 @@
     "static/js/2.a0b413fe.chunk.js.LICENSE.txt": "/PortfolioWebsite/static/js/2.a0b413fe.chunk.js.LICENSE.txt",
     "static/media/Ben Jordan [June 2023 Resume] V3.3cd4a462.pdf": "/PortfolioWebsite/static/media/Ben Jordan [June 2023 Resume] V3.3cd4a462.pdf",
     "static/media/EQ2.4f946a9f.PNG": "/PortfolioWebsite/static/media/EQ2.4f946a9f.PNG",
+    "static/media/FV3.8dd5368a.PNG": "/PortfolioWebsite/static/media/FV3.8dd5368a.PNG",
+    "static/media/FV5.f9dd787d.png": "/PortfolioWebsite/static/media/FV5.f9dd787d.png",
     "static/media/GNN1.93a9ac99.PNG": "/PortfolioWebsite/static/media/GNN1.93a9ac99.PNG",
     "static/media/GNN2.d55ebba0.png": "/PortfolioWebsite/static/media/GNN2.d55ebba0.png",
     "static/media/ITP1.c2d554f0.PNG": "/PortfolioWebsite/static/media/ITP1.c2d554f0.PNG",
@@ -34,12 +36,13 @@
     "static/media/dslabs2.37fb7c6f.png": "/PortfolioWebsite/static/media/dslabs2.37fb7c6f.png",
     "static/media/eq-dry.d1d955e3.mp3": "/PortfolioWebsite/static/media/eq-dry.d1d955e3.mp3",
     "static/media/eq-wet.9ed82bf8.mp3": "/PortfolioWebsite/static/media/eq-wet.9ed82bf8.mp3",
+    "static/media/layer2_feat2.d8481bae.png": "/PortfolioWebsite/static/media/layer2_feat2.d8481bae.png",
     "static/media/newsmaller.c434568e.jpg": "/PortfolioWebsite/static/media/newsmaller.c434568e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.906d1dcc.js",
     "static/js/2.a0b413fe.chunk.js",
     "static/css/main.097c8040.chunk.css",
-    "static/js/main.f6c72477.chunk.js"
+    "static/js/main.5becead3.chunk.js"
   ]
 }
