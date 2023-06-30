@@ -40,8 +40,8 @@ const portfolios = [
         link:"https://github.com/Bej9038/FeatureViz",
         icon: faGithub,
         images: [FV1, FV2, FV3],
-        imagecap: ["1: An output feature from the third group of layers in ResNet50",
-            "2: A more basic looking feature from group two",
+        imagecap: ["1: A cool looking feature from the third group of layers in ResNet50",
+            "2: A more basic feature from an earlier layer",
             "3: A faint visualization of the stingray class from the final classifier"],
     },
     {
