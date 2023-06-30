@@ -15,6 +15,9 @@ import EQ2 from "../Images/EQ2.PNG";
 import OMNI1 from "../Images/OMNI1.PNG";
 import OMNI2 from "../Images/OMNI2.PNG";
 import OMNI4 from "../Images/OMNI4.PNG";
+import FV1 from "../Images/FV3.PNG";
+import FV2 from "../Images/layer2_feat2.png";
+import FV3 from "../Images/FV5.png";
 
 import dry from "../Images/clarinet-dry.mp3"
 import wet from "../Images/clarinet-wet.mp3"
@@ -29,12 +32,18 @@ import {faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {faSoundcloud} from "@fortawesome/free-brands-svg-icons";
 import {faChrome} from "@fortawesome/free-brands-svg-icons";
 const portfolios = [
-    // {
-    //     id: 10,
-    //     category: ['2023'],
-    //     descriptions: [descriptions.temp],
-    //     title: 'ResNet Feature Visualization'
-    // },
+    {
+        id: 10,
+        category: ['2023'],
+        descriptions: [descriptions.fv1, descriptions.fv2, descriptions.fv3, descriptions.fv4, descriptions.fv5],
+        title: 'FeatureViz - Deep Learning Visualization',
+        link:"https://github.com/Bej9038/FeatureViz",
+        icon: faGithub,
+        images: [FV1, FV2, FV3],
+        imagecap: ["1: An output feature from the third group of layers in ResNet50",
+            "2: A more basic looking feature from group two",
+            "3: A faint visualization of the stingray class from the final classifier"],
+    },
     {
         id: 7,
         category: ['2021'],

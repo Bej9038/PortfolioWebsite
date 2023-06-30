@@ -133,6 +133,31 @@ const descriptions =
             "can also select different sound source and listening locations, and change which microphone is being used " +
             "with the controls on the bottom.",
 
+        fv1: "This is a small program that came about as I was working on a project for my internship. I was looking " +
+            "into how interpretable one could make deep CNNs, and I came across a Stanford YouTube lecture on " +
+            "visualization for computer vision. One of the topics briefly discussed in the lecture was called gradient ascent, " +
+            "and it was originally from the paper 'Understanding Neural Networks Through Deep Visualization'.",
+        fv2: "A similar idea is known as saliency maps. Saliency maps are created by inputting an " +
+            "image into a network, and visualizing which pixels are most responsible for the prediction made. " +
+            "Gradient ascent aims to generate an image that maximally activates a given output feature or class. " +
+            "The paper mentioned above talks about how to make the results of gradient ascent into more interpretable, natural looking images.",
+        fv3: "I tried implementing this algorithm myself using PyTorch, and after a little bit of fooling " +
+            "around with hyperparameters, I was able to get some cool images! I did it by taking a pre-trained PyTorch ResNet50 (trained on ImageNet1K), " +
+            "creating a blank image and passing it to the optimizer, and then performing gradient descent on the image pixels until the image fit " +
+            "a specified class in the model. Following the advice of the paper, I also added gaussian blurring, L2 regularization, and gradient " +
+            "clipping which helped make the images much cleaner once I found the right values. I also made it so the images could be created in parallel. " +
+            "This way, one could potentially generate visualizations for all output features in a given layer in one run.",
+        fv4: "I ended up seeing some very interesting things in my testing. First, this technique does not appear to work " +
+            "with transformer architectures. The resulting images look like a bunch of small squares with random patterns " +
+            "stitched together. This is presumably due to the way images are chopped up before being fed into a transformer. " +
+            "I also found it to be really cool how the visualizations that showed up in my images showed up in different " +
+            "spots, shapes, and sizes depending on hyperparameter and image initialization. however, they all still maintained " +
+            "the characteristics of the feature/class that they represented. I think this is a great example " +
+            "of how CNNs can pick out specific features of an image regardless of location or other factors.",
+        fv5: "The last thing I wanted to mention was how much faster the image generation got when running it on a GPU. I recently" +
+            "bought an NVIDIA 4070 for myself, and was amazed at the difference in time it took when I ran it at my house. " +
+            "On a CPU, it took 108s to generate 5 images in parallel. On my GPU, it took 3.6s. That's 30x faster.",
+
 
         portfolio1: "This Website! During quarantine I wanted to give React a try, so I started with a tutorial I found online and " +
             "made some changes to it. I recently did a re-design as well. I haven't done a ton of web dev since it was " +
