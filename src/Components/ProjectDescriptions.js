@@ -155,7 +155,7 @@ const descriptions =
             "the general characteristics of the feature/class that they represented. I think this is a great example " +
             "of how CNNs can pick out specific features of an image regardless of location or other factors.",
         fv5: "The last thing I wanted to mention was how much faster the image generation got when running it on a GPU. I recently" +
-            "bought an NVIDIA 4070 for myself, and was amazed at the difference in time it took when I ran it at my house. " +
+            " bought an NVIDIA 4070 for myself, and was amazed at the difference in time it took when I ran it at my house. " +
             "On a CPU, it took 108s to generate 5 images in parallel. On my GPU, it took 3.6s. That's 30x faster.",
 
 
