@@ -117,10 +117,12 @@ const portfolios = [
         link: 'https://github.com/Bej9038/GraphSAGE-ML-Project',
         icon: faGithub,
         descriptions: [descriptions.gnn1, descriptions.gnn2, descriptions.gnn3, descriptions.gnn4, descriptions.gnn5],
-        images: [GNN1, GNN2],
-        imagecap: ["1: Visualization of CORA. The dataset consists of 2708 scientific publications classified " +
-        "into one of seven classes. The citation network consists of 5429 links between papers.",
-            "2: A GraphSAGE layer visualized"],
+        images: [GNN2, GNN1],
+        imagecap: [
+            "1: A GraphSAGE layer visualized",
+            "2: Visualization of the CORA dataset. It consists of 2708 scientific publications classified " +
+        "into one of seven classes. The citation network consists of 5429 directed links between papers.",
+            ],
         title: 'Graph Neural Network Research Project'
     },
     {

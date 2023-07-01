@@ -76,21 +76,21 @@ const descriptions =
         ipt4: "As part of a separate research question, I also added a speech-in-noise test that played a series " +
             "of words alongside background noise. The user just has to guess which word was spoken.",
 
-        gnn1:"For the final research project in my ML course at RIT, we were tasked with researching a deep learning " +
+        gnn1:"For the final research project in my machine learning course at RIT, we were tasked with researching a deep learning " +
             "architecture that we didn't cover in class, proposing an experiment, and then putting together a " +
-            "final paper and presentation. After doing some searching online, I found graph neural networks and " +
-            "decided to experiment on the GraphSAGE architecture specifically.",
-        gnn2:"GraphSAGE works by randomly sampling the neighbors of a node in a graph (nodes which are directly connected to another), " +
-            "and combining those neighbors' embeddings using an aggregation function. One way you can think of this " +
-            "is as a generalization of convolution for graph data, which is the basic principle behind most GNN architectures. " +
-            "Its also similar to the idea of sentence embeddings in NLP.",
-        gnn3:"For the experiment portion of the project, I proposed that if we methodically select which type of aggregation function " +
-            "is used for a given layer, then we will get better results out of our model than by simply using a single " +
-            "function for all layers (like all current GNN architectures do). This is because some aggregators," +
-            " such as the mean aggregator, may be better at summarizing earlier layers of " +
-            "embeddings than max aggregators for example. For the code used to test this theory out, " +
-            "I used the CORA dataset (the MNIST for GNNs) along with a PyTorch implementation of GraphSAGE. " +
-            "I implemented max and mean aggregation functions to go along with the GraphSAGE code I downloaded.",
+            "final paper and presentation. After doing some searching online, I decided to do my project on " +
+            "graph neural networks (specifically the GraphSAGE architecture).",
+        gnn2:"The GraphSAGE algorithm works by first randomly sampling neighboring nodes of a given node in a graph, " +
+            "and then combining the original and sampled node's embeddings using an aggregation function. It's best to think of this " +
+            "as a generalization of convolution for graph data. " +
+            "Its also similar to the idea of summarizing word embeddings into sentence embeddings in NLP.",
+        gnn3:"For the experiment portion of the project, I proposed that if we methodically select which aggregation function " +
+            "is used for each layer, then we will get better results out of our model " +
+            "(most GNNs use a single type of aggregation function for all layers). This is because some aggregators," +
+            " such as mean pooling, may be better at summarizing earlier layers of " +
+            "embeddings than max pooling for example. To test this idea out, " +
+            "I used the CORA dataset (basically MNIST digits for GNNs) along with a PyTorch implementation of GraphSAGE. " +
+            "I implemented max and mean aggregators to go along with model.",
         gnn4: "The results showed that the proposed combination of aggregation layers (mean in earlier layers, and max in later layers) " +
             "did in fact result in an increase in F1 score. However, this experiment was at such a small scale that testing on a larger " +
                 "dataset and model would need to be done to make any conclusions.",
@@ -98,8 +98,8 @@ const descriptions =
             "I was in the process of finishing up one of my favorite math classes, graph theory, " +
             "so graphs concepts were fresh in my mind. It was also cool to study GNNs given that they " +
             "aren't discussed nearly as much as other modalities of deep learning. Lastly, it was a good experience " +
-            "to learn a little more about the research process, writing a proposal, and creating and analyzing an experiment." +
-            " Although it was challenging doing such a project on a new subject in a little over a month, " +
+            "to learn a little more about writing a project proposal and creating an experiment." +
+            " Although it was challenging doing a research project on a new topic in a little over a month, " +
             "I'm glad I went through it.",
 
         eq1: "As an avid user of music production software, I always wondered how the tools I was using were created " +
@@ -160,13 +160,7 @@ const descriptions =
 
 
         portfolio1: "This Website! During quarantine I wanted to give React a try, so I started with a tutorial I found online and " +
-            "made some changes to it. I recently did a re-design as well. I haven't done a ton of web dev since it was " +
-            "never a part of my coursework, but I've always found designing and styling websites to be relaxing " +
-            "(other than when trying to figure out how to center a div).",
-        portfolio2: "If you're interested, you can check out the code on my GitHub.",
-
-        conv1: "didnt work for transformers, really cool how results are different depending on initialization, regulation",
-        conv2: "",
+            "made some edits. I recently did a re-design of the projects page as well.",
 
         temp: "Content coming soon..."
 
