@@ -54,7 +54,7 @@ const descriptions =
             "This service was injected into the slider components and the view component, so both the sliders and the 3D graphic could " +
             "have realtime access to the attribute sliders' values.",
 
-        ipt1: "This project was created during my internship in 2020 with Professor Sungyoung Kim at RIT. In collaboration with " +
+        ipt1: "This was one of two projects created during my internship with Professor Sungyoung Kim at RIT. In collaboration with " +
             "a team from University of Iowa, " +
             "we attempted to evaluate the effectiveness of hearing devices called hybrid cochlear implants. " +
             "The team was also interested in people's ability to understand speech depending on background noise level. " +
@@ -102,8 +102,8 @@ const descriptions =
             " Although it was challenging doing a research project on a new topic in a little over a month, " +
             "I'm glad I went through it.",
 
-        eq1: "As an avid user of music production software, I always wondered how the tools I was using were created " +
-            "and how they worked. I also wanted to brush up on my C++ skills. Therefore, " +
+        eq1: "As an avid user of music production software, I always wondered how the tools I was using were created. " +
+            "I also wanted to brush up on my C++ skills. Therefore, " +
             "to kill two birds with one stone I decided to dive in and make a parametric EQ (a common audio effect).",
         eq2: "At first, I looked into writing VST3s (the standard format of an audio plugin) from scratch. However, it became " +
             "apparent that this wasn't a simple feat for someone starting out. I ended up using an excellent C++ " +
@@ -136,10 +136,10 @@ const descriptions =
         fv1: "This is a small program that came about as I was working on a project for my internship. I was looking " +
             "into how interpretable one could make deep CNNs, and I came across a Stanford YouTube lecture on " +
             "visualization for computer vision. One of the topics briefly discussed in the lecture was called gradient ascent, " +
-            "and it was originally from the paper 'Understanding Neural Networks Through Deep Visualization'.",
+            "which is originally from the paper 'Understanding Neural Networks Through Deep Visualization'.",
         fv2: "A similar idea is known as saliency maps. Saliency maps are created by inputting an " +
             "image into a network, and visualizing which pixels are most responsible for the prediction made. " +
-            "Gradient ascent aims to generate a new image that maximally activates a given output feature or class. " +
+            "On the other hand, Gradient ascent aims to generate a new image that maximally activates a given output feature or class. " +
             "The paper mentioned above talks about how to make the results of gradient ascent into more interpretable, natural looking images.",
         fv3: "I tried implementing this algorithm myself using PyTorch, and after a little bit of fooling " +
             "around with hyperparameters, I was able to get some cool images! I did it by taking a pre-trained PyTorch ResNet50 (trained on ImageNet1K), " +
