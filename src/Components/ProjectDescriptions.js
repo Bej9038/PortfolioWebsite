@@ -95,7 +95,7 @@ const descriptions =
             "did in fact result in an increase in F1 score. However, this experiment was at such a small scale that testing on a larger " +
                 "dataset and model would need to be done to make any conclusions.",
         gnn5: "Overall, this turned out to be a great choice for my project. " +
-            "I was in the process of finishing up one of my favorite math classes, graph theory, " +
+            "I was in the process of finishing up a graph theory course, " +
             "so graphs concepts were fresh in my mind. It was also cool to study GNNs given that they " +
             "aren't discussed nearly as much as other modalities of deep learning. Lastly, it was a good experience " +
             "to learn a little more about writing a project proposal and creating an experiment." +
@@ -119,19 +119,19 @@ const descriptions =
             "my own music production software. Now that I have more experience behind my belt, I can hopefully tackle more " +
             "interesting ideas that I have.",
 
-        omni1: "Alongside the implant testing software I created while working with Professor Kim, I was also given " +
+        omni1: "Alongside the cochlear implant testing software I created while working with Professor Kim, I was also given " +
             "the task of fleshing out another VR/AR project idea in my free time. This project was created " +
             "in an attempt to preserve the aural characteristics of historical buildings.",
-        omni2: "The software is designed to take in a dry audio sample, and play the audio back is if it was " +
-            "inside a room from any position in the room. The final result ended up working surprisingly well! " +
-            "The way something like this is done is by recording room impulses, which are essentially isolated reverb " +
+        omni2: "The software is designed to take in a dry audio sample (no reverb), and play it back as if it was " +
+            "inside a room, from any position in the room. The final result ended up working surprisingly well! " +
+            "The way something like this is done is by recording impulses, which are essentially isolated reverb " +
             "tails, inside a room using an ambisonic 4 channel microphone. Then you convolve the " +
             "source file with those impulse recordings, and combine the resulting 4 audio files in such a way such that they create " +
             "B format ambisonic files.",
-        omni3: "These B format files can then be converted to stereo using a library called Omnitone. " +
+        omni3: "These B format files can then be converted to stereo using a javascript library called Omnitone. " +
             "In the program, users can rotate their position in the room using the VR viewer. Users " +
             "can also select different sound source and listening locations, and change which microphone is being used " +
-            "with the controls on the bottom.",
+            "with the control panel on the bottom.",
 
         fv1: "This is a small program that came about as I was working on a project for my internship. I was looking " +
             "into how interpretable one could make deep CNNs, and I came across a Stanford YouTube lecture on " +

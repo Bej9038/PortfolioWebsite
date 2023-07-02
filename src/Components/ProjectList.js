@@ -106,7 +106,7 @@ const portfolios = [
         audio: [dry, wet, wet2],
         audiocap:["The original audio file", "The audio file being played inside the simulated savings bank"],
         images: [OMNI1, OMNI2, OMNI4],
-        imagecap: ["1: The Omnitone interface using the Rochester savings bank room. " +
+        imagecap: ["1: The Omnitone interface displaying the Rochester savings bank. " +
         "Users can use their mouse to explore the VR room and its audio characteristics.",
             "2: The second selectable room"],
         title: 'Omnitone'
