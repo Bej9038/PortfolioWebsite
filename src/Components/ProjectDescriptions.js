@@ -34,7 +34,7 @@ const descriptions =
             " phase commit for agreement between server groups during transactions. On its own 2PC is susceptible to failures, " +
             "but when paired with paxos provides agreement without major availability issues.",
 
-        sae1: "After working for Professor Sungyoung Kim at RIT in 2020, I was rehired as a part-" +
+        sae1: "After working for Professor Kim in 2020, I was rehired as a part-" +
             "time developer during my last semester of undergrad. During this semester, my task was to write a program " +
             "that would allow Dr. Kim to collect data on how listeners interpret the spatial characteristics of audio. " +
             "This was quite an enjoyable project because I was given a general overview of what to build, but every " +
@@ -46,15 +46,15 @@ const descriptions =
             "experience with it. I really like Angular + Typescript because of the OOP style, and because it helps me keep my " +
             "projects organized. As for the 3D visual, I used a library called three.js. This was " +
             "easily the most challenging part of the project since it was my first time doing anything related to " +
-            "graphics, but I learned a lot! I created a custom shader that morphed based on the music's volume and the attribute slider values. ",
-        sae4: "For the overall design of the software, I added my basic components such as the attribute sliders, " +
-            "a view component to hold the three.js canvas, a singular audio service that controlled everything sound related " +
-            "and could injected into any component, and a singular session values service, that was used to maintain " +
-            "important values during each instance of the program (such as the current round number for example). " +
+            "graphics, but I learned a lot! I created a custom shader that morphs based on the music's volume and attribute slider values. ",
+        sae4: "For the design of the software, I added my UI components such as the attribute sliders and menus, " +
+            "a view component to hold the three.js canvas, a singular audio service that controls everything sound related " +
+            "and can be injected into any component, and a singular session values service, that is used to maintain " +
+            "important values during each instance of the program (such as the current round number or username). " +
             "This service was injected into the slider components and the view component, so both the sliders and the 3D graphic could " +
-            "have realtime access to the values of the attribute sliders.",
+            "have realtime access to the attribute sliders' values.",
 
-        ipt1: "This project was created during my internship in 2020 with Professor Sungyoung Kim. In collaboration with " +
+        ipt1: "This project was created during my internship in 2020 with Professor Sungyoung Kim at RIT. In collaboration with " +
             "a team from University of Iowa, " +
             "we attempted to evaluate the effectiveness of hearing devices called hybrid cochlear implants. " +
             "The team was also interested in people's ability to understand speech depending on background noise level. " +
@@ -119,7 +119,7 @@ const descriptions =
             "my own music production software. Now that I have more experience behind my belt, I can hopefully tackle more " +
             "interesting ideas that I have.",
 
-        omni1: "Alongside the cochlear implant testing software I created while working with Professor Kim, I was also given " +
+        omni1: "Alongside the cochlear implant testing software I created while interning with Professor Kim, I was also given " +
             "the task of fleshing out another VR/AR project idea in my free time. This project was created " +
             "in an attempt to preserve the aural characteristics of historical buildings.",
         omni2: "The software is designed to take in a dry audio sample (no reverb), and play it back as if it was " +
