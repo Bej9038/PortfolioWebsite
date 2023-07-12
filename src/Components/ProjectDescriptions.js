@@ -1,5 +1,15 @@
 const descriptions =
     {
+
+        neuro1:"This is easily the largest personal project I've ever attempted. First, I started going through the open " +
+            "source code for audiocraft/musicgen from facebook. Unfortuantely, there is no training code provided, " +
+            "so I had to figure out how everything worked, and creat ym own based on the Encodec, SoundStream, and AudioGen papers." +
+            "I started out trying to train Encodec, with pretty discouraging results. After training on a large music " +
+            "production sample pack for about 8 hours, I was just getting noise when testing the autoencoder. I then attempted" +
+            "to train the autoencoder model on the librespeech dataset, which a lot of text to audio paper use, " +
+            "and got much more promising results. I am assuming this is because the dataset is more cohesive (all voice audio)" +
+            " and maybe because I used a lower learning rate so the model had an easier time converging.",
+
         synthlm1: "Over the past couple of years, there's been a good deal of research published related to audio generation and " +
             "compression using deep learning. After coming across Google's MusicLM, I was inspired to " +
             "create my own deep learning powered software synthesizer.",

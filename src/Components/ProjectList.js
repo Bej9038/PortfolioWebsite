@@ -32,6 +32,12 @@ import {faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {faSoundcloud} from "@fortawesome/free-brands-svg-icons";
 import {faChrome} from "@fortawesome/free-brands-svg-icons";
 const portfolios = [
+    // {
+    //     id: 11,
+    //     category: ['2023'],
+    //     descriptions: [descriptions.temp],
+    //     title: 'Project Neuro',
+    // },
     {
         id: 10,
         category: ['2023'],
