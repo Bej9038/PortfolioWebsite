@@ -1,6 +1,5 @@
 const descriptions =
     {
-
         neuro1:"This is easily the largest personal project I've ever attempted. First, I started going through the open " +
             "source code for audiocraft/musicgen from facebook. Unfortuantely, there is no training code provided, " +
             "so I had to figure out how everything worked, and creat ym own based on the Encodec, SoundStream, and AudioGen papers." +
