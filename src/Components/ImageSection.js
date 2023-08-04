@@ -11,7 +11,7 @@ function ImageSection() {
 
                     Software engineering and music are without a doubt my favorite ways to express this passion.
                     At the moment, I'm most interested in machine learning and its applications in audio,
-                    but I also enjoy learning about topics such as computer vision, computer systems, and graph theory.
+                    but I also enjoy learning about topics such as computer systems and graph theory.
                     <br/><br/>
                     Outside of academics, I love being active, visiting new places, and music.
                     As an undergrad, I was a member of RIT's varsity track and field team.
