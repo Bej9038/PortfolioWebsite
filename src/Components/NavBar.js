@@ -14,7 +14,7 @@ function NavBar() {
                     </h1>
 
                     <p className="home-sub-text">
-                        CS Master's Student at Cornell
+                        CS Graduate Student at Cornell
                     </p>
 
                     <div className="icons">
