@@ -14,7 +14,7 @@ function NavBar() {
                     </h1>
 
                     <p className="home-sub-text">
-                        CS Graduate Student at Cornell
+                        Machine Learning & Software Engineering
                     </p>
 
                     <div className="icons">
