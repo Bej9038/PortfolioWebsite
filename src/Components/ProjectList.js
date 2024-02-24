@@ -35,9 +35,10 @@ const portfolios = [
     {
         id: 1,
         category: ['2023'],
-        link: 'https://google-research.github.io/seanet/musiclm/examples/',
+        link: 'https://ai.meta.com/blog/audiocraft-musicgen-audiogen-encodec-generative-ai-audio/',
         icon: faChrome,
-        descriptions: [descriptions.synthlm1, descriptions.synthlm2, descriptions.synthlm3],
+        descriptions: [descriptions.synthlm1, descriptions.synthlm2, descriptions.synthlm3, descriptions.synthlm4
+        , descriptions.synthlm5],
         title: 'Entropy: Generative Audio Synthesizer',
         images: [SynthLM3, SynthLM4],
         imagecap: ["1. The structure of Google's MusicLM", "2. Some neat autoencoder audio compression"]
@@ -64,6 +65,7 @@ const portfolios = [
         imagecap: ["1: The EQ in action in my music production software"],
         title: 'EQ Audio Plugin'
     },
+
     {
         id: 10,
         category: ['2023'],

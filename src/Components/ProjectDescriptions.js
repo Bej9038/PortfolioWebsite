@@ -1,29 +1,24 @@
 const descriptions =
     {
-        neuro1:"This is easily the largest personal project I've ever attempted. First, I started going through the open " +
-            "source code for audiocraft/musicgen from facebook. Unfortuantely, there is no training code provided, " +
-            "so I had to figure out how everything worked, and creat ym own based on the Encodec, SoundStream, and AudioGen papers." +
-            "I started out trying to train Encodec, with pretty discouraging results. After training on a large music " +
-            "production sample pack for about 8 hours, I was just getting noise when testing the autoencoder. I then attempted" +
-            "to train the autoencoder model on the librespeech dataset, which a lot of text to audio paper use, " +
-            "and got much more promising results. I am assuming this is because the dataset is more cohesive (all voice audio)" +
-            " and maybe because I used a lower learning rate so the model had an easier time converging.",
-
-        synthlm1: "Over the past couple of years, there's been a good deal of research published related to audio generation and " +
-            "compression using deep learning. After coming across Google's MusicLM, I was inspired to " +
-            "create my own deep learning powered software synthesizer.",
-        synthlm2: "My goal with this project is to create the first text-to-sample synthesizer meant for music production. " +
-            "Rather than generating entire songs like MusicLM, my focus is on generating " +
-            "short audio samples. For example, if someone were to enter the text \"metallic snare A#\", the synth should " +
-            "be able to generate a single tuned snare sample. To me this task seems more feasible and more useful than creating whole songs. " +
-            "There's already an abundance of labeled sample packs online that can be used " +
-            "for personalized training, focusing on samples removes the need to learn long term structure, and audio samples are " +
-            "more useful for musicians compared to entire songs.",
-        synthlm3: "At the moment, I've been going through older papers that MusicLM builds on such as AudioLM, " +
-            "SoundStream, and BERT. Meta also released their own audio generation model called " +
-            "AudioCraft, which may be a promising option given that its open-source and would require less training than " +
-            "MusicLM's multi-model, hierarchical structure. I'm hoping to get a usable model trained this summer " +
-            "and am looking forward to seeing the results!",
+        synthlm1: "Entropy is an idea I had for a natural language synthesizer. I believe that some form of natural" +
+            " langauge interface is the future of audio creation. Although there's been some work in the text to speech, text to" +
+            " music, and text to synthesizer parameter domains, I don't feel like any of these tools are ideal for music " +
+            "creators in their current state.",
+        synthlm2: "Luckily, Meta AI has done some great research on audio generation. They released 3 models (MusicGen, " +
+            "AudioGen, and Encodec), along with a paper for each and an open source codebase. MusicGen and AudioGen are " +
+            "relatively simple transformer that models aim to predict time-steps in an audio sequence. My goal is to " +
+            "retrain MusicGen to produce instrument samples, rather than entire songs, which should be much more useful for " +
+            "music creation and an easier task in general.",
+        synthlm3: "For my dataset, I accumulated 160 GB of music production sample packs. For the text descriptions, about half" +
+            " of the packs already contain natural language descriptions (thanks to BOOM library). For the other half, I " +
+            "parsed to file paths of the samples to create multi-label descriptions. This works out quite well because the " +
+            "file paths are very descriptive in sample packs.",
+        synthlm4:"As for the actual training of the models, I started by creating training code based off of the audiocraft codebase, " +
+            "and debugged things on my local machine with the small 300M parameter model. I then trained the medium 1.1B model on a single A100" +
+            "  using a small dataset (~3 sample packs) just to be sure that this model could learn the task. I am currently working on " +
+            "training the large 3.3B parameter model on the 160GB dataset using 3 A6000s on RunPod.",
+        synthlm5: "I also hope to eventually create a frontend, deploy the model using a serverless computing service, and collect data " +
+            "on which text inputs are most popular from users in order to improve the dataset.",
 
         dslabs1: "DSLabs was a semester long project that I completed while taking Cornell's CS5414 " +
             "(Distributed Computing) with Lorenzo Alvisi. This class was easily one of the most challenging, rewarding, " +
