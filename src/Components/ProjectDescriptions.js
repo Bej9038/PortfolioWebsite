@@ -12,11 +12,14 @@ const descriptions =
         synthlm3: "For my dataset, I accumulated 160 GB of music production sample packs. For the text descriptions, about half" +
             " of the packs already contain natural language descriptions (thanks to BOOM library). For the other half, I " +
             "parsed to file paths of the samples to create multi-label descriptions. This works out quite well because the " +
-            "file paths are very descriptive in sample packs.",
+            "file paths are very descriptive in sample packs, and many times contain BPM or key signatures. (For example, one of the file paths looks like " +
+            "dataset\\Sounds of KSHMR Vol 4\\Drum Loops\\Drum Loops - By Genre\\Hip Hop Loops\\Old School\\KSHMR Hip Hop Old School 01 - 80BPM - Full.wav)",
         synthlm4:"As for the actual training of the models, I started by creating training code based off of the audiocraft codebase, " +
             "and debugged things on my local machine with the small 300M parameter model. I then trained the medium 1.1B model on a single A100" +
             "  using a small dataset (~3 sample packs) just to be sure that this model could learn the task. I am currently working on " +
-            "training the large 3.3B parameter model on the 160GB dataset using 3 A6000s on RunPod.",
+            "training the large 3.3B parameter model on the 160GB dataset using 3 A6000s on RunPod. I converted the model weights to float16 " +
+            "in order to get a good batch size to fit, but I may end up doing some finetuning in float32 after to see if quality can be " +
+            "improved even further.",
         synthlm5: "I also hope to eventually create a frontend, deploy the model using a serverless computing service, and collect data " +
             "on which text inputs are most popular from users in order to improve the dataset.",
 

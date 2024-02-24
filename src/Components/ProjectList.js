@@ -24,6 +24,9 @@ import wet from "../Images/clarinet-wet.mp3"
 import wet2 from "../Images/clarinet-wet2.mp3"
 import eqdry from "../Images/eq-dry.mp3"
 import eqwet from "../Images/eq-wet.mp3"
+import audiocraft1 from "../Images/audiocraft1.png"
+import audiocraft2 from "../Images/audiocraft2.png"
+
 
 import descriptions from "./ProjectDescriptions"
 
@@ -40,8 +43,8 @@ const portfolios = [
         descriptions: [descriptions.synthlm1, descriptions.synthlm2, descriptions.synthlm3, descriptions.synthlm4
         , descriptions.synthlm5],
         title: 'Entropy: Generative Audio Synthesizer',
-        images: [SynthLM3, SynthLM4],
-        imagecap: ["1. The structure of Google's MusicLM", "2. Some neat autoencoder audio compression"]
+        images: [audiocraft1, audiocraft2],
+        imagecap: ["1. The MusicGen Architecture", "2. The AudioCraft Codebase"]
     },
     {
         id: 2,
