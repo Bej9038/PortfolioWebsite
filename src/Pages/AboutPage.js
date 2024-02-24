@@ -10,20 +10,16 @@ function AboutPage() {
             <ImageSection />
             <Title title={'Skills'} progress={50}/>
             <div className="skills-group">
-                <Skills skill = {'C#'} progress={'90%'}/>
-                <Skills skill = {'Java'} progress={'90%'}/>
-                <Skills skill = {'JavaScript'} progress={'90%'}/>
-                <Skills skill = {'C++'} progress={'90%'}/>
-                <Skills skill = {'C'} progress={'90%'}/>
-                <Skills skill = {'Python'} progress={'80%'}/>
-                <Skills skill = {'NumPy'} progress={'80%'}/>
-                <Skills skill = {'PyTorch'} progress={'80%'}/>
-                <Skills skill = {'Angular'} progress={'70%'}/>
-                <Skills skill = {'SQL'} progress={'60%'}/>
+                <Skills skill = {'Python'} progress={'100%'}/>
+                <Skills skill = {'PyTorch'} progress={'100%'}/>
+                <Skills skill = {'NumPy'} progress={'100%'}/>
+                <Skills skill = {'C++'} progress={'100%'}/>
+                <Skills skill = {'C'} progress={'100%'}/>
+                <Skills skill = {'CUDA'} progress={'100%'}/>
+                <Skills skill = {'Docker'} progress={'100%'}/>
                 <Skills skill = {'Git'} progress={'100%'}/>
-                <Skills skill = {'Unit Testing'} progress={'100%'}/>
                 <Skills skill = {'Linux'} progress={'100%'}/>
-                <Skills skill = {'Agile Development'} progress={'100%'}/>
+                <Skills skill = {'LaTeX'} progress={'100%'}/>
             </div>
         </div>
     );
