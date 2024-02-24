@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PortfolioWebsite/static/css/main.d911170a.chunk.css",
-    "main.js": "/PortfolioWebsite/static/js/main.9875d1a5.chunk.js",
-    "main.js.map": "/PortfolioWebsite/static/js/main.9875d1a5.chunk.js.map",
+    "main.js": "/PortfolioWebsite/static/js/main.659360bf.chunk.js",
+    "main.js.map": "/PortfolioWebsite/static/js/main.659360bf.chunk.js.map",
     "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js",
     "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js.map",
     "static/js/2.801035b6.chunk.js": "/PortfolioWebsite/static/js/2.801035b6.chunk.js",
@@ -28,6 +28,8 @@
     "static/media/SAE4.5677207e.PNG": "/PortfolioWebsite/static/media/SAE4.5677207e.PNG",
     "static/media/SynthLM3.828823aa.PNG": "/PortfolioWebsite/static/media/SynthLM3.828823aa.PNG",
     "static/media/SynthLM4.a3f325ba.PNG": "/PortfolioWebsite/static/media/SynthLM4.a3f325ba.PNG",
+    "static/media/audiocraft1.7119c8f1.png": "/PortfolioWebsite/static/media/audiocraft1.7119c8f1.png",
+    "static/media/audiocraft2.b5b890d1.png": "/PortfolioWebsite/static/media/audiocraft2.b5b890d1.png",
     "static/media/clarinet-dry.7f32045e.mp3": "/PortfolioWebsite/static/media/clarinet-dry.7f32045e.mp3",
     "static/media/clarinet-wet.0e96b129.mp3": "/PortfolioWebsite/static/media/clarinet-wet.0e96b129.mp3",
     "static/media/clarinet-wet2.77a5b03a.mp3": "/PortfolioWebsite/static/media/clarinet-wet2.77a5b03a.mp3",
@@ -43,6 +45,6 @@
     "static/js/runtime-main.906d1dcc.js",
     "static/js/2.801035b6.chunk.js",
     "static/css/main.d911170a.chunk.css",
-    "static/js/main.9875d1a5.chunk.js"
+    "static/js/main.659360bf.chunk.js"
   ]
 }
