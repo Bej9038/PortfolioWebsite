@@ -56,18 +56,6 @@ const portfolios = [
         imagecap: ["1: The Part-Time Parliament", "2: The greatest moment of my life"],
         title: 'DSLabs - Sharded Key-Value Store'
     },
-    {
-        id: 7,
-        category: ['2021'],
-        link: 'https://github.com/Bej9038/EQ',
-        icon: faGithub,
-        descriptions: [descriptions.eq1, descriptions.eq2, descriptions.eq3, descriptions.eq4],
-        audio: [eqdry, eqwet],
-        audiocap:["A drum loop with the EQ bypassed", "The same drum loop after applying the EQ curve shown in the image above"],
-        images: [EQ2],
-        imagecap: ["1: The EQ in action in my music production software"],
-        title: 'EQ Audio Plugin'
-    },
 
     {
         id: 10,
@@ -81,6 +69,20 @@ const portfolios = [
             "2: A more basic feature from an earlier layer",
             "3: A faint visualization of the stingray class from the final classifier"],
     },
+
+    {
+        id: 7,
+        category: ['2021'],
+        link: 'https://github.com/Bej9038/EQ',
+        icon: faGithub,
+        descriptions: [descriptions.eq1, descriptions.eq2, descriptions.eq3, descriptions.eq4],
+        audio: [eqdry, eqwet],
+        audiocap:["A drum loop with the EQ bypassed", "The same drum loop after applying the EQ curve shown in the image above"],
+        images: [EQ2],
+        imagecap: ["1: The EQ in action in my music production software"],
+        title: 'EQ Audio Plugin'
+    },
+
 
 
     // {
