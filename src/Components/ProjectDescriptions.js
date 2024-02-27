@@ -111,18 +111,18 @@ const descriptions =
 
         eq1: "As an avid user of music production software, I always wondered how the tools I was using were created. " +
             "I also wanted to brush up on my C++ skills. Therefore, " +
-            "to kill two birds with one stone I decided to dive in and make a parametric EQ (a common audio effect).",
+            "to kill two birds with one stone I decided to dive in and make a parametric EQ (a common audio mixing effect).",
         eq2: "At first, I looked into writing VST3s (the standard format of an audio plugin) from scratch. However, it became " +
             "apparent that this wasn't a simple feat for someone starting out. I ended up using an excellent C++ " +
-            "framework called JUCE that has libraries for both audio processing and UI elements.",
+            "framework called JUCE that includes libraries for both audio processing and UI elements.",
         eq3: "My final EQ consisted of 2 notch filters for middle frequencies, a low pass filter to cut high frequencies, " +
             "and a high pass filter to cut low frequencies. Each filter has a small bypass button above it. " +
             "Writing the program involved routing audio input " +
             "through the four filters, and connecting the UI knobs to the filter parameters. " +
             "I also created a real-time frequency analyzer that sits behind a visualization of the EQ curve (the orange line). " +
-            "Lastly, I edited the code/math for one of the built in JUCE filters to allow the user " +
+            "Lastly, I edited the algorithm for one of the built in JUCE filters to allow the user " +
             "to select different slope values for the high and low pass filters.",
-        eq4: "Although not the worlds flashiest audio plugin, I am very satisfied that I got it working inside " +
+        eq4: "Although its not the worlds flashiest audio plugin, I am very satisfied that I got it working inside " +
             "my own music production software. Now that I have more experience behind my belt, I can hopefully tackle more " +
             "interesting ideas that I have.",
 
