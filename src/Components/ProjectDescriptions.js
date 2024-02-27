@@ -28,18 +28,18 @@ const descriptions =
             "and well designed courses I have ever taken. The project itself consisted of a framework that allows " +
             "students to create and test distributed systems, along with four major labs where we were tasked with " +
             "implementing a system similar in functionality to Google's Spanner.",
-        dslabs2: "Lab 1 involved implementing an \"at-most-once\" key-value store (duplicate commands will only execute once), along" +
-            " with a basic client and server. Lab2 consisted of adding primary-backup replication to" +
-            " lab 1 using an all-knowing view service that decides on primary backup configurations. This allows for state replication and consistency, " +
-            "but it also leaves us with a single point of failure. ",
+        dslabs2: "Lab 1 involved implementing an \"at-most-once\" key-value store (duplicate commands will only execute once, results are cached), along" +
+            " with a basic client and server. Lab 2 consisted of adding primary-backup replication to" +
+            " lab 1 using an all-knowing view service server that decides on primary backup configurations. This allows for state replication and consistency, " +
+            "but it also leaves us with a single point of failure (the view service).",
         dslabs3: "Lab 3 fixes this problem using Paxos. Paxos " +
-            "is an amazing algorithm that allows a group of servers to be fault tolerant as long as less than a majority fail. It " +
+            "is an intriguing algorithm that allows a group of servers to be fault tolerant as long as a majority of servers in the group don't fail. It " +
             "also guarantees that consensus can be reached during periods of synchrony. This part involved a bit too many hours " +
-            "of grinding in order to debug the system, but I'm proud to say that we eventually passed all of the test cases.",
+            "of grinding in order to debug the system, but I'm proud to say that we passed all of the test cases.",
         dslabs4: "Lab 4 added on multi-key transactions and sharding. This allows the system to process operations " +
             "in parallel thus increasing performance proportional to the number of server groups. We also had to implement two" +
             " phase commit for agreement between server groups during transactions. On its own 2PC is susceptible to failures, " +
-            "but when paired with paxos provides agreement without major availability issues.",
+            "but when paired with paxos provides agreement without any major availability issues.",
 
         sae1: "After working for Professor Kim in 2020, I was rehired as a part-" +
             "time developer during my last semester of undergrad. During this semester, my task was to write a program " +
