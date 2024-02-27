@@ -54,9 +54,9 @@ const descriptions =
             "projects organized. As for the 3D visual, I used a library called three.js. This was " +
             "easily the most challenging part of the project since it was my first time doing anything related to " +
             "graphics, but I learned a lot! I created a custom shader that morphs based on the music's volume and attribute slider values. ",
-        sae4: "For the design of the software, I added my UI components such as the attribute sliders and menus, " +
+        sae4: "For the design of the software, I added UI components such as the attribute sliders and menus, " +
             "a view component to hold the three.js canvas, a singular audio service that controls everything sound related " +
-            "and can be injected into any component, and a singular session values service, that is used to maintain " +
+            "and can be injected into any component, and a singular session values service used to maintain " +
             "important values during each instance of the program (such as the current round number or username). " +
             "This service was injected into the slider components and the view component, so both the sliders and the 3D graphic could " +
             "have realtime access to the attribute sliders' values.",
