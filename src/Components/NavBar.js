@@ -52,7 +52,7 @@ function NavBar() {
 
                 <div className="footer footer">
                     <p>
-                        @2023 Ben Jordan
+                        @2024 Ben Jordan
                     </p>
                 </div>
 
