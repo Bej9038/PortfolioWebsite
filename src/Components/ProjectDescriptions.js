@@ -1,25 +1,25 @@
 const descriptions =
     {
-        synthlm1: "Entropy is an idea I had for a natural language synthesizer. I believe that some form of natural" +
-            " langauge interface is the future of audio creation. Although there's been some work in the text to speech, text to" +
-            " music, and text to synthesizer parameter domains, I don't feel like any of these tools are ideal for music " +
+        synthlm1: "I believe that some form of natural langauge interface is the future of audio creation. Therefore, after envisioning a natural language synthesizer, " +
+            "I knew I had the chance to apply my skill set and make something novel happen. Although there's been some work in the text to speech, text to" +
+            " music, and text to synth parameter domains, I don't feel like any of these tools are ideal for music " +
             "creators in their current state.",
         synthlm2: "Luckily, Meta AI has done some great research on audio generation. They released 3 models (MusicGen, " +
-            "AudioGen, and Encodec), along with a paper for each and an open source codebase. MusicGen and AudioGen are " +
-            "relatively simple transformer that models aim to predict time-steps in an audio sequence. My goal is to " +
-            "retrain MusicGen to produce instrument samples, rather than entire songs, which should be much more useful for " +
-            "music creation and an easier task in general.",
+            "AudioGen, and Encodec), along with a paper for each and an open-source codebase. MusicGen and AudioGen are " +
+            "relatively simple autoregressive transformer models that aim to predict time-steps in an audio sequence. My goal is to " +
+            "retrain MusicGen to produce instrument samples rather than entire songs, which should be a much easier of a task, and " +
+            "more useful for music creation general.",
         synthlm3: "For my dataset, I accumulated 160 GB of music production sample packs. For the text descriptions, about half" +
-            " of the packs already contain natural language descriptions (thanks to BOOM library). For the other half, I " +
-            "parsed to file paths of the samples to create multi-label descriptions. This works out quite well because the " +
+            " of the packs already contain natural language descriptions (thanks to the company boom library). For the other half, I " +
+            "parsed the file paths of the samples to create multi-label descriptions. This works out quite well because the " +
             "file paths are very descriptive in sample packs, and many times contain BPM or key signatures. (For example, one of the file paths looks like " +
             "dataset\\Sounds of KSHMR Vol 4\\Drum Loops\\Drum Loops - By Genre\\Hip Hop Loops\\Old School\\KSHMR Hip Hop Old School 01 - 80BPM - Full.wav)",
-        synthlm4:"As for the actual training of the models, I started by creating training code based off of the audiocraft codebase, " +
+        synthlm4:"As for training, I started by creating training code based off of the audiocraft codebase, " +
             "and debugged things on my local machine with the small 300M parameter model. I then trained the medium 1.1B model on a single A100" +
-            "  using a small dataset (~3 sample packs) just to be sure that this model could learn the task. I am currently working on " +
-            "training the large 3.3B parameter model on the 160GB dataset using 3 A6000s on RunPod. I converted the model weights to float16 " +
+            "  using a small dataset (~3 sample packs) just to be sure that this task was possible for the model to learn. I am currently working on " +
+            "training the large 3.3B parameter model on the 160GB dataset using 3 A6000s. I converted the model weights to float16 " +
             "in order to get a good batch size to fit, but I may end up doing some finetuning in float32 after to see if quality can be " +
-            "improved even further.",
+            "improved even further. The original weights are float32, so that may end up offering superior sound quality.",
         synthlm5: "I also hope to eventually create a frontend, deploy the model using a serverless computing service, and collect data " +
             "on which text inputs are most popular from users in order to improve the dataset.",
 

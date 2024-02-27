@@ -42,7 +42,7 @@ const portfolios = [
         icon: faChrome,
         descriptions: [descriptions.synthlm1, descriptions.synthlm2, descriptions.synthlm3, descriptions.synthlm4
         , descriptions.synthlm5],
-        title: 'Entropy: Generative Audio Synthesizer',
+        title: 'Entropy - Generative Audio Synthesizer',
         images: [audiocraft1, audiocraft2],
         imagecap: ["1. The MusicGen Architecture", "2. The AudioCraft Codebase"]
     },
