@@ -1,27 +1,28 @@
 const descriptions =
     {
-        synthlm1: "I believe that some form of natural langauge interface is the future of audio creation. Therefore, after envisioning a natural language synthesizer, " +
-            "I knew I had the chance to apply my skill set and make something novel happen. Although there's been some work in the text to speech, text to" +
-            " music, and text to synth parameter domains, I don't feel like any of these tools are ideal for music " +
+        synthlm1: "I believe that some form of natural langauge interface is the future of audio creation. After envisioning a natural language synthesizer, " +
+            "I knew I had the chance to apply my skill set and create something novel. Although there's been some work in the text to speech, text to" +
+            " music, and text to synth-parameter domains, I don't feel like any of these tools are ideal for music " +
             "creators in their current state.",
         synthlm2: "Luckily, Meta AI has done some great research on audio generation. They released 3 models (MusicGen, " +
             "AudioGen, and Encodec), along with a paper for each and an open-source codebase. MusicGen and AudioGen are " +
-            "relatively simple autoregressive transformer models that aim to predict time-steps in an audio sequence. My goal is to " +
-            "retrain MusicGen to produce instrument samples rather than entire songs, which should be a much easier of a task, and " +
-            "more useful for music creation general.",
+            "relatively simple autoregressive transformer models that aim to predict time-steps in a discretized audio sequence. My goal is to " +
+            "retrain MusicGen to produce instrument samples rather than entire songs, which should be an easier task to learn, and " +
+            "hopefully more useful for music creators.",
         synthlm3: "For my dataset, I accumulated 160 GB of music production sample packs. For the text descriptions, about half" +
-            " of the packs already contain natural language descriptions (thanks to the company boom library). For the other half, I " +
-            "parsed the file paths of the samples to create multi-label descriptions. This works out quite well because the " +
-            "file paths are very descriptive in sample packs, and many times contain BPM or key signatures. (For example, one of the file paths looks like " +
+            " of the packs already contain natural language descriptions. For the other half, I " +
+            "parsed the file paths of the samples to create multi-label descriptions. This works out quite well because sample pack " +
+            "file paths are very descriptive, and often times contain BPM or key signatures. (For example, one of the file paths looks like " +
             "dataset\\Sounds of KSHMR Vol 4\\Drum Loops\\Drum Loops - By Genre\\Hip Hop Loops\\Old School\\KSHMR Hip Hop Old School 01 - 80BPM - Full.wav)",
-        synthlm4:"As for training, I started by creating training code based off of the audiocraft codebase, " +
-            "and debugged things on my local machine with the small 300M parameter model. I then trained the medium 1.1B model on a single A100" +
-            "  using a small dataset (~3 sample packs) just to be sure that this task was possible for the model to learn. I am currently working on " +
-            "training the large 3.3B parameter model on the 160GB dataset using 3 A6000s. I converted the model weights to float16 " +
-            "in order to get a good batch size to fit, but I may end up doing some finetuning in float32 after to see if quality can be " +
-            "improved even further. The original weights are float32, so that may end up offering superior sound quality.",
-        synthlm5: "I also hope to eventually create a frontend, deploy the model using a serverless computing service, and collect data " +
-            "on which text inputs are most popular from users in order to improve the dataset.",
+        synthlm4:"As for training, I started by creating custom training code based off of the original codebase, " +
+            "and tested things on my local machine with the small 300M parameter model. I then trained the medium 1.1B model on a single A100" +
+            "  using a small dataset (~3 sample packs) just to be sure this task was learnable. I am currently " +
+            "training the large 3.3B parameter model on the 160GB dataset using 3 A6000s. It is quite interesting seeing how " +
+            "the learning rate and other hyperparameters affect the model's output. For example, I found in my testing that a lower learning " +
+            "rate almost directly corresponds to more detailed audio, but it is really easy to go too low and pick up noisy patterns!",
+        synthlm5: "I am currently in the process of designing a frontend, and have deployed the model using a serverless computing. " +
+            "I also have many planned improvements for the model's architecture and training process that I am incredibly excited about implementing. " +
+            "It feels like there's a world of possibilities for this tech, and the fact that audio quality is already good is really promising.",
 
         dslabs1: "DSLabs was a semester long project that I completed while taking Cornell's CS5414 " +
             "(Distributed Computing) with Lorenzo Alvisi. This class was easily one of the most challenging, rewarding, " +
