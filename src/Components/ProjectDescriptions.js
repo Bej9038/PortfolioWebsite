@@ -20,9 +20,9 @@ const descriptions =
             "training the large 3.3B parameter model on the 160GB dataset using 3 A6000s. It is quite interesting seeing how " +
             "the learning rate and other hyperparameters affect the model's output. For example, I found in my testing that a lower learning " +
             "rate almost directly corresponds to more detailed audio, but it is really easy to go too low and pick up noisy patterns!",
-        synthlm5: "I am currently in the process of designing a frontend, and have deployed the model using a serverless computing. " +
-            "I also have many planned improvements for the model's architecture and training process that I am incredibly excited about implementing. " +
-            "It feels like there's a world of possibilities for this tech, and the fact that audio quality is already good is really promising.",
+        synthlm5: "I am currently in the process of designing a frontend, and have deployed the model using serverless computing. " +
+            "I also have many planned improvements for the model's architecture and training process that I am incredibly excited about. " +
+            "It feels like there's a world of possibilities for this technology as evident by the progress made with language and images.",
 
         dslabs1: "DSLabs was a semester long project that I completed while taking Cornell's CS5414 " +
             "(Distributed Computing) with Lorenzo Alvisi. This class was easily one of the most challenging, rewarding, " +
