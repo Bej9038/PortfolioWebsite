@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from "../Downloads/Ben Jordan [March 2024].pdf";
+import resume from "../Downloads/Ben Jordan [May 2024].pdf";
 
 function ImageSection() {
     return (
