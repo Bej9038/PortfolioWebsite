@@ -1,28 +1,26 @@
 const descriptions =
     {
-        synthlm1: "I believe that some form of natural langauge interface is the future of audio creation. After envisioning a natural language synthesizer, " +
-            "I knew I had the chance to apply my skill set and create something novel. Although there's been some work in the text to speech, text to" +
+        synthlm1: "I believe that some form of natural langauge interface is the future of audio creation. Since audio is generally focused on less than text and images in ML research, " +
+            "I knew I had the chance to apply my skill set and create something novel. Although there has been some work in the text to speech, text to" +
             " music, and text to synth-parameter domains, I don't feel like any of these tools are ideal for music " +
             "creators in their current state.",
         synthlm2: "Luckily, Meta AI has done some great research on audio generation. They released 3 models (MusicGen, " +
             "AudioGen, and Encodec), along with a paper for each and an open-source codebase. MusicGen and AudioGen are " +
-            "relatively simple autoregressive transformer models that aim to predict time-steps in a discretized audio sequence. My goal is to " +
+            "relatively simple autoregressive transformer models that aim to predict time-steps in a latent audio sequence. My goal is to " +
             "retrain MusicGen to produce instrument samples rather than entire songs, which should be an easier task to learn, and " +
             "hopefully more useful for music creators.",
-        synthlm3: "For my dataset, I accumulated 160 GB of music production sample packs. For the text descriptions, about half" +
+        synthlm3: "For my dataset, I accumulated 160 GB of music production samples. For the text descriptions, about half" +
             " of the packs already contain natural language descriptions. For the other half, I " +
-            "parsed the file paths of the samples to create multi-label descriptions. This works out quite well because sample pack " +
-            "file paths are very descriptive, and often times contain BPM or key signatures. (For example, one of the file paths looks like " +
-            "dataset\\Sounds of KSHMR Vol 4\\Drum Loops\\Drum Loops - By Genre\\Hip Hop Loops\\Old School\\KSHMR Hip Hop Old School 01 - 80BPM - Full.wav)",
+            "parsed the file paths of the samples to create multi-label descriptions.",
         synthlm4:"As for training, I started by creating custom training code based off of the original codebase, " +
             "and tested things on my local machine with the small 300M parameter model. I then trained the medium 1.1B model on a single A100" +
-            "  using a small dataset (~3 sample packs) just to be sure this task was learnable. I am currently " +
-            "training the large 3.3B parameter model on the 160GB dataset using 3 A6000s. It is quite interesting seeing how " +
+            "  using a small dataset (~3 sample packs) just to be sure this task was learnable. I finished training the large 3.3B parameter model (the one currently on the website) using 3 A6000s. It is quite interesting seeing how " +
             "the learning rate and other hyperparameters affect the model's output. For example, I found in my testing that a lower learning " +
-            "rate almost directly corresponds to more detailed audio, but it is really easy to go too low and pick up noisy patterns!",
-        synthlm5: "I am currently in the process of designing a frontend, and have deployed the model using serverless computing. " +
-            "I also have many planned improvements for the model's architecture and training process that I am incredibly excited about. " +
-            "It feels like there's a world of possibilities for this technology as evidenced by the progress made with language and images.",
+            "rate almost directly corresponds to more detailed audio up to a point. Past around 1e-6, the quality suffered. Interestingly enough, " +
+            "I also found the optimal hyperparameters for Entropy V1 to be scarily similar to those used to train GPT2 and other large transformer models in research.",
+        synthlm5: "I am currently in the process of creating a novel dataset using manual and automated labelling. This should give users complete control over " +
+            "the sound generation. I also have improvements planned for the model's architecture and training process. " +
+            "There is a world of technology used with text and images that has yet to be applied to audio synthesis, which makes me very excited!",
 
         dslabs1: "DSLabs was a semester long project that I completed while taking Cornell's CS5414 " +
             "(Distributed Computing) with Lorenzo Alvisi. This class was easily one of the most challenging, rewarding, " +

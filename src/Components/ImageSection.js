@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from "../Downloads/Ben Jordan [May 2024].pdf";
+import resume from "../Downloads/Ben Jordan [June 2024].pdf";
 
 function ImageSection() {
     return (
@@ -9,10 +9,10 @@ function ImageSection() {
                     <span>I am a recent graduate of cornell university working in industry as a machine learning engineer.</span>
                     <br/><br/>
                     I enjoy learning about applied math, machine learning, and computer systems.
-                    I also just really like working on software projects in general.
+                    I also just like working on large software projects in general.
                     <br/><br/>
                     Outside of work, I like being active, visiting new places, and music.
-                    As an undergrad, I was a member of RIT's varsity track and field team.
+                    As an undergrad, I was a member of RIT's varsity track and field team. I also completed a minor in Music along with my bachelors.
                 </p>
                 <a style={{color: "var(--font-color2)"}} href={resume} download>
                     <button className="btn">Download CV</button>
