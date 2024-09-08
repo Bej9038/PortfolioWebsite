@@ -6,7 +6,7 @@ function ImageSection() {
         <div className="ImageSection">
             <div className="about-info">
                 <p className="about-text">
-                    <span>I am a graduate of cornell university working in industry as an AI/ML engineer.</span>
+                    <span>I am a graduate of Cornell University working in industry as an AI/ML engineer.</span>
                     <br/><br/>
                     I enjoy learning about applied math, machine learning, and computer systems.
                     I also just like working on large software projects in general.
