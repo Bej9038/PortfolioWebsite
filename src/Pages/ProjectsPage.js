@@ -33,7 +33,7 @@ function ProjectsPage() {
     return (
         <div className="ProjectsPage">
             <div className="title">
-                <Title title={'Projects'} progress={66}/>
+                <Title title={'Projects'} progress={75}/>
             </div>
             <div className="portfolio-menu">
                 {/*<Categories categories = {categories} filter={filter} />*/}

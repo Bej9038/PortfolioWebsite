@@ -6,7 +6,7 @@ import ImageSection from "../Components/ImageSection";
 function AboutPage() {
     return (
         <div className="AboutPage">
-            <Title title={'About Me'} progress={33}/>
+            <Title title={'About Me'} progress={25}/>
             <ImageSection />
             <Title title={'Skills'} progress={50}/>
             <div className="skills-group">
