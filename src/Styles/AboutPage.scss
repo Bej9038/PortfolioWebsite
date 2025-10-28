@@ -7,23 +7,64 @@
   {
     margin-top: 4.5rem;
     margin-bottom: 4.5rem;
-    .img
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+
+    .image-content
     {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
       width: 100%;
-      img
-      {
-        width: 100%;
-        object-fit: cover;
-      }
     }
 
     .about-info
     {
-      .about-text
+      flex: 1;
+    }
+
+    .about-text
+    {
+      font-size: 1.6rem;
+      width: 100%;
+    }
+
+    .about-img-wrapper
+    {
+      flex: 0 0 20rem;
+      max-width: 20rem;
+      width: 100%;
+    }
+
+    .about-img
+    {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      box-shadow: var(--card-shadow);
+    }
+
+    .download-link
+    {
+      align-self: flex-start;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 900px)
+    {
+      .image-content
       {
-        padding-bottom: 5rem;
-        width: 85%;
-        font-size: 1.6rem;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .about-img-wrapper
+      {
+        max-width: 18rem;
       }
     }
 

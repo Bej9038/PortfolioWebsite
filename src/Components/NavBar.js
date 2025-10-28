@@ -9,13 +9,13 @@ function NavBar() {
         <div className="NavBar">
             <nav className="nav">
                 <header className="hero">
-                    <h1 className="hero-text">
-                        <span> Ben Jordan</span>
-                    </h1>
+                    {/*<h1 className="hero-text">*/}
+                    {/*    <span> Ben Jordan</span>*/}
+                    {/*</h1>*/}
 
-                    <p className="home-sub-text">
-                        Machine Learning & Software Engineering
-                    </p>
+                    {/*<p className="home-sub-text">*/}
+                    {/*    Machine Learning & Software Engineering*/}
+                    {/*</p>*/}
 
                     <div className="icons">
                         <a target = "_blank" href = "https://github.com/Bej9038" className="icon-link">
@@ -49,10 +49,11 @@ function NavBar() {
                         </NavLink>
                     </lin>
                 </ul>
-
+                {/*<div className="footer footer">*/}
+                {/*</div>*/}
                 <div className="footer footer">
                     <p>
-                        @2024 Ben Jordan
+                        @2025 Ben Jordan
                     </p>
                 </div>
 

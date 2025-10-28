@@ -56,30 +56,30 @@ const portfolios = [
         imagecap: ["1: The Part-Time Parliament", "2: The greatest moment of my life"],
         title: 'DSLabs - Sharded Key-Value Store'
     },
-    {
-        id: 10,
-        category: ['2023'],
-        descriptions: [descriptions.fv1, descriptions.fv2, descriptions.fv3, descriptions.fv4, descriptions.fv5],
-        title: 'FeatureViz - Deep Learning Visualization',
-        link:"https://github.com/Bej9038/FeatureViz",
-        icon: faGithub,
-        images: [FV1, FV2, FV3],
-        imagecap: ["1: A cool looking feature from the third group of layers in ResNet50",
-            "2: A more basic feature from an earlier layer",
-            "3: A faint visualization of the stingray class from the final classifier"],
-    },
-    {
-        id: 7,
-        category: ['2021'],
-        link: 'https://github.com/Bej9038/EQ',
-        icon: faGithub,
-        descriptions: [descriptions.eq1, descriptions.eq2, descriptions.eq3, descriptions.eq4],
-        audio: [eqdry, eqwet],
-        audiocap:["A drum loop with the EQ bypassed", "The same drum loop after applying the EQ curve shown in the image above"],
-        images: [EQ2],
-        imagecap: ["1: The EQ in action in my music production software"],
-        title: 'EQ Audio Plugin'
-    },
+    // {
+    //     id: 10,
+    //     category: ['2023'],
+    //     descriptions: [descriptions.fv1, descriptions.fv2, descriptions.fv3, descriptions.fv4, descriptions.fv5],
+    //     title: 'FeatureViz - Deep Learning Visualization',
+    //     link:"https://github.com/Bej9038/FeatureViz",
+    //     icon: faGithub,
+    //     images: [FV1, FV2, FV3],
+    //     imagecap: ["1: A cool looking feature from the third group of layers in ResNet50",
+    //         "2: A more basic feature from an earlier layer",
+    //         "3: A faint visualization of the stingray class from the final classifier"],
+    // },
+    // {
+    //     id: 7,
+    //     category: ['2021'],
+    //     link: 'https://github.com/Bej9038/EQ',
+    //     icon: faGithub,
+    //     descriptions: [descriptions.eq1, descriptions.eq2, descriptions.eq3, descriptions.eq4],
+    //     audio: [eqdry, eqwet],
+    //     audiocap:["A drum loop with the EQ bypassed", "The same drum loop after applying the EQ curve shown in the image above"],
+    //     images: [EQ2],
+    //     imagecap: ["1: The EQ in action in my music production software"],
+    //     title: 'EQ Audio Plugin'
+    // },
 
 
 
@@ -94,16 +94,16 @@ const portfolios = [
     //         "3: Setting the frequency ranges on the canvas's axes and creating the oscillators", "4: Speech to noise ratio selection"],
     //     title: 'Implant Testing Program'
     // },
-    {
-        id: 3,
-        category: ['2022'],
-        link: 'https://github.com/Bej9038/SpatialAttributeEvaluation',
-        icon: faGithub,
-        descriptions: [descriptions.sae1, descriptions.sae2, descriptions.sae3, descriptions.sae4],
-        images: [SAE4, SAE1, SAE2],
-        imagecap: ["1: Part of the initial project specifications", "2: Welcome menu","3: Playing around with the controls"],
-        title: 'Spatial Attributes Evaluation'
-    },
+    // {
+    //     id: 3,
+    //     category: ['2022'],
+    //     link: 'https://github.com/Bej9038/SpatialAttributeEvaluation',
+    //     icon: faGithub,
+    //     descriptions: [descriptions.sae1, descriptions.sae2, descriptions.sae3, descriptions.sae4],
+    //     images: [SAE4, SAE1, SAE2],
+    //     imagecap: ["1: Part of the initial project specifications", "2: Welcome menu","3: Playing around with the controls"],
+    //     title: 'Spatial Attributes Evaluation'
+    // },
     // {
     //     id: 8,
     //     category: ['2020'],
