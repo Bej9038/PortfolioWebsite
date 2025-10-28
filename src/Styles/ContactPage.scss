@@ -18,17 +18,28 @@
     }
     margin-top: 4.5rem;
     position: relative;
+    .context-info
+    {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
     .map-sect
     {
       color: var(--sidebar);
-      width: 466px;
+      //width: 100px;
+      width: auto;
+      max-width: fit-content;
       padding: .5rem;
       box-shadow: var(--card-shadow);
       background-color: var(--sidebar);
       position: relative;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      //top: 50%;
+      //left: 50%;
+      //transform: translate(-50%, -50%);
     }
     .contact-sect
     {

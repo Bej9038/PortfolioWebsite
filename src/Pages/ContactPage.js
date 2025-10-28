@@ -14,6 +14,13 @@ function ContactPage() {
                 <Title title={'Contact'} progress={100}/>
             </div>
             <div className="sections">
+                <div className="context-info">
+                    Phone: 607-339-1740
+                    <br/><br/>
+                    Email: bej9@cornell.edu, bejordae@amazon.com
+                    <br/><br/>
+                    Current Location: New York, NY
+                </div>
                 <div className="map-sect">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193572.132814464!2d-74.11808698000894!3d40.705825455231026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v0000000000000!5m2!1sen!2sus"
@@ -25,28 +32,29 @@ function ContactPage() {
                         referrerPolicy="no-referrer-when-downgrade"
                     />
             </div>
-            <div className="contact-sect">
-                <form autoComplete="off" onSubmit={handleSubmit} action="https://formspree.io/f/mqkwpwoa" method="post"
-                      id="contact-form">
-                    <div className="form-group">
-                        <label htmlFor="name" className="label">Name</label>
-                        <input autoComplete="new-password" type="text" id = "name" className="textio" name = "name" />
-                        </div>
-                        <input type="hidden" value = 'prayer'/>
 
-                        <div className="form-group">
-                            <label htmlFor="email" className="label">Email</label>
-                            <input autoComplete="new-password" type="text" id="email" className="textio" name="email"/>
-                        </div>
+            {/*<div className="contact-sect">*/}
+            {/*    <form autoComplete="off" onSubmit={handleSubmit} action="https://formspree.io/f/mqkwpwoa" method="post"*/}
+            {/*          id="contact-form">*/}
+            {/*        <div className="form-group">*/}
+            {/*            <label htmlFor="name" className="label">Name</label>*/}
+            {/*            <input autoComplete="new-password" type="text" id = "name" className="textio" name = "name" />*/}
+            {/*            </div>*/}
+            {/*            <input type="hidden" value = 'prayer'/>*/}
 
-                        <div className="form-group">
-                            <label htmlFor="message" className="label">Message</label>
-                            <textarea id="message" className="textio" name="message"/>
-                        </div>
-                        <button className='email-btn' type = "submit">Send</button>
-                    </form>
-                    <div className="success">Massage Received!</div>
-                </div>
+            {/*            <div className="form-group">*/}
+            {/*                <label htmlFor="email" className="label">Email</label>*/}
+            {/*                <input autoComplete="new-password" type="text" id="email" className="textio" name="email"/>*/}
+            {/*            </div>*/}
+
+            {/*            <div className="form-group">*/}
+            {/*                <label htmlFor="message" className="label">Message</label>*/}
+            {/*                <textarea id="message" className="textio" name="message"/>*/}
+            {/*            </div>*/}
+            {/*            <button className='email-btn' type = "submit">Send</button>*/}
+            {/*        </form>*/}
+            {/*        <div className="success">Massage Received!</div>*/}
+            {/*    </div>*/}
             </div>
         </div>
     );
