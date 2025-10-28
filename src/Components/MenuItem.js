@@ -5,7 +5,7 @@ import ReactAudioPlayer from 'react-audio-player';
 
 
 function MenuItem({menuItem, id, setId}) {
-    const [expanded, setExpanded] = useState(false);
+    const [expanded, setExpanded] = useState(true);
     return (
         <div className={`MenuItem`}>
             {
@@ -23,18 +23,18 @@ function MenuItem({menuItem, id, setId}) {
 
                         <div style={{maxHeight: `${expanded && (id === -1 || item.id === id) ? "400vh" : "24vh"}`}} className={`project-content`}>
                             <div className={`${expanded && (id === -1 || item.id === id)? 'text-cover-plain' : 'text-cover'}`}></div>
-                            <button className="expand-btn" onClick={() => {
-                                if(!expanded)
-                                {
-                                    setId(item.id);
-                                    setExpanded(true);
-                                }
-                                else
-                                {
-                                    setId(-1);
-                                    setExpanded(false);
-                                }
-                            }}>Expand</button>
+                            {/*<button className="expand-btn" onClick={() => {*/}
+                            {/*    if(!expanded)*/}
+                            {/*    {*/}
+                            {/*        setId(item.id);*/}
+                            {/*        setExpanded(true);*/}
+                            {/*    }*/}
+                            {/*    else*/}
+                            {/*    {*/}
+                            {/*        setId(-1);*/}
+                            {/*        setExpanded(false);*/}
+                            {/*    }*/}
+                            {/*}}>Expand</button>*/}
                             <div className="flex-container">
                                 <p className="description">
                                     {item.descriptions? item.descriptions[0] ? item.descriptions[0]:"":""}

@@ -42,20 +42,20 @@ const portfolios = [
         icon: faChrome,
         descriptions: [descriptions.synthlm1, descriptions.synthlm2, descriptions.synthlm3, descriptions.synthlm4
         , descriptions.synthlm5],
-        title: 'Entropy Audio - Conditional Audio Generation For Music Production',
+        title: 'Generative, Transformer-Based Models For Music Composition',
         images: [audiocraft1, audiocraft2],
         imagecap: ["1. The MusicGen Architecture", "2. My UI Prototype"]
     },
-    {
-        id: 2,
-        category: ['2023'],
-        link: 'https://github.com/emichael/dslabs',
-        icon: faGithub,
-        descriptions: [descriptions.dslabs1, descriptions.dslabs2, descriptions.dslabs3, descriptions.dslabs4],
-        images: [dslabs1, dslabs2],
-        imagecap: ["1: The Part-Time Parliament", "2: The greatest moment of my life"],
-        title: 'DSLabs - Sharded Key-Value Store'
-    },
+    // {
+    //     id: 2,
+    //     category: ['2023'],
+    //     link: 'https://github.com/emichael/dslabs',
+    //     icon: faGithub,
+    //     descriptions: [descriptions.dslabs1, descriptions.dslabs2, descriptions.dslabs3, descriptions.dslabs4],
+    //     images: [dslabs1, dslabs2],
+    //     imagecap: ["1: The Part-Time Parliament", "2: The greatest moment of my life"],
+    //     title: 'DSLabs - Sharded Key-Value Store'
+    // },
     // {
     //     id: 10,
     //     category: ['2023'],
@@ -80,9 +80,6 @@ const portfolios = [
     //     imagecap: ["1: The EQ in action in my music production software"],
     //     title: 'EQ Audio Plugin'
     // },
-
-
-
     // {
     //     id: 4,
     //     category: ['2020'],

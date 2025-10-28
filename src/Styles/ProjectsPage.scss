@@ -99,7 +99,7 @@
     .portfolio
     {
       box-shadow: var(--card-shadow);
-      background-color: var(--sidebar);
+      //background-color: var(--sidebar);
       overflow: hidden;
       .project-content
       {
@@ -226,7 +226,7 @@
         height: auto;
         font-weight: 400;
         font-size: 2rem;
-        background-color: var(--sidebar);
+        //background-color: var(--sidebar);
         &:hover
         {
           color: var(--main-color);
