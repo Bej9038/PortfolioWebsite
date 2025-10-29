@@ -13,9 +13,9 @@ function MenuItem({menuItem, id, setId}) {
                 {
                     return <div className={`portfolio`} key={item.id}>
                         <h5>
-                            {!item.link ? "" : <a target = "_blank" href={item.link}>
-                                <FontAwesomeIcon icon={item.icon} className='icon'/>
-                            </a>}
+                            {/*{!item.link ? "" : <a target = "_blank" href={item.link}>*/}
+                            {/*    <FontAwesomeIcon icon={item.icon} className='icon'/>*/}
+                            {/*</a>}*/}
                             <div className="title">
                                 {item.title}
                             </div>
@@ -54,17 +54,17 @@ function MenuItem({menuItem, id, setId}) {
                                 <p className="description">
                                     {item.descriptions? item.descriptions[1] ? item.descriptions[1]:"":""}
                                 </p>
-                                {(() => {
-                                        if (item.images && item.images[1]) {
-                                            return <div>
-                                                <img className="img"
-                                                     src={item.images[1]}
-                                                     alt=""/>
-                                                <div className="img-caption">{item.imagecap[1]}</div>
-                                            </div>
-                                        }
-                                    }
-                                )()}
+                                {/*{(() => {*/}
+                                {/*        if (item.images && item.images[1]) {*/}
+                                {/*            return <div>*/}
+                                {/*                <img className="img"*/}
+                                {/*                     src={item.images[1]}*/}
+                                {/*                     alt=""/>*/}
+                                {/*                <div className="img-caption">{item.imagecap[1]}</div>*/}
+                                {/*            </div>*/}
+                                {/*        }*/}
+                                {/*    }*/}
+                                {/*)()}*/}
                                 {(() => {
                                     if (item.audio && item.audiocap) {
                                         return <div className="audio-container">
@@ -116,6 +116,9 @@ function MenuItem({menuItem, id, setId}) {
                                 )()}
                                 <p className="description">
                                     {item.descriptions? item.descriptions[4] ? item.descriptions[4]:"":""}
+                                </p>
+                                <p className="description">
+                                    {item.descriptions? item.descriptions[5] ? item.descriptions[5]:"":""}
                                 </p>
                             </div>
                         </div>

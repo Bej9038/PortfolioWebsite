@@ -38,10 +38,10 @@ const portfolios = [
     {
         id: 1,
         category: ['2023'],
-        link: 'https://ai.meta.com/blog/audiocraft-musicgen-audiogen-encodec-generative-ai-audio/',
+        link: 'https://entropyaudio.io/',
         icon: faChrome,
         descriptions: [descriptions.synthlm1, descriptions.synthlm2, descriptions.synthlm3, descriptions.synthlm4
-        , descriptions.synthlm5],
+        , descriptions.synthlm5, descriptions.synthlm6],
         title: 'Generative, Transformer-Based Models For Music Composition',
         images: [audiocraft1, audiocraft2],
         imagecap: ["1. The MusicGen Architecture", "2. My UI Prototype"]

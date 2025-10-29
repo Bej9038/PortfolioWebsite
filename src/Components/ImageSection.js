@@ -8,7 +8,7 @@ function ImageSection() {
             <div className="image-content">
                 <div className="about-info">
                     <p className="about-text">
-                        <span>I am a graduate of Cornell & RIT currently working as a software engineer at Amazon.</span>
+                        <span>I am a software engineer at Amazon and a former graduate of Cornell & RIT CS.</span>
                         <br/><br/>
                         In my current job, I work on large scale software systems with project focus on complex spark ETL jobs and ML ops.
                         I have a background in ML from my masters as well as from my previous role and internship.
