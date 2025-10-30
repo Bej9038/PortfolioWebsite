@@ -26,21 +26,27 @@ const descriptions =
         synthlm4: "However, the data bottleneck still remains. To fix this, I have been working on a dataset that is currently sitting at around 2TB. " +
             "The largest portion of this data was a result of my effort in automating the data gathering and labeling process. I used LLMs " +
             "(Qwen3-30B) ran locally on my workstation and gemini-2.5-flash (API) to generate captions. Each piece of data has metadata and conditioning fields " +
-            "prepared in a predefined schema and saved as a json file. This dataset format was inspired by Meta's AudioCraft codebase: https://github.com/facebookresearch/audiocraft. " +
+            "prepared in a predefined schema and saved as a json file. This dataset format was inspired by " +
+            "<a href='https://github.com/facebookresearch/audiocraft' target='_blank' rel='noopener noreferrer'>Meta's AudioCraft codebase</a>. " +
             "The rest of the data is either open source or manually labeled. I am planning on attempting to train an LLM to do the labelling as well. " +
             "All open source and synthetic data is filtered by CLAP score https://huggingface.co/docs/transformers/model_doc/clap to ensure the data is high quality.",
 
         synthlm5: "Alongside the data preparation aspect, I created 4 main code packages: entropy_training, entropy_models, entropy_metrics, and entropy_data. " +
-            "Currently, entropy_models was initialized from https://github.com/Stability-AI/stable-audio-tools and contains model code for a stable audio open like model. " +
-            "entropy_data holds the code for the audio dataset (somewhat inspired by the dataset classes in https://github.com/facebookresearch/audiocraft) as well as " +
+            "entropy_models was initialized from the <a href='https://github.com/Stability-AI/stable-audio-tools' target='_blank' rel='noopener noreferrer'>Stable Audio Tools repo</a> " +
+            "and contains code for the DiT, autoencoder, and conditioners. For text conditioners" +
+            "entropy_data holds the code for the audio dataset (inspired by the dataset classes in <a href='https://github.com/facebookresearch/audiocraft' target='_blank' rel='noopener noreferrer'>AudioCraft</a>) as well as " +
             "the code for curating the synthetic data and analyzing the data distribution. The training package contains code for training and evaluating the model, " +
-            "and the metrics package is just metrics for evaluation. Some interesting metrics I have been using are the metrics from https://ai.meta.com/research/publications/meta-audiobox-aesthetics-unified-automatic-quality-assessment-for-speech-music-and-sound/. " +
+            "and the metrics package is just metrics for evaluation. Some interesting metrics I have been using are the model scores from <a href='https://ai.meta.com/research/publications/meta-audiobox-aesthetics-unified-automatic-quality-assessment-for-speech-music-and-sound/' target='_blank' rel='noopener noreferrer'>Meta's Audiobox Aesthetics</a>. " +
             "This is a pretrained model that predicts scores for an audio's content enjoyment, content quality, production complexity, and production quality. " +
             "These scores have actually been decent indicators of training progress and could potentially be useful for some experimental RL post-training.",
 
-        synthlm6: "On the engineering side, I created a frontend repo made with Angular https://entropyaudio.io/. My goals with the user interface were to make something " +
-            "that felt like a hybrid between digital synth and an LLM UI, and to make a UI that allows for automatic preference data selection (aka a data flywheel). " +
-            "For backend and model inference, I used AWS Lambdas+S3+DDB and RunPod Serverless Endpoints respectively.",
+        synthlm6: "On the engineering side, initial/experimental training runs for the diffusion model were done on my personal workstation with 1x5090. When I'm ready to scale (when the dataset is complete)" +
+            "I will probably move to a multi-gpu setup on RunPod (and use up some free startup credits). To speed up training, I used PyTorch's automatic mixed precision " +
+            "to convert some of the weights down to bfloat16 (from float32). I also preencoded the audio latents ahead of time in my dataset. For training/experiment tracking I used wandb. " +
+            "I created a <a href='https://github.com/EntropyAudio/entropy_frontend' target='_blank' rel='noopener noreferrer'>frontend with Angular</a> " +
+            "as well as a small serverless backend + model inference function. For those pieces I used AWS Lambdas+S3+DDB and RunPod Serverless Endpoints respectively. My goal with the user interface was to make something " +
+            "that felt like a hybrid between digital synth and LLM UIs, and also to make a UI that allows for natural preference data selection (aka a data flywheel). " +
+            "RunPod/Lambda code can be found here: Note that the core packages like entropy_training are private.",
 
 
 

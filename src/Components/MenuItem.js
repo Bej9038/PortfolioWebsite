@@ -5,6 +5,17 @@ import ReactAudioPlayer from 'react-audio-player';
 
 
 function MenuItem({menuItem, id, setId}) {
+    const linkify = (text) => {
+        if (!text) return '';
+        // If manual anchors are present, leave text unchanged
+        if (/<a\b[^>]*>/i.test(text)) return text;
+        // Linkify bare URLs while avoiding attribute contexts and quotes
+        return text.replace(/(^|[^"'==])(https?:\/\/[^\s<)"']+)/g, (match, prefix, rawUrl) => {
+            const url = rawUrl.replace(/[.,!?)]*$/, '');
+            const trailing = rawUrl.slice(url.length);
+            return `${prefix}<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>${trailing}`;
+        });
+    };
     const [expanded, setExpanded] = useState(true);
     return (
         <div className={`MenuItem`}>
@@ -36,9 +47,9 @@ function MenuItem({menuItem, id, setId}) {
                             {/*    }*/}
                             {/*}}>Expand</button>*/}
                             <div className="flex-container">
-                                <p className="description">
-                                    {item.descriptions? item.descriptions[0] ? item.descriptions[0]:"":""}
-                                </p>
+                                <p className="description" dangerouslySetInnerHTML={{
+                                    __html: linkify(item.descriptions ? (item.descriptions[0] || "") : "")
+                                }} />
                                 {(() => {
                                         if (item.images && item.images[0]) {
                                             return <div>
@@ -51,44 +62,53 @@ function MenuItem({menuItem, id, setId}) {
                                         }
                                     }
                                 )()}
-                                <p className="description">
-                                    {item.descriptions? item.descriptions[1] ? item.descriptions[1]:"":""}
-                                </p>
+                                <p className="description" dangerouslySetInnerHTML={{
+                                    __html: linkify(item.descriptions ? (item.descriptions[1] || "") : "")
+                                }} />
                                 {/*{(() => {*/}
-                                {/*        if (item.images && item.images[1]) {*/}
-                                {/*            return <div>*/}
-                                {/*                <img className="img"*/}
-                                {/*                     src={item.images[1]}*/}
-                                {/*                     alt=""/>*/}
-                                {/*                <div className="img-caption">{item.imagecap[1]}</div>*/}
+                                {/*    if (item.audio && item.audiocap) {*/}
+                                {/*        return <div className="audio-container">*/}
+                                {/*            <div>*/}
+                                {/*                <ReactAudioPlayer className="audio-player"*/}
+                                {/*                                  src={item.audio[0]}*/}
+                                {/*                                  controls*/}
+                                {/*                />*/}
+                                {/*                <div className="audio-caption">{item.audiocap[0]}</div>*/}
                                 {/*            </div>*/}
-                                {/*        }*/}
+                                {/*            <div>*/}
+                                {/*                <ReactAudioPlayer className="audio-player"*/}
+                                {/*                                  src={item.audio[1]}*/}
+                                {/*                                  controls*/}
+                                {/*                />*/}
+                                {/*                <div className="audio-caption">{item.audiocap[1]}</div>*/}
+                                {/*            </div>*/}
+                                {/*        </div>*/}
                                 {/*    }*/}
-                                {/*)()}*/}
+                                {/*})()}*/}
+                                <p className="description" dangerouslySetInnerHTML={{
+                                    __html: linkify(item.descriptions ? (item.descriptions[2] || "") : "")
+                                }} />
                                 {(() => {
-                                    if (item.audio && item.audiocap) {
-                                        return <div className="audio-container">
-                                            <div>
-                                                <ReactAudioPlayer className="audio-player"
-                                                                  src={item.audio[0]}
-                                                                  controls
-                                                />
-                                                <div className="audio-caption">{item.audiocap[0]}</div>
+                                        if (item.images && item.images[1]) {
+                                            return <div>
+                                                <img className="img"
+                                                     src={item.images[1]}
+                                                     alt=""/>
+                                                <div className="img-caption">{item.imagecap[1]}</div>
                                             </div>
-                                            <div>
-                                                <ReactAudioPlayer className="audio-player"
-                                                                  src={item.audio[1]}
-                                                                  controls
-                                                />
-                                                <div className="audio-caption">{item.audiocap[1]}</div>
-                                            </div>
-                                        </div>
+                                        }
                                     }
-                                })()}
-                                <p className="description">
-                                    {item.descriptions? item.descriptions[2] ? item.descriptions[2]:"":""}
-                                </p>
+                                )()}
+                                <p className="description" dangerouslySetInnerHTML={{
+                                    __html: linkify(item.descriptions ? (item.descriptions[3] || "") : "")
+                                }} />
 
+                                <p className="description" dangerouslySetInnerHTML={{
+                                    __html: linkify(item.descriptions ? (item.descriptions[4] || "") : "")
+                                }} />
+                                <p className="description" dangerouslySetInnerHTML={{
+                                    __html: linkify(item.descriptions ? (item.descriptions[5] || "") : "")
+                                }} />
                                 {(() => {
                                         if (item.images && item.images[2]) {
                                             return <div>
@@ -100,9 +120,6 @@ function MenuItem({menuItem, id, setId}) {
                                         }
                                     }
                                 )()}
-                                <p className="description">
-                                    {item.descriptions? item.descriptions[3] ? item.descriptions[3]:"":""}
-                                </p>
                                 {(() => {
                                         if (item.images && item.images[3]) {
                                             return <div>
@@ -114,12 +131,6 @@ function MenuItem({menuItem, id, setId}) {
                                         }
                                     }
                                 )()}
-                                <p className="description">
-                                    {item.descriptions? item.descriptions[4] ? item.descriptions[4]:"":""}
-                                </p>
-                                <p className="description">
-                                    {item.descriptions? item.descriptions[5] ? item.descriptions[5]:"":""}
-                                </p>
                             </div>
                         </div>
                     </div>
