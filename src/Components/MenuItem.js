@@ -102,16 +102,6 @@ function MenuItem({menuItem, id, setId}) {
                                 <p className="description" dangerouslySetInnerHTML={{
                                     __html: linkify(item.descriptions ? (item.descriptions[3] || "") : "")
                                 }} />
-
-                                <p className="description" dangerouslySetInnerHTML={{
-                                    __html: linkify(item.descriptions ? (item.descriptions[4] || "") : "")
-                                }} />
-                                <p className="description" dangerouslySetInnerHTML={{
-                                    __html: linkify(item.descriptions ? (item.descriptions[5] || "") : "")
-                                }} />
-                                <p className="description" dangerouslySetInnerHTML={{
-                                    __html: linkify(item.descriptions ? (item.descriptions[6] || "") : "")
-                                }} />
                                 {(() => {
                                         if (item.images && item.images[2]) {
                                             return <div>
@@ -123,6 +113,16 @@ function MenuItem({menuItem, id, setId}) {
                                         }
                                     }
                                 )()}
+                                <p className="description" dangerouslySetInnerHTML={{
+                                    __html: linkify(item.descriptions ? (item.descriptions[4] || "") : "")
+                                }} />
+                                <p className="description" dangerouslySetInnerHTML={{
+                                    __html: linkify(item.descriptions ? (item.descriptions[5] || "") : "")
+                                }} />
+                                <p className="description" dangerouslySetInnerHTML={{
+                                    __html: linkify(item.descriptions ? (item.descriptions[6] || "") : "")
+                                }} />
+
                                 {(() => {
                                         if (item.images && item.images[3]) {
                                             return <div>

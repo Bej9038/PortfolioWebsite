@@ -40,7 +40,7 @@ function NavBar() {
                     {/*</lin>*/}
                     <lin className="nav-item">
                         <NavLink to="/Projects" exact activeClassName="active">
-                            Projects
+                            Blog
                         </NavLink>
                     </lin>
                     <lin className="nav-item">

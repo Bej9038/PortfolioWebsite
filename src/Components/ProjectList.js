@@ -28,6 +28,7 @@ import audiocraft1 from "../Images/audiocraft1.png"
 import audiocraft2 from "../Images/frontend.PNG"
 import dit from "../Images/dit.png"
 import pc from "../Images/IMG_8809.JPEG"
+import ea from "../Images/EntropyAudio (2).png"
 
 import descriptions from "./ProjectDescriptions"
 
@@ -44,8 +45,8 @@ const portfolios = [
         descriptions: [descriptions.synthlm1, descriptions.synthlm2, descriptions.synthlm3, descriptions.synthlm4
         , descriptions.synthlm5, descriptions.synthlm6, descriptions.synthlm7],
         title: 'Generative, Transformer-Based Models For Music Composition',
-        images: [audiocraft1, dit, pc],
-        imagecap: ["1. MusicGen + Encodec Architecture", "2. Diffusion Transformer (DiT) Paper", "3. My Local Machine"]
+        images: [audiocraft1, dit, ea, pc],
+        imagecap: ["1. MusicGen + Encodec Architecture", "2. Diffusion Transformer (DiT) Paper", "3. Generation Flow System Design", "4. My Local Machine"]
     },
     // {
     //     id: 2,
