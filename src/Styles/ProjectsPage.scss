@@ -107,6 +107,7 @@
         max-height: 24vh;
         position: relative;
         padding-bottom: 6rem;
+
         .expand-btn
         {
           position: absolute;
@@ -175,6 +176,9 @@
           align-items: center;
           //grid-template-rows: 1fr;
           row-gap: 3rem;
+          .description {
+            max-width: 900px;
+          }
           img
           {
             //height: 200px;
