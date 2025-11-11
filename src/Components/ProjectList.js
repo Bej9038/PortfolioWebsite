@@ -46,7 +46,14 @@ const portfolios = [
         , descriptions.synthlm5, descriptions.synthlm6, descriptions.synthlm7],
         title: 'Generative, Transformer-Based Models For Music Composition',
         images: [audiocraft1, dit, ea, pc],
-        imagecap: ["1. MusicGen + Encodec Architecture", "2. Diffusion Transformer (DiT) Paper", "3. Generation Flow System Design", "4. My Local Machine"]
+        imagecap: ["1. MusicGen + Encodec Architecture", "2. Diffusion Transformer (DiT) Paper", "3. Generation Flow System Design", "4. My Local Machine"],
+        citations: ["https://github.com/facebookresearch/audiocraft",
+            "https://huggingface.co/docs/transformers/model_doc/clap",
+            "https://github.com/Stability-AI/stable-audio-tools",
+            "https://ai.meta.com/research/publications/meta-audiobox-aesthetics-unified-automatic-quality-assessment-for-speech-music-and-sound/",
+            "https://github.com/EntropyAudio/entropy_frontend",
+            "https://entropyaudio.io/"
+        ]
     },
     // {
     //     id: 2,

@@ -134,6 +134,11 @@ function MenuItem({menuItem, id, setId}) {
                                         }
                                     }
                                 )()}
+                                <div className="description" dangerouslySetInnerHTML={{
+                                    __html: item.citations && item.citations.length > 0
+                                        ? `<h3>Links/Citations</h3><ul style="list-style-type: none; padding-left: 0;">${item.citations.map((citation, index) => `<li style="margin-bottom: 5px;">[${index + 1}] ${linkify(citation)}</li>`).join('')}</ul>`
+                                        : ""
+                                }} />
                             </div>
                         </div>
                     </div>
