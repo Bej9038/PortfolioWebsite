@@ -1,24 +1,26 @@
 const descriptions =
     {
-        synthlm1: "Given the impressive modeling capabilities of modern diffusion and flow-based models in the speech and music domains, " +
+        synthlm1: "Given the impressive modeling capabilities of modern diffusion and flow models in the speech and music domains, " +
             "it seems clear to me that there will be some form of natural langauge tool available for music composers in the future. " +
-            "Unfortunately, audio generation models are not suitable for music composition in their current state. " +
-            "Some of these models may be able to generate full songs, but none are able to generate high-quality, individual samples well. " +
-            "This fact highlights both a large data bottleneck as well as a lack of focus on this task by the community.",
+            "Unfortunately, audio generation models are great for music composition in their current state. " +
+            "Some of these models may be able to generate full songs, but none are able to generate individual, high-quality samples well. " +
+            "To me this highlights both a large data bottleneck as well as a lack of focus on this specific task by the community.",
 
-        synthlm2: "The open source model that first peaked my interest was MusicGen from Meta AI in 2023. This is an " +
-            "autoregressive transformer model that aims to predict time-steps in a discretized, compressed audio sequence conditioned on text. " +
-            "Although these models were a huge step up in open source at the time and implement an interesting approach to audio modeling, " +
-            "the limitations of autoregressive models become apparent when playing around with the model (consistency issues and slow generative speeds for long sequences). " +
-            "This doesn't mean autoregressive models are inherently bad, I just think that maybe they are the best fit for the audio generation task. " +
-            "Some other issues like artifact-free latent audio encoding and decoding were not completely solved at this point, lowering the quality of the model further. " +
-            "Encodec (the model used in AudioGen) is solid, but not yet at the level needed for professional audio.",
+        synthlm2: "The open source model that first peaked my interest was <a href='https://musicgen.com/' target='_blank' rel='noopener noreferrer'>MusicGen from Meta AI</a> in summer 2023. This is an " +
+            "autoregressive transformer model that predicts time-steps in a compressed, discretized audio sequence conditioned on text. " +
+            "Although these models were a huge step up in open source at the time and implemented a cool approach to audio modeling, " +
+            "the limitations of autoregressive models became apparent when playing around with the model (consistency issues and slow generative speeds for long sequences). " +
+            "Autoregressive models aren't inherently bad, but they may not be the best fit for audio generation. " +
+            "Some other issues like artifact-free latent audio encoding and decoding were not completely solved at the time as well, lowering the quality of the model further. " +
+            "<a href='https://github.com/facebookresearch/encodec' target='_blank' rel='noopener noreferrer'>Encodec</a> (an audio autoencoder made by Meta) is solid, but not quite at the level needed for professional audio.",
 
-        synthlm3: "By the end of the year (Dec 2023), I began experimenting with finetuning MusicGen with somewhat limited results. " +
-            "Through testing I determined that the autoencoder Descript Audio Codec (DAC) had superior audio quality so I swapped out Encodec with DAC for these experiments. " +
-            "Although DAC was an improvement on Encodec, I was still experiencing issues with model efficiency (AudioGen is a 7B model), dataset quality and breadth, and sequence consistency. " +
-            "In June 2024, StabilityAI released Stable Audio Open (SAO). SAO is a 1B diffusion model that operates on a continuous latent space provided by a newer encoder model called Oobleck. " +
-            "To me, SAO is superior to AudioGen in consistency, quality, simplicity, and efficiency. Diffusion/flow models are the clear winner for audio generation.",
+        synthlm3: "By the end of the year (Dec 2023), I began experimenting and finetuning MusicGen. " +
+            "Through some testing I found that the autoencoder called <a href='https://github.com/descriptinc/descript-audio-codec' target='_blank' rel='noopener noreferrer'>Descript Audio Codec (DAC)</a> " +
+            "had superior audio quality, so I swapped out Encodec with DAC for these experiments. " +
+            "Unfortuantely, experienced issues with model efficiency (AudioGen has 7B parameters), dataset breadth and quality, and sequence consistency. " +
+            "In June 2024, StabilityAI released <a href='https://huggingface.co/stabilityai/stable-audio-open-1.0' target='_blank' rel='noopener noreferrer'>Stable Audio Open (SAO)</a>. " +
+            "SAO is a 1B diffusion model that operates on a continuous latent space provided by a great encoder model called <a href='https://github.com/Harmonai-org/oobleck' target='_blank' rel='noopener noreferrer'>Oobleck</a>. " +
+            "SAO is superior to AudioGen in consistency, quality, simplicity, and efficiency. In my opinion, diffusion/flow models are the clear winner for audio generation.",
 
         synthlm4: "However, the data bottleneck for this task still remains. " +
             "To fix this, I have been working on a dataset that is currently sitting at around 2TB. " +
