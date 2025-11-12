@@ -1,12 +1,12 @@
 const descriptions =
     {
         synthlm1: "Given the impressive modeling capabilities of modern diffusion and flow models in the speech and music domains, " +
-            "it seems clear to me that there will be some form of natural langauge tool available for music composers in the future. " +
-            "Unfortunately, audio generation models are great for music composition in their current state. " +
+            "it seems clear to me that there will be some form of natural language tool available for music composers in the future. " +
+            "Unfortunately, audio generation models aren't great for music composition in their current state. " +
             "Some of these models may be able to generate full songs, but none are able to generate individual, high-quality samples well. " +
             "To me this highlights both a large data bottleneck as well as a lack of focus on this specific task by the community.",
 
-        synthlm2: "The open source model that first peaked my interest was <a href='https://musicgen.com/' target='_blank' rel='noopener noreferrer'>MusicGen from Meta AI</a> in summer 2023. This is an " +
+        synthlm2: "The open source model that first piqued my interest was <a href='https://musicgen.com/' target='_blank' rel='noopener noreferrer'>MusicGen from Meta AI</a> in summer 2023. This is an " +
             "autoregressive transformer model that predicts time-steps in a compressed, discretized audio sequence conditioned on text. " +
             "Although these models were a huge step up in open source at the time and implemented a cool approach to audio modeling, " +
             "the limitations of autoregressive models became apparent when playing around with the model (consistency issues and slow generative speeds for long sequences). " +
@@ -17,40 +17,44 @@ const descriptions =
         synthlm3: "By the end of the year (Dec 2023), I began experimenting and finetuning MusicGen. " +
             "Through some testing I found that the autoencoder called <a href='https://github.com/descriptinc/descript-audio-codec' target='_blank' rel='noopener noreferrer'>Descript Audio Codec (DAC)</a> " +
             "had superior audio quality, so I swapped out Encodec with DAC for these experiments. " +
-            "Unfortuantely, experienced issues with model efficiency (AudioGen has 7B parameters), dataset breadth and quality, and sequence consistency. " +
+            "Unfortunately, experienced issues with model efficiency (MusicGen has 7B parameters), dataset breadth and quality, and sequence consistency. " +
             "In June 2024, StabilityAI released <a href='https://huggingface.co/stabilityai/stable-audio-open-1.0' target='_blank' rel='noopener noreferrer'>Stable Audio Open (SAO)</a>. " +
             "SAO is a 1B diffusion model that operates on a continuous latent space provided by a great encoder model called <a href='https://github.com/Harmonai-org/oobleck' target='_blank' rel='noopener noreferrer'>Oobleck</a>. " +
-            "SAO is superior to AudioGen in consistency, quality, simplicity, and efficiency. In my opinion, diffusion/flow models are the clear winner for audio generation.",
+            "SAO is superior to MusicGen in consistency, quality, simplicity, and efficiency. In my opinion, diffusion/flow models are the clear winner for audio generation.",
 
-        synthlm4: "However, the data bottleneck for this task still remains. " +
-            "To fix this, I have been working on a dataset that is currently sitting at around 2TB. " +
+        synthlm4: "Unfortunately, the data bottleneck still remains. " +
+            "To fix this, I have been working on a dataset currently sitting at around 2TB. " +
             "The largest portion of this data came from a program I made to automate the data gathering and labeling process. I used LLMs " +
-            "Gemini 2.5 Flash (API) and Qwen3-30B (Local) to generate captions given metadata of an audio sample. Each datapoint has metadata and conditioning fields " +
-            "prepared in a predefined schema and saved as a json file. This dataset format was inspired by the dataset classes in " +
-            "<a href='https://github.com/facebookresearch/audiocraft' target='_blank' rel='noopener noreferrer'>Meta's AudioCraft codebase</a>. " +
-            "The rest of the data is either open source or manually labeled. When I get a chane, I am hoping to finetune a multimodal LLM to do labelling from raw audio as well. " +
-            "This is pending completion of the metadata-caption dataset, so I have lots of training data to play around with. I used <a href='https://huggingface.co/docs/transformers/model_doc/clap' target='_blank' rel='noopener noreferrer'>CLAP score</a> to filter all open source and synthetic data to ensure that data is high quality.",
+            "(Gemini 2.5 Flash (API) and Qwen3-30B (Local)) to generate captions given text metadata of an audio sample. " +
+            "Each datapoint in the dataset has metadata and conditioning fields prepared in a predefined schema and saved as a json file. " +
+            "This dataset design was inspired by the dataset classes in <a href='https://github.com/facebookresearch/audiocraft' target='_blank' rel='noopener noreferrer'>Meta's AudioCraft codebase</a>. " +
+            "The rest of the data is either open source or manually labeled. I am also hoping to create an audio classifier as well as a multimodal LLM trained to do labelling from raw audio as well. " +
+            "This is pending completion of the initial dataset to ensure I have lots of training data to play around with. " +
+            "Lastly, I use <a href='https://huggingface.co/docs/transformers/model_doc/clap' target='_blank' rel='noopener noreferrer'>CLAP score</a> to filter all open source and synthetic data to ensure that data is high quality. ",
 
-        synthlm5: "On the engineering side, I created 4 main code packages: entropy_training, entropy_models, entropy_metrics, and entropy_data. " +
-            "The model package was initialized from the model code in the <a href='https://github.com/Stability-AI/stable-audio-tools' target='_blank' rel='noopener noreferrer'>Stable Audio Tools</a> repo " +
-            "(which surprisingly contained more bugs than I would have liked! A good lesson in testing your code and reviewing open source I guess) " +
-            "and contains code for the DiT, autoencoder, and conditioning module. For text embeddings, I swapped out the original T5 used with SAO and added in " +
-            "Qwen3 Embedding, CLIP, and CLAP for diverse text features. The data package holds the code for the audio dataset as well as " +
-            "code for curating synthetic data and analyzing the dataset distribution. The training package contains controller/orchestrator code for training and evaluating the model, " +
-            "and the metrics package has metrics for evaluation. Some interesting metrics I have been using are the model scores from <a href='https://ai.meta.com/research/publications/meta-audiobox-aesthetics-unified-automatic-quality-assessment-for-speech-music-and-sound/' target='_blank' rel='noopener noreferrer'>Meta's Audiobox Aesthetics</a>. " +
+        synthlm5: "On the engineering side, I created 4 core code packages: entropy_training, entropy_models, entropy_metrics, and entropy_data. " +
+            "The model package was initialized from the code in the <a href='https://github.com/Stability-AI/stable-audio-tools' target='_blank' rel='noopener noreferrer'>Stable Audio Tools</a> repo " +
+            "(which contained more than a few bugs, a good lesson in reviewing open source code and adding tests!) " +
+            "and contains code for the DiT, autoencoder, and conditioning modules. For text embeddings, I swapped out the original T5 used with SAO and added in " +
+            "Qwen3 Embedding, CLIP, and CLAP for diverse text features. The data package holds the dataset code as well as " +
+            "code for curating synthetic data and analyzing the dataset's distributions. The training package contains controller/orchestrator code for training and evaluating the model. " +
+            "Finally the metrics package contains metrics for evaluating audio. Some interesting metrics I have been using are the scores from <a href='https://ai.meta.com/research/publications/meta-audiobox-aesthetics-unified-automatic-quality-assessment-for-speech-music-and-sound/' target='_blank' rel='noopener noreferrer'>Meta's Audiobox Aesthetics</a>. " +
             "This is a pretrained model that predicts scores for an audio's content enjoyment, content quality, production complexity, and production quality. " +
-            "These scores have actually been decent indicators of training progress and could potentially be useful for some experimental RL post-training. I also used CLAP score and personal judgement for evaluations.",
+            "These scores have actually been decent indicators of training progress and could potentially be used as reward models for post-training (this is an area I am really excited about experimenting with). " +
+            "I also use CLAP score and personal judgement for model evaluation.",
 
         synthlm6: "Initial/experimental training runs for the diffusion model were done on my local workstation with 1x5090. When I'm ready to scale " +
-            "I will probably move to a multi-gpu setup on RunPod (and use up some free startup credits I have there). To speed up training, I used PyTorch's automatic mixed precision " +
-            "to convert the original float32 SAO weights down to bfloat16. Bfloat16 was prefered over float16 as it is just a simple precision/mantissa truncation and no re-scaling is required. " +
-            "I also preencoded the audio latents ahead of time in my dataset as the CNN was a bottleneck during the training step. For training/experiment tracking I used wandb.",
+            "I will probably move to a multi-gpu setup on RunPod. To speed up training, I used PyTorch's automatic mixed precision " +
+            "to convert the original float32 SAO weights down to bfloat16. Bfloat16 was preferred over float16 since it is just a simple precision/mantissa truncation on the float32 weights and no re-scaling is required. " +
+            "I also pre-encoded the audio latents since the CNN was a bottleneck during the training step. For training/experiment tracking I used wandb.",
 
-
-        synthlm7: "I created a <a href='https://github.com/EntropyAudio/entropy_frontend' target='_blank' rel='noopener noreferrer'>frontend with Angular</a> " +
-            "as well as a small serverless backend + model inference function. For those backend pieces I used AWS Lambdas+S3+DDB and RunPod Serverless Endpoints respectively. My goal with the frontend was to make something " +
-            "that felt like a hybrid between digital synth and LLM UIs, and also to make a UI that allows for natural preference data selection (aka a data flywheel). " +
-            "RunPod/Lambda code can be found here: Note that the core packages like entropy_training are private.",
+        synthlm7: "For the Entropy Audio application, I created a <a href='https://github.com/EntropyAudio/entropy_frontend' target='_blank' rel='noopener noreferrer'>frontend with Angular</a> " +
+            "as well as a <a href='https://github.com/EntropyAudio/entropy_lambda' target='_blank' rel='noopener noreferrer'>small serverless backend</a> + <a href='https://github.com/EntropyAudio/entropy_inference' target='_blank' rel='noopener noreferrer'>model inference function</a>. " +
+            "For those backend pieces I used AWS Lambdas+S3+DDB and RunPod Serverless Endpoints respectively (see the design diagram above). My goal with the frontend was to make something " +
+            "that felt like a hybrid between digital synthesizer and LLM/chatbot UIs, and also integrate a natural data flywheel into the workflow. " +
+            "During generation, the user is presented with 4 options. The audio samples that the user selects to download are marked in a DDB table as 'preferred'. " +
+            "This way a synthetic preference dataset is automatically created as people use the app, helping to solve the data bottleneck mentioned earlier. " +
+            "RunPod/Lambda code can be found on my github. Core packages like entropy_training are private.",
 
 
 
