@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/PortfolioWebsite/static/css/main.79cc88fd.chunk.css",
-    "main.js": "/PortfolioWebsite/static/js/main.974f09b7.chunk.js",
-    "main.js.map": "/PortfolioWebsite/static/js/main.974f09b7.chunk.js.map",
+    "main.css": "/PortfolioWebsite/static/css/main.6d3ee08f.chunk.css",
+    "main.js": "/PortfolioWebsite/static/js/main.d8024c45.chunk.js",
+    "main.js.map": "/PortfolioWebsite/static/js/main.d8024c45.chunk.js.map",
     "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js",
     "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.906d1dcc.js.map",
     "static/js/2.bd8e1c77.chunk.js": "/PortfolioWebsite/static/js/2.bd8e1c77.chunk.js",
     "static/js/2.bd8e1c77.chunk.js.map": "/PortfolioWebsite/static/js/2.bd8e1c77.chunk.js.map",
     "index.html": "/PortfolioWebsite/index.html",
-    "static/css/main.79cc88fd.chunk.css.map": "/PortfolioWebsite/static/css/main.79cc88fd.chunk.css.map",
+    "static/css/main.6d3ee08f.chunk.css.map": "/PortfolioWebsite/static/css/main.6d3ee08f.chunk.css.map",
     "static/js/2.bd8e1c77.chunk.js.LICENSE.txt": "/PortfolioWebsite/static/js/2.bd8e1c77.chunk.js.LICENSE.txt",
     "static/media/Benjamin_Jordan_Resume_2025.87d270a2.pdf": "/PortfolioWebsite/static/media/Benjamin_Jordan_Resume_2025.87d270a2.pdf",
     "static/media/EQ2.4f946a9f.PNG": "/PortfolioWebsite/static/media/EQ2.4f946a9f.PNG",
@@ -48,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.906d1dcc.js",
     "static/js/2.bd8e1c77.chunk.js",
-    "static/css/main.79cc88fd.chunk.css",
-    "static/js/main.974f09b7.chunk.js"
+    "static/css/main.6d3ee08f.chunk.css",
+    "static/js/main.d8024c45.chunk.js"
   ]
 }
