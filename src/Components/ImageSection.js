@@ -10,11 +10,11 @@ function ImageSection() {
                     <p className="about-text">
                         <span>I am a software engineer at Amazon and a graduate of Cornell & RIT CS.</span>
                         <br/><br/>
-                        In my current job, I primarily work on large scale spark ETL jobs and ML ops.
+                        In my current job, I primarily work on large scale spark ETL jobs, ML ops, and other fullstack tasks.
                         I have a background in ML from my masters as well as from my previous role and internship.
                         <br/><br/>
                         Outside of work I like to spend my time on my project, Entropy Audio, which aims to redefine how we create sound for music composition.
-                        I also love trying new food, cool architecture, and keeping up with cool research in CS.
+                        I also love trying new food, cool architecture, and keeping up with research in CS.
                     </p>
                 </div>
                 <div className="about-img-wrapper">
