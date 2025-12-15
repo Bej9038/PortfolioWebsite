@@ -7,12 +7,13 @@
   //justify-content: center;
   .nav
   {
-    //flex: 1;
+    // Use grid to center nav + icons as a group and keep footer bottom
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    // Slightly larger bottom spacer to nudge center group up
+    grid-template-rows: 0.9fr auto 1.1fr auto; // top spacer, center group, bottom spacer, footer
     align-items: center;
-    justify-content: flex-start;
+    justify-items: center;
     flex-shrink: 0;
     .hero
     {
@@ -69,50 +70,83 @@
       }
     }
 
-    .nav-items
+    .nav-center
     {
-      //position: relative;
-      height: 100%;
+      grid-row: 2;
       width: 100%;
-      padding-top: 2.5rem;
-      padding-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .nav-items
+      {
+        width: 100%;
+        padding-top: 2.5rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .nav-item
+        {
+          width: 100%;
+          list-style: none;
+          text-align: center;
+          a
+          {
+            text-decoration: none;
+            font-size: inherit;
+            color: var(--font-color1);
+            text-align: center;
+            display: block;
+            padding: 1.3rem 0;
+            position: relative;
+            &::before
+            {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: var(--main-color-hover);
+              transform-origin: bottom;
+              transform: scale(0);
+              overflow-x: hidden;
+              transition: transform .6s, .2s, width .2s cubic-bezier(1,-.16,0,1.32);
+            }
+            &:hover::before
+            {
+              transform: scale(1);
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    // Social icons placed directly below nav items inside the centered group
+    .icons
+    {
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      .nav-item
+      padding: 1.5rem 0;
+
+      .icon-link
       {
-        width: 100%;
-        list-style: none;
-        text-align: center;
-        a
+        margin-right: 1rem;
+        .icon
         {
-          text-decoration: none;
-          font-size: inherit;
-          color: var(--font-color1);
-          text-align: center;
-          display: block;
-          padding: 1.3rem 0;
-          position: relative;
-          &::before
-          {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--main-color-hover);
-            transform-origin: bottom;
-            transform: scale(0);
-            overflow-x: hidden;
-            transition: transform .6s, .2s, width .2s cubic-bezier(1,-.16,0,1.32);
-          }
-          &:hover::before
-          {
-            transform: scale(1);
-            width: 100%;
-          }
+          font-size: 2.8rem;
+          color: var(--font-color2);
+          transition: all .3s ease-in-out;
+        }
+
+        .icon:hover
+        {
+          color: var(--main-color)
         }
       }
     }
@@ -120,8 +154,9 @@
   }
   .footer
   {
-    margin-top: auto;
-    //margin-bottom: auto;
+    grid-row: 4;
+    // Footer is placed on the 4th grid row by parent .nav
+    margin-top: 0; // override previous auto margin to work with grid
     cursor: default;
     width: 100%;
     p

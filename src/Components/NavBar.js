@@ -8,15 +8,31 @@ function NavBar() {
     return (
         <div className="NavBar">
             <nav className="nav">
-                <header className="hero">
-                    {/*<h1 className="hero-text">*/}
-                    {/*    <span> Ben Jordan</span>*/}
-                    {/*</h1>*/}
+                {/* Header removed; icons moved below nav items */}
 
-                    {/*<p className="home-sub-text">*/}
-                    {/*    Machine Learning & Software Engineering*/}
-                    {/*</p>*/}
-
+                <div className="nav-center">
+                    <ul className="nav-items">
+                        <lin className="nav-item">
+                            <NavLink to="/" exact activeClassName="active">
+                                Home
+                            </NavLink>
+                        </lin>
+                        {/*<lin className="nav-item">*/}
+                        {/*    <NavLink to="/About" exact activeClassName="active">*/}
+                        {/*        About*/}
+                        {/*    </NavLink>*/}
+                        {/*</lin>*/}
+                        <lin className="nav-item">
+                            <NavLink to="/Projects" exact activeClassName="active">
+                                Blog
+                            </NavLink>
+                        </lin>
+                        <lin className="nav-item">
+                            <NavLink to="/Contact" exact activeClassName="active">
+                                Contact
+                            </NavLink>
+                        </lin>
+                    </ul>
                     <div className="icons">
                         <a target = "_blank" href = "https://github.com/EntropyAudio" className="icon-link">
                             <FontAwesomeIcon icon = {faGithub} className="icon"/>
@@ -25,30 +41,7 @@ function NavBar() {
                             <FontAwesomeIcon icon = {faLinkedin} className="icon"/>
                         </a>
                     </div>
-                </header>
-
-                <ul className="nav-items">
-                    <lin className="nav-item">
-                        <NavLink to="/" exact activeClassName="active">
-                            Home
-                        </NavLink>
-                    </lin>
-                    {/*<lin className="nav-item">*/}
-                    {/*    <NavLink to="/About" exact activeClassName="active">*/}
-                    {/*        About*/}
-                    {/*    </NavLink>*/}
-                    {/*</lin>*/}
-                    <lin className="nav-item">
-                        <NavLink to="/Projects" exact activeClassName="active">
-                            Blog
-                        </NavLink>
-                    </lin>
-                    <lin className="nav-item">
-                        <NavLink to="/Contact" exact activeClassName="active">
-                            Contact
-                        </NavLink>
-                    </lin>
-                </ul>
+                </div>
                 {/*<div className="footer footer">*/}
                 {/*</div>*/}
                 <div className="footer footer">
