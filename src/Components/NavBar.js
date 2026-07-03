@@ -34,11 +34,11 @@ function NavBar() {
                         </lin>
                     </ul>
                     <div className="icons">
-                        <a target = "_blank" href = "https://github.com/EntropyAudio" className="icon-link">
-                            <FontAwesomeIcon icon = {faGithub} className="icon"/>
-                        </a>
                         <a target = "_blank"  href = "https://www.linkedin.com/in/ben-jordan-b745a0194/" className="icon-link">
                             <FontAwesomeIcon icon = {faLinkedin} className="icon"/>
+                        </a>
+                        <a target = "_blank" href = "https://github.com/bej9" className="icon-link">
+                            <FontAwesomeIcon icon = {faGithub} className="icon"/>
                         </a>
                     </div>
                 </div>
