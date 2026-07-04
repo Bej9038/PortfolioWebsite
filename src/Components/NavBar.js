@@ -24,7 +24,7 @@ function NavBar() {
                         {/*</lin>*/}
                         <lin className="nav-item">
                             <NavLink to="/Projects" exact activeClassName="active">
-                                Personal Project
+                                Entropy Audio
                             </NavLink>
                         </lin>
                         <lin className="nav-item">
