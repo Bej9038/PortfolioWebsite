@@ -9,7 +9,7 @@ function ImageSection() {
                     <p className="about-text">
                         <span>
                         I am currently an engineer at Amazon Ads on the Brand Lift team (Measurement, Ad Tech, Data Science org).
-                        Previously, I worked on Computer Vision at KLA and at Northrop Grumman's Autonomous Intelligence and Robotics Lab.</span>
+                        Previously, I worked on computer vision at KLA and at Northrop Grumman's Autonomous Intelligence and Robotics Lab.</span>
                         <br/><br/>
                         The areas within ML that I'm most interested in are flow/diffusion models, reinforcement learning, and ML hardware & frameworks.
                         <br/><br/>
