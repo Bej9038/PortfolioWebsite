@@ -51,9 +51,9 @@ function MenuItem({menuItem, id, setId}) {
                                 {(() => {
                                         if (item.topImage) {
                                             return <div>
-                                                <img className="img img-wide"
+                                                <img className="img"
                                                      src={item.topImage}
-                                                     alt="Entropy Audio user interface"/>
+                                                     alt="Entropy Audio architecture diagram"/>
                                                 <div className="img-caption">{item.topImageCap}</div>
                                             </div>
                                         }
@@ -131,7 +131,7 @@ function MenuItem({menuItem, id, setId}) {
                                 {(() => {
                                         if (item.images && item.images[3]) {
                                             return <div>
-                                                <img className="img"
+                                                <img className="img img-wide"
                                                      src={item.images[3]}
                                                      alt=""/>
                                                 <div className="img-caption">{item.imagecap[3]}</div>

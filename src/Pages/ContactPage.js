@@ -17,7 +17,7 @@ function ContactPage() {
                 <div className="context-info">
                     Phone: 607-339-1740
                     <br/><br/>
-                    Email: bej9@cornell.edu, bejordae@amazon.com
+                    Email: bej9@cornell.edu
                     <br/><br/>
                     Current Location: New York, NY
                 </div>
