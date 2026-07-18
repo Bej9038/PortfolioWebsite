@@ -1,10 +1,9 @@
 const descriptions =
     {
-        entropy1: "Given the impressive capabilities of modern diffusion models in the speech and music domains, " +
-            "a natural-language tool made for composers feels inevitable. " +
-            "Unfortunately, current audio models are largely focused on speech and music generation - not individual, high-quality instrument samples. " +
-            "In my experience, two things stand in the way - a large data bottleneck and a lack of focus on this specific task. " +
-            "Entropy Audio is my attempt at making this tool come to life.",
+        entropy1: "Modern flow matching and diffusion models have shown impressive capabilities in the speech and music domains. " +
+            "We've reached the point where entire, convincing songs can be generated with a single prompt. However, I would argue that this isn't what most musicians want. " +
+            "Instead, they want a tool that allows them to generate and design sound with maximum control. " +
+            "Entropy Audio is my attempt at creating this tool.",
 
         entropy2: "The open-source model that first captured my interest was <a href='https://musicgen.com/' target='_blank' rel='noopener noreferrer'>MusicGen from Meta AI [1]</a>, released in June 2023. " +
             "MusicGen is an autoregressive transformer model that predicts time-steps in a compressed, discretized audio sequence. " +
