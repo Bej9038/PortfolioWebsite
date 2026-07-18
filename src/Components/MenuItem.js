@@ -48,6 +48,10 @@ function MenuItem({menuItem, id, setId}) {
                             {/*    }*/}
                             {/*}}>Expand</button>*/}
                             <div className="flex-container">
+
+                                <p className="description" dangerouslySetInnerHTML={{
+                                    __html: linkify(item.descriptions ? (item.descriptions[0] || "") : "")
+                                }} />
                                 {(() => {
                                         if (item.topImage) {
                                             return <div>
@@ -60,7 +64,7 @@ function MenuItem({menuItem, id, setId}) {
                                     }
                                 )()}
                                 <p className="description" dangerouslySetInnerHTML={{
-                                    __html: linkify(item.descriptions ? (item.descriptions[0] || "") : "")
+                                    __html: linkify(item.descriptions ? (item.descriptions[1] || "") : "")
                                 }} />
                                 {(() => {
                                         if (item.images && item.images[0]) {
@@ -74,29 +78,6 @@ function MenuItem({menuItem, id, setId}) {
                                         }
                                     }
                                 )()}
-                                <p className="description" dangerouslySetInnerHTML={{
-                                    __html: linkify(item.descriptions ? (item.descriptions[1] || "") : "")
-                                }} />
-                                {/*{(() => {*/}
-                                {/*    if (item.audio && item.audiocap) {*/}
-                                {/*        return <div className="audio-container">*/}
-                                {/*            <div>*/}
-                                {/*                <ReactAudioPlayer className="audio-player"*/}
-                                {/*                                  src={item.audio[0]}*/}
-                                {/*                                  controls*/}
-                                {/*                />*/}
-                                {/*                <div className="audio-caption">{item.audiocap[0]}</div>*/}
-                                {/*            </div>*/}
-                                {/*            <div>*/}
-                                {/*                <ReactAudioPlayer className="audio-player"*/}
-                                {/*                                  src={item.audio[1]}*/}
-                                {/*                                  controls*/}
-                                {/*                />*/}
-                                {/*                <div className="audio-caption">{item.audiocap[1]}</div>*/}
-                                {/*            </div>*/}
-                                {/*        </div>*/}
-                                {/*    }*/}
-                                {/*})()}*/}
                                 <p className="description" dangerouslySetInnerHTML={{
                                     __html: linkify(item.descriptions ? (item.descriptions[2] || "") : "")
                                 }} />
