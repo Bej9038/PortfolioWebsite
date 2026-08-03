@@ -24,7 +24,7 @@ const descriptions =
             "The rest of the data is open-source, manually labeled, or synthetically generated. <br><br>" +
             "To prep the dataset, I used <a href='https://huggingface.co/docs/transformers/model_doc/clap' target='_blank' rel='noopener noreferrer'>CLAP score [3]</a> to filter out low-quality examples. " +
             "I balanced the dataset using a weighted sampler, downweighting examples with common metadata using an inverse frequency weighting. " +
-            "Deduplicated using done using latent similarity score thresholding on multiple types of audio embeddings. " +
+            "Deduplication was done using latent similarity score thresholding on multiple types of audio embeddings. " +
             "Finally, I encoded the latents ahead of training to improve efficiency.",
 
         entropy5: "For my training runs, I swapped out the original text encoder used with SAO for T5Gemma. " +
